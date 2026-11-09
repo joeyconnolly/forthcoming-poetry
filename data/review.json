@@ -1,15 +1,15 @@
 {
   "gallery": {
     "accepted_count": 0,
-    "attempted_at": "2026-11-09T14:45:09+00:00",
+    "attempted_at": "2026-11-09T14:50:06+00:00",
     "candidates": 38,
-    "excluded": 9,
+    "excluded": 1,
     "forthcoming_count": 0,
-    "last_data_at": "2026-11-09T14:45:09+00:00",
+    "last_data_at": "2026-11-09T14:50:06+00:00",
     "last_success_at": null,
     "scope": "Official rolling forthcoming and poetry RSS feeds, with book-page date and genre verification. Older undiscovered titles outside these feeds are not covered.",
     "status": "partial",
-    "valid_records": 27,
+    "valid_records": 2,
     "warnings": [
       {
         "reason": "Rolling feed: 10 announcements/products processed; older undiscovered records are outside this scope",
@@ -20,22 +20,154 @@
         "url": "https://gallerypress.com/product-category/poetry/feed/"
       },
       {
-        "reason": "'NoneType' object has no attribute 'get_text'",
+        "reason": "HTTP 429: https://gallerypress.com/product/chic-to-be-sad/",
+        "url": "https://gallerypress.com/product/chic-to-be-sad/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/cork/",
+        "url": "https://gallerypress.com/product/cork/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/custom-of-the-coast/",
+        "url": "https://gallerypress.com/product/custom-of-the-coast/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/daylight-mystery/",
+        "url": "https://gallerypress.com/product/daylight-mystery/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/devotion/",
+        "url": "https://gallerypress.com/product/devotion/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/harmony-unfinished/",
+        "url": "https://gallerypress.com/product/harmony-unfinished/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/hymn-to-all-the-restless-girls/",
+        "url": "https://gallerypress.com/product/hymn-to-all-the-restless-girls/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/infinity-pool/",
+        "url": "https://gallerypress.com/product/infinity-pool/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/lives-of-the-saints/",
+        "url": "https://gallerypress.com/product/lives-of-the-saints/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/midnight-at-the-saltmarsh/",
+        "url": "https://gallerypress.com/product/midnight-at-the-saltmarsh/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/mud-angels/",
+        "url": "https://gallerypress.com/product/mud-angels/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/national-theatre/",
+        "url": "https://gallerypress.com/product/national-theatre/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/new-selected-poems-1966-2025/",
+        "url": "https://gallerypress.com/product/new-selected-poems-1966-2025/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/new-selected-poems-1978-2022/",
+        "url": "https://gallerypress.com/product/new-selected-poems-1978-2022/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/of-shards-and-tatters/",
+        "url": "https://gallerypress.com/product/of-shards-and-tatters/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/old-friends/",
+        "url": "https://gallerypress.com/product/old-friends/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/over-here/",
+        "url": "https://gallerypress.com/product/over-here/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/poetry-memory-and-the-party/",
+        "url": "https://gallerypress.com/product/poetry-memory-and-the-party/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/questioning-ireland/",
+        "url": "https://gallerypress.com/product/questioning-ireland/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/raised-among-vultures/",
         "url": "https://gallerypress.com/product/raised-among-vultures/"
       },
       {
-        "reason": "No recognised book publication date",
+        "reason": "HTTP 429: https://gallerypress.com/product/selected-poems-john-mcauliffe/",
+        "url": "https://gallerypress.com/product/selected-poems-john-mcauliffe/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/ship-in-full-sail/",
+        "url": "https://gallerypress.com/product/ship-in-full-sail/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/standing-in-the-rain/",
+        "url": "https://gallerypress.com/product/standing-in-the-rain/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/states/",
+        "url": "https://gallerypress.com/product/states/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/thats-it/",
+        "url": "https://gallerypress.com/product/thats-it/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-coast-road-ailbhe-ni-ghearbhuigh/",
         "url": "https://gallerypress.com/product/the-coast-road-ailbhe-ni-ghearbhuigh/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-convent-of-mercy/",
+        "url": "https://gallerypress.com/product/the-convent-of-mercy/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-flower-master-and-other-poems-medbh-mcguckian/",
+        "url": "https://gallerypress.com/product/the-flower-master-and-other-poems-medbh-mcguckian/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-gold-standard/",
+        "url": "https://gallerypress.com/product/the-gold-standard/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-lookout-post/",
+        "url": "https://gallerypress.com/product/the-lookout-post/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-only-fear-ive-ever-had-is-standing-still/",
+        "url": "https://gallerypress.com/product/the-only-fear-ive-ever-had-is-standing-still/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-river-crana/",
+        "url": "https://gallerypress.com/product/the-river-crana/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/the-thankless-paths-to-freedom/",
+        "url": "https://gallerypress.com/product/the-thankless-paths-to-freedom/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/this-deep/",
+        "url": "https://gallerypress.com/product/this-deep/"
+      },
+      {
+        "reason": "HTTP 429: https://gallerypress.com/product/times-guest/",
+        "url": "https://gallerypress.com/product/times-guest/"
       }
     ]
   },
   "shearsman": {
     "accepted_count": 0,
-    "attempted_at": "2026-11-09T14:32:38+00:00",
+    "attempted_at": "2026-11-09T14:50:06+00:00",
     "candidates": 67,
     "excluded": 5,
     "forthcoming_count": 19,
-    "last_data_at": "2026-11-09T14:32:38+00:00",
+    "last_data_at": "2026-11-09T14:50:06+00:00",
     "last_success_at": null,
     "scope": "Current and future annual catalogues discovered from the store navigation. Reissues and ambiguous prose held for review.",
     "status": "partial",
