@@ -1,6 +1,6 @@
 # Coverage expansion, 9 November 2026
 
-The calendar now includes a shared Inpress feed, Faber pre-order discovery and a dated Carcanet catalogue import. Before cloud verification, the reviewed local build contains 87 forthcoming titles from 21 publishers; 25 publishers are registered. Counts are observations, not fixed acceptance thresholds.
+The calendar now includes a shared Inpress feed, Faber pre-order discovery and a dated Carcanet catalogue import. The published GitHub Actions build contains 87 forthcoming titles from 21 publishers; 25 publishers are registered. Counts are observations, not fixed acceptance thresholds.
 
 ## Inpress
 
@@ -24,4 +24,4 @@ Picador, Jonathan Cape and Dedalus remain uncollected. Gallery discovery remains
 
 ## Verification
 
-Offline tests cover CSV schema/error handling, Unicode and dates, contributor roles, reissue holds, publisher/feed conflicts, constrained Google sheet redirects, Faber pagination/date extraction and snapshot verification dates. The expanded page was opened in the browser. GitHub Actions publication and per-source results must be checked after push, because local access does not prove runner access.
+Offline tests cover CSV schema/error handling, Unicode and dates, contributor roles, reissue holds, publisher/feed conflicts, constrained Google sheet redirects, Faber pagination/date extraction and snapshot verification dates. The expanded page was opened in the browser. GitHub Actions run 42648509072 passed all 36 tests, collection, durable saving and publication. The runner reproduced 87 forthcoming titles across 21 publishers. Inpress and Faber returned current records; Gallery returned rate-limit warnings, so its coverage remains unresolved.

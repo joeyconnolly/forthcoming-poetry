@@ -1,3 +1,7 @@
+# Expansion validation, 9 November 2026
+
+36 offline checks passed for the expanded collector. The local reviewed build has 87 forthcoming titles across 21 publishers. See [COVERAGE_EXPANSION.md](COVERAGE_EXPANSION.md) for the current scope. The original validation notes below are retained as historical evidence. GitHub Pages deployment was already verified for the first prototype; the expansion also passed collection, durable saving and publication in GitHub Actions run 42648509072.
+
 # Validation and remaining work
 
 ## Verified locally, 9 November 2026

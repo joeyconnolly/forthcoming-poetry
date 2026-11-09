@@ -76,7 +76,7 @@ The Sites publication is a reviewable snapshot. The production automation suppli
 6. Enable GitHub's workflow-failure notifications for the operator, and check for missed schedules. Scheduled runs can be delayed or disabled after repository inactivity; timestamps on the page remain explicit.
 7. Once verified, change the preview scheduling notice in `site/template.html` to describe the actual live cadence. Do not claim automation active before this verification.
 
-GitHub account/repository access is needed to perform steps 1–5. They have not been executed as part of this snapshot. [GitHub scheduling reference](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+The repository, Pages configuration, and an end-to-end push-triggered collection and publication were verified on 9 November 2026. The schedule is configured; a later scheduled occurrence has not yet been observed. Steps above remain setup instructions for a new installation. [GitHub scheduling reference](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 ## Diagnose and recover
 
