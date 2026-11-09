@@ -32,7 +32,7 @@ def render(root,today):
         rows.append(f'''<li class="book" data-publisher="{esc(p['id'])}" data-search="{esc((r['title']+' '+contributors+' '+p['name']).lower())}">
           <div class="book-date">{esc(d['label'])}</div>
           <div class="book-main"><h3><a href="{esc(r['source_url'])}">{esc(r['title'])}<span aria-hidden="true" class="arrow"> ↗</span></a></h3>{subtitle}<p class="contributors">{esc(contributors)}</p></div>
-          <div class="book-source"><span>{esc(p['name'])}</span><small>Checked {esc(verified or 'not yet')}</small>{''.join(f'<small class="warning">{esc(n)}</small>' for n in notes)}</div>
+          <details class="book-source"><summary aria-label="Source details for {esc(r['title'])}">{esc(p['name'])}</summary><small>Checked {esc(verified or 'not yet')}</small>{''.join(f'<small class="warning">{esc(n)}</small>' for n in notes)}</details>
         </li>''')
     health=[]; checked=0
     labels={'ok':'Checked','partial':'Partial coverage','failed':'Check failed','permission_review':'Access review needed','robots_disallowed':'Collector disallowed','access_blocked':'Access blocked','not_checked':'Not checked'}

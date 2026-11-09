@@ -11,16 +11,16 @@
 <div class="page">
   <header>
     <div class="masthead"><span>UK &amp; IRELAND</span><a href="#coverage">Sources &amp; coverage <span aria-hidden="true">↘</span></a></div>
-    <div class="intro"><p class="eyebrow">A PUBLICATION CALENDAR</p><h1>Forthcoming<br><em>Poetry.</em></h1>
-    <p class="lede">New collections, translations and anthologies.<br>A place to see what’s on the horizon.</p></div>
+    <div class="intro"><h1>Forthcoming Poetry</h1>
+    <p class="lede">New collections, translations and anthologies.</p></div>
     <div class="edition"><span><strong>{{COUNT}}</strong> forthcoming titles</span><span>From {{VISIBLE_PUBLISHERS}} publishers</span><span>Last checked <time>{{ATTEMPT}}</time></span></div>
   </header>
   <main>
-    <aside class="notice"><span class="dot" aria-hidden="true"></span><p><strong>A working prototype, with partial coverage.</strong> Some publishers are awaiting access review. Dates reflect publisher information and can change. <a href="#coverage">See what is covered.</a></p></aside>
+    <aside class="notice"><p>Coverage is partial and dates can change. <a href="#coverage">Sources &amp; limitations</a></p></aside>
     <section aria-labelledby="calendar-title" id="calendar">
-      <div class="calendar-top"><h2 id="calendar-title">The reading ahead</h2><span>Calendar as of <time id="as-of" datetime="{{AS_OF}}">{{AS_OF}}</time></span></div>
+      <div class="calendar-top"><h2 id="calendar-title">Forthcoming titles</h2><span>As of <time id="as-of" datetime="{{AS_OF}}">{{AS_OF}}</time></span></div>
       <div class="filters" hidden><label>Find a title or poet<input type="search" id="search" placeholder="Search the calendar…"></label><label>Publisher<select id="publisher"><option value="">All publishers</option>{{OPTIONS}}</select></label><p id="filter-count" role="status" aria-live="polite"></p></div>
-      <p class="date-note">Month and season dates are approximate. Year-only and unconfirmed dates appear at the end.</p>
+      <p class="date-note">Month-only dates are approximate. Select a publisher name beside a book for source details.</p>
       <ol class="calendar">{{BOOKS}}</ol><p id="no-results" hidden>No titles match these filters.</p>
     </section>
     <section id="coverage" aria-labelledby="coverage-title" class="coverage">
