@@ -1,5 +1,9 @@
 # Forthcoming Poetry
 
+Live calendar: https://joeyconnolly.github.io/forthcoming-poetry/
+
+The November expansion adds 15 independent presses through Inpress, supplements Nine Arches and Seren, enables Faber pre-order checks, and includes a clearly dated Carcanet catalogue entry. See [coverage expansion](docs/COVERAGE_EXPANSION.md) for current scope and remaining gaps. The earlier Sites-hosted preview is not the automatically maintained calendar.
+
 A real, source-attributed poetry publication calendar, implemented in Python with a static HTML frontend. This is a **working partial prototype**, not completed ten-publisher coverage. Read [SOURCE_STATUS.md](SOURCE_STATUS.md) and [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md) before interpreting its coverage.
 
 ## Run locally

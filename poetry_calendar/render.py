@@ -23,6 +23,7 @@ def render(root,today):
         source=state['sources'].get(p['id'],{})
         stale=(today-date.fromisoformat(verified)).days>8 if verified else True
         notes=[]
+        if r.get('source_label'): notes.append(r['source_label'])
         if stale: notes.append('Source check overdue')
         if r.get('missing_checks'): notes.append('Awaiting reconfirmation')
         if source.get('status') not in ('ok',): notes.append('Publisher coverage incomplete')
@@ -47,6 +48,7 @@ def render(root,today):
     replacements={'{{BOOKS}}':''.join(rows) or '<li class="empty">No verified forthcoming titles are currently available. See coverage below.</li>',
         '{{HEALTH}}':''.join(health),'{{OPTIONS}}':options,'{{COUNT}}':str(len(records)),
         '{{PUBLISHERS}}':str(len(registry)),'{{CHECKED}}':str(checked),'{{ATTEMPT}}':esc(last_attempt),
+        '{{VISIBLE_PUBLISHERS}}':str(len(set(r['publisher_id'] for r in records))),
         '{{AS_OF}}':today.isoformat(),
         '{{AUTOMATION}}':('Built by GitHub Actions. Collection is scheduled for Mondays at 08:17 UK time; the calendar is rebuilt daily. Check the timestamps above for missed updates.' if os.getenv('GITHUB_ACTIONS')=='true' else 'Weekly collection and daily rebuilding are provided in the project workflow. <strong>This locally generated preview is not itself an unattended service.</strong>')}
     for token,value in replacements.items(): template=template.replace(token,value)

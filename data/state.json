@@ -1,6 +1,44 @@
 {
-  "last_attempt_at": "2026-11-09T14:50:06+00:00",
+  "last_attempt_at": "2026-11-09T15:45:50+00:00",
   "records": [
+    {
+      "contributors": [
+        {
+          "name": "Tomi Adegbayibi",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-30",
+        "label": "30 November 2026",
+        "precision": "day",
+        "raw": "30/11/2026",
+        "start": "2026-11-30",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: For Days on End; Tomi Adegbayibi; 30/11/2026; ISBN 9781918628302; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "00748a885a556d0176f4",
+      "isbns": [
+        "9781918628302"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "brokensleep",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628302",
+      "territory": "UK/Ireland trade listing",
+      "title": "For Days on End"
+    },
     {
       "contributors": [
         {
@@ -28,8 +66,8 @@
         "9781916760325",
         "9781916760332"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -195,6 +233,44 @@
     {
       "contributors": [
         {
+          "name": "Scout Tzofiya Bolton",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-31",
+        "label": "31 January 2027",
+        "precision": "day",
+        "raw": "31/01/2027",
+        "start": "2027-01-31",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Homilies; Scout Tzofiya Bolton; 31/01/2027; ISBN 9781918628418; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "0d0c66cffc88158f1b02",
+      "isbns": [
+        "9781918628418"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "brokensleep",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628418",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Homilies"
+    },
+    {
+      "contributors": [
+        {
           "name": "Audrey Molloy",
           "role": "author"
         }
@@ -223,6 +299,44 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/fallen",
       "title": "Fallen"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Tom Proverbs-Garbett",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-26",
+        "label": "26 February 2027",
+        "precision": "day",
+        "raw": "26/02/2027",
+        "start": "2027-02-26",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Apotheosis; Tom Proverbs-Garbett; 26/02/2027; ISBN 9781788642019; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "0e819425adc2cdf109de",
+      "isbns": [
+        "9781788642019"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642019",
+      "territory": "UK/Ireland trade listing",
+      "title": "Apotheosis"
     },
     {
       "contributors": [
@@ -484,8 +598,8 @@
         "9781916760349",
         "9781916760356"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -527,6 +641,82 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/the-field-the-wood-the-way-1432",
       "subtitle": "",
       "title": "The Field, The Wood, The Way"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Mark Fitzgerald",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-26",
+        "label": "26 February 2027",
+        "precision": "day",
+        "raw": "26/02/2027",
+        "start": "2027-02-26",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Snowscapes; Mark Fitzgerald; 26/02/2027; ISBN 9781788642002; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "16b7de14a9b51bf2fb6b",
+      "isbns": [
+        "9781788642002"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642002",
+      "territory": "UK/Ireland trade listing",
+      "title": "Snowscapes"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Nick Jones",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-04-02",
+        "label": "2 April 2027",
+        "precision": "day",
+        "raw": "02/04/2027",
+        "start": "2027-04-02",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Towards an End; Nick Jones; 02/04/2027; ISBN 9781788648417; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "1ac51274eb1af24005fe",
+      "isbns": [
+        "9781788648417"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788648417",
+      "territory": "UK/Ireland trade listing",
+      "title": "Towards an End"
     },
     {
       "contributors": [
@@ -619,6 +809,52 @@
     {
       "contributors": [
         {
+          "name": "Jackie Kay",
+          "role": "foreword"
+        },
+        {
+          "name": "Nathan Evans",
+          "role": "editor"
+        },
+        {
+          "name": "Justin David",
+          "role": "photographer"
+        }
+      ],
+      "date": {
+        "end": "2027-06-10",
+        "label": "10 June 2027",
+        "precision": "day",
+        "raw": "10/06/2027",
+        "start": "2027-06-10",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: BOLD; Foreword by Jackie Kay, edited by Nathan Evans, photographs by Justin David; 10/06/2027; ISBN 9781912620401; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "1de825dc855aef33c4ce",
+      "isbns": [
+        "9781912620401"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "inkandescent",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781912620401",
+      "territory": "UK/Ireland trade listing",
+      "title": "BOLD"
+    },
+    {
+      "contributors": [
+        {
           "name": "Anthony Caleshu",
           "role": "author"
         }
@@ -672,6 +908,44 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1171811905",
       "title": "Whoever Wants Wisdom Can Have it"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Philip Rösel Baker",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-16",
+        "label": "16 November 2026",
+        "precision": "day",
+        "raw": "16/11/2026",
+        "start": "2026-11-16",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Supernova; Philip Rösel Baker; 16/11/2026; ISBN 9781788648523; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "1e0c538f3985772f4a78",
+      "isbns": [
+        "9781788648523"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788648523",
+      "territory": "UK/Ireland trade listing",
+      "title": "Supernova"
     },
     {
       "contributors": [
@@ -829,8 +1103,8 @@
         "9781916760363",
         "9781916760370"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -1270,6 +1544,44 @@
     {
       "contributors": [
         {
+          "name": "Robin Lindsay Wilson",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-12",
+        "label": "12 February 2027",
+        "precision": "day",
+        "raw": "12/02/2027",
+        "start": "2027-02-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Tender Shore; Robin Lindsay Wilson; 12/02/2027; ISBN 9781788642026; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "31a1c15a2cf3766e995f",
+      "isbns": [
+        "9781788642026"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642026",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Tender Shore"
+    },
+    {
+      "contributors": [
+        {
           "name": "Eiléan Ní Chuilleanáin",
           "role": "author"
         }
@@ -1326,13 +1638,89 @@
         "9781916760486",
         "9781916760493"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
       "source_url": "https://ninearchespress.com/publications/poetry-collections/mindset-mindrise",
       "title": "Mindset Mindrise"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Abeer Ameer",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-22",
+        "label": "22 February 2027",
+        "precision": "day",
+        "raw": "22/02/2027",
+        "start": "2027-02-22",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: On Bearing Witness; Abeer Ameer; 22/02/2027; ISBN 9781911752189; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "3782fa2685d8137d6d7d",
+      "isbns": [
+        "9781911752189"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "seren",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781911752189",
+      "territory": "UK/Ireland trade listing",
+      "title": "On Bearing Witness"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Matt Abbott",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-31",
+        "label": "31 January 2027",
+        "precision": "day",
+        "raw": "31/01/2027",
+        "start": "2027-01-31",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Peacocks Can't Swim; Matt Abbott; 31/01/2027; ISBN 9781918628296; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "37c0d11e1c9c70445c98",
+      "isbns": [
+        "9781918628296"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "brokensleep",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628296",
+      "territory": "UK/Ireland trade listing",
+      "title": "Peacocks Can't Swim"
     },
     {
       "contributors": [
@@ -1521,6 +1909,120 @@
     {
       "contributors": [
         {
+          "name": "Zoë Green",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-26",
+        "label": "26 November 2026",
+        "precision": "day",
+        "raw": "26/11/2026",
+        "start": "2026-11-26",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Charm; Zoë Green; 26/11/2026; ISBN 9781915606747; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Hardback",
+      "history": [],
+      "id": "3d675e2efd4d6a4171b3",
+      "isbns": [
+        "9781915606747"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "valley",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915606747",
+      "territory": "UK/Ireland trade listing",
+      "title": "Charm"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Myndstate",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-05",
+        "label": "5 November 2026",
+        "precision": "day",
+        "raw": "05/11/2026",
+        "start": "2026-11-05",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: deep breath; Myndstate; 05/11/2026; ISBN 9781913958756; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "3ebe453aea51bfde9996",
+      "isbns": [
+        "9781913958756"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "burningeye",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913958756",
+      "territory": "UK/Ireland trade listing",
+      "title": "deep breath"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Mukahang Limbu",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-19",
+        "label": "19 November 2026",
+        "precision": "day",
+        "raw": "19/11/2026",
+        "start": "2026-11-19",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: TWINK; Mukahang Limbu; 19/11/2026; ISBN 9781911824022; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "3f172ddf5c9f5cadb337",
+      "isbns": [
+        "9781911824022"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "verve",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781911824022",
+      "territory": "UK/Ireland trade listing",
+      "title": "TWINK"
+    },
+    {
+      "contributors": [
+        {
           "name": "Peter Didsbury",
           "role": "author"
         }
@@ -1553,6 +2055,82 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/scenes-from-a-long-sleep-1409",
       "subtitle": "New & Collected Poems: expanded edition",
       "title": "Scenes from a Long Sleep"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Maria Sledmere",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-04",
+        "label": "4 March 2027",
+        "precision": "day",
+        "raw": "04/03/2027",
+        "start": "2027-03-04",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Meadowbook; Maria Sledmere; 04/03/2027; ISBN 9781067693961; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "41fb5f3be6d5a3beeb71",
+      "isbns": [
+        "9781067693961"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "the87press",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693961",
+      "territory": "UK/Ireland trade listing",
+      "title": "Meadowbook"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Derek Sellen",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-16",
+        "label": "16 November 2026",
+        "precision": "day",
+        "raw": "16/11/2026",
+        "start": "2026-11-16",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Night Bus; Derek Sellen; 16/11/2026; ISBN 9781788648516; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "43ae1efc6568c1f6ccd0",
+      "isbns": [
+        "9781788648516"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788648516",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Night Bus"
     },
     {
       "contributors": [
@@ -1762,8 +2340,8 @@
         "9781916760523",
         "9781916760530"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -1840,6 +2418,86 @@
     {
       "contributors": [
         {
+          "name": "Various",
+          "role": "author"
+        },
+        {
+          "name": "Daljit Nagra",
+          "role": "foreword"
+        }
+      ],
+      "date": {
+        "end": "2026-12-03",
+        "label": "3 December 2026",
+        "precision": "day",
+        "raw": "03/12/2026",
+        "start": "2026-12-03",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: VERVACEOUS; Various, foreword by Daljit Nagra; 03/12/2026; ISBN 9781913917982; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "4d29676fcc17381070cb",
+      "isbns": [
+        "9781913917982"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "verve",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913917982",
+      "territory": "UK/Ireland trade listing",
+      "title": "VERVACEOUS"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Jason b. crawford",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-15",
+        "label": "15 October 2026",
+        "precision": "day",
+        "raw": "15/10/2026",
+        "start": "2026-10-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: YEET!; Jason b. crawford; 15/10/2026; ISBN 9781068204760; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "5276fc487015029f9ea2",
+      "isbns": [
+        "9781068204760"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "the87press",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781068204760",
+      "territory": "UK/Ireland trade listing",
+      "title": "YEET!"
+    },
+    {
+      "contributors": [
+        {
           "name": "Mary Mulholland",
           "role": "author"
         }
@@ -1864,8 +2522,8 @@
         "9781916760509",
         "9781916760516"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -2793,6 +3451,120 @@
     {
       "contributors": [
         {
+          "name": "Pey Oh",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-12",
+        "label": "12 November 2026",
+        "precision": "day",
+        "raw": "12/11/2026",
+        "start": "2026-11-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Love & Fresh Air; Pey Oh; 12/11/2026; ISBN 9781911824008; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "6bce7b5be87476324a2e",
+      "isbns": [
+        "9781911824008"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "verve",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781911824008",
+      "territory": "UK/Ireland trade listing",
+      "title": "Love & Fresh Air"
+    },
+    {
+      "contributors": [
+        {
+          "name": "David Batten",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-16",
+        "label": "16 November 2026",
+        "precision": "day",
+        "raw": "16/11/2026",
+        "start": "2026-11-16",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Lost Voices; David Batten; 16/11/2026; ISBN 9781788648509; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "6d5a589617565eca83f9",
+      "isbns": [
+        "9781788648509"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788648509",
+      "territory": "UK/Ireland trade listing",
+      "title": "Lost Voices"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Summer Farah",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-16",
+        "label": "16 February 2027",
+        "precision": "day",
+        "raw": "16/02/2027",
+        "start": "2027-02-16",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Hungering Years; Summer Farah; 16/02/2027; ISBN 9781067693947; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "6d72d645f5f1e7d3452a",
+      "isbns": [
+        "9781067693947"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "the87press",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693947",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Hungering Years"
+    },
+    {
+      "contributors": [
+        {
           "name": "Chase Twichell",
           "role": "author"
         }
@@ -2829,6 +3601,48 @@
     {
       "contributors": [
         {
+          "name": "Rachel Jeffcoat",
+          "role": "author"
+        },
+        {
+          "name": "Amy Louise Evans",
+          "role": "cover artist"
+        }
+      ],
+      "date": {
+        "end": "2027-03-11",
+        "label": "11 March 2027",
+        "precision": "day",
+        "raw": "11/03/2027",
+        "start": "2027-03-11",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: There Is No Word Alive For What I Am; Rachel Jeffcoat, cover design or artwork by Amy Louise Evans; 11/03/2027; ISBN 9781915628664; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "70f389def5406231cfc3",
+      "isbns": [
+        "9781915628664"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "emmapress",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915628664",
+      "territory": "UK/Ireland trade listing",
+      "title": "There Is No Word Alive For What I Am"
+    },
+    {
+      "contributors": [
+        {
           "name": "Eiléan Ní Chuilleanáin",
           "role": "author"
         }
@@ -2856,6 +3670,44 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/new-selected-poems-1966-2025",
       "title": "New Selected Poems (1966-2025)"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Victoria Pugh",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-04-21",
+        "label": "21 April 2027",
+        "precision": "day",
+        "raw": "21/04/2027",
+        "start": "2027-04-21",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Homescape; Victoria Pugh; 21/04/2027; ISBN 9781915048417; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "72b7e91baa20b4168ccd",
+      "isbns": [
+        "9781915048417"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "tworivers",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915048417",
+      "territory": "UK/Ireland trade listing",
+      "title": "Homescape"
     },
     {
       "contributors": [
@@ -2985,8 +3837,8 @@
         "9781916760400",
         "9781916760417"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -3023,6 +3875,44 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/the-only-fear-ive-ever-had-is-standing-still",
       "title": "The Only Fear I’ve Ever Had Is Standing Still"
+    },
+    {
+      "contributors": [
+        {
+          "name": "R. A. Villanueva",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-04",
+        "label": "4 February 2027",
+        "precision": "day",
+        "raw": "04/02/2027",
+        "start": "2027-02-04",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: A Holy Dread; R. A. Villanueva; 04/02/2027; ISBN 9781067693954; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "7b11e785dd355ec4677c",
+      "isbns": [
+        "9781067693954"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "the87press",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693954",
+      "territory": "UK/Ireland trade listing",
+      "title": "A Holy Dread"
     },
     {
       "contributors": [
@@ -3087,8 +3977,8 @@
         "9781916760462",
         "9781916760479"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -3215,8 +4105,8 @@
         "9781916760448",
         "9781916760455"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -3253,6 +4143,44 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/the-river-crana",
       "title": "The River Crana"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Thembe Mvula",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-06",
+        "label": "6 November 2026",
+        "precision": "day",
+        "raw": "06/11/2026",
+        "start": "2026-11-06",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Cloud Vigil; Thembe Mvula; 06/11/2026; ISBN 9781915606938; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "8514366d1fb25e1a496b",
+      "isbns": [
+        "9781915606938"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "valley",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915606938",
+      "territory": "UK/Ireland trade listing",
+      "title": "Cloud Vigil"
     },
     {
       "contributors": [
@@ -3310,6 +4238,86 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1678733248",
       "title": "Nordic Sublime"
+    },
+    {
+      "contributors": [
+        {
+          "name": "John Freeman",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-31",
+        "label": "31 October 2026",
+        "precision": "day",
+        "raw": "31/10/2026",
+        "start": "2026-10-31",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Both Sides of the Woods:; John Freeman; 31/10/2026; ISBN 9781918628258; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "8713676f757975dfdb42",
+      "isbns": [
+        "9781918628258"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "brokensleep",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628258",
+      "territory": "UK/Ireland trade listing",
+      "title": "Both Sides of the Woods:"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Susan Utting",
+          "role": "author"
+        },
+        {
+          "name": "Sally Castle",
+          "role": "cover artist"
+        }
+      ],
+      "date": {
+        "end": "2027-04-21",
+        "label": "21 April 2027",
+        "precision": "day",
+        "raw": "21/04/2027",
+        "start": "2027-04-21",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Too Young For The Saxophone; Susan Utting, cover design or artwork by Sally Castle; 21/04/2027; ISBN 9781915048400; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "8740e4df65ca195127e4",
+      "isbns": [
+        "9781915048400"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "tworivers",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915048400",
+      "territory": "UK/Ireland trade listing",
+      "title": "Too Young For The Saxophone"
     },
     {
       "contributors": [
@@ -3373,6 +4381,48 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/old-friends",
       "title": "Old Friends"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Dan Ying",
+          "role": "author"
+        },
+        {
+          "name": "Christina Ng",
+          "role": "translator"
+        }
+      ],
+      "date": {
+        "end": "2026-10-01",
+        "label": "1 October 2026",
+        "precision": "day",
+        "raw": "01/10/2026",
+        "start": "2026-10-01",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Years in My Hair; Dan Ying, translated by Christina Ng; 01/10/2026; ISBN 9781738470150; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "89eb3e6c228fe46362af",
+      "isbns": [
+        "9781738470150"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrytranslationcentre",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781738470150",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Years in My Hair"
     },
     {
       "contributors": [
@@ -3524,6 +4574,44 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/national-theatre",
       "title": "National Theatre"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Sue Lewis",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-07-12",
+        "label": "12 July 2027",
+        "precision": "day",
+        "raw": "12/07/2027",
+        "start": "2027-07-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Leaf; Sue Lewis; 12/07/2027; ISBN 9781788642088; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "8c123e70e28db465c282",
+      "isbns": [
+        "9781788642088"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642088",
+      "territory": "UK/Ireland trade listing",
+      "title": "Leaf"
     },
     {
       "contributors": [
@@ -3769,6 +4857,44 @@
     {
       "contributors": [
         {
+          "name": "Yvonne Baker",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-07-12",
+        "label": "12 July 2027",
+        "precision": "day",
+        "raw": "12/07/2027",
+        "start": "2027-07-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Visions & Flame; Yvonne Baker; 12/07/2027; ISBN 9781788642071; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "8f322be356580d4db3b0",
+      "isbns": [
+        "9781788642071"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642071",
+      "territory": "UK/Ireland trade listing",
+      "title": "Visions & Flame"
+    },
+    {
+      "contributors": [
+        {
           "name": "Daniel Sluman",
           "role": "author"
         }
@@ -3793,8 +4919,8 @@
         "9781916760387",
         "9781916760394"
       ],
-      "last_seen_at": "2026-11-09T14:50:06+00:00",
-      "last_verified_at": "2026-11-09T14:50:06+00:00",
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
       "missing_checks": 0,
       "publisher_id": "ninearches",
       "record_status": "active",
@@ -3892,6 +5018,44 @@
     {
       "contributors": [
         {
+          "name": "Michael Grieve",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-19",
+        "label": "19 January 2027",
+        "precision": "day",
+        "raw": "19/01/2027",
+        "start": "2027-01-19",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Asterism; Michael Grieve; 19/01/2027; ISBN 9781916751897; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "9496ef77fb417c4094bb",
+      "isbns": [
+        "9781916751897"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "andotherstories",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781916751897",
+      "territory": "UK/Ireland trade listing",
+      "title": "Asterism"
+    },
+    {
+      "contributors": [
+        {
           "name": "J. H. Prynne",
           "role": "author"
         }
@@ -3945,6 +5109,44 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1617057947",
       "title": "Selected Early Work"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Victoria Demici",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-04-05",
+        "label": "5 April 2027",
+        "precision": "day",
+        "raw": "05/04/2027",
+        "start": "2027-04-05",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Then I Shall Become a Bird; Victoria Demici; 05/04/2027; ISBN 9781912545599; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "94ba72c35aa5618d281d",
+      "isbns": [
+        "9781912545599"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "istros",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781912545599",
+      "territory": "UK/Ireland trade listing",
+      "title": "Then I Shall Become a Bird"
     },
     {
       "contributors": [
@@ -4017,6 +5219,44 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/a-commonplace-book-1407",
       "subtitle": "",
       "title": "A Commonplace Book"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Al Anderson",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-04-08",
+        "label": "8 April 2027",
+        "precision": "day",
+        "raw": "08/04/2027",
+        "start": "2027-04-08",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Monstrance; Al Anderson; 08/04/2027; ISBN 9781067693978; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "9a1d2138f707a8daaa26",
+      "isbns": [
+        "9781067693978"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "the87press",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693978",
+      "territory": "UK/Ireland trade listing",
+      "title": "Monstrance"
     },
     {
       "contributors": [
@@ -4188,6 +5428,44 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1249019785",
       "title": "Dis(illusion)"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Lucy English",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-15",
+        "label": "15 October 2026",
+        "precision": "day",
+        "raw": "15/10/2026",
+        "start": "2026-10-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Dream Time; Lucy English; 15/10/2026; ISBN 9781913958749; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "9bf5d80748e2637c9cda",
+      "isbns": [
+        "9781913958749"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "burningeye",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913958749",
+      "territory": "UK/Ireland trade listing",
+      "title": "Dream Time"
     },
     {
       "contributors": [
@@ -4400,6 +5678,82 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1981683392",
       "title": "Goya As Dog: Selected Poems"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Karen Downs-Barton",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-12",
+        "label": "12 November 2026",
+        "precision": "day",
+        "raw": "12/11/2026",
+        "start": "2026-11-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Flutes of Whittled Ribs; Karen Downs-Barton; 12/11/2026; ISBN 9781911824015; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "a19d064425934b98004b",
+      "isbns": [
+        "9781911824015"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "verve",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781911824015",
+      "territory": "UK/Ireland trade listing",
+      "title": "Flutes of Whittled Ribs"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Alexandra Fössinger",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-15",
+        "label": "15 March 2027",
+        "precision": "day",
+        "raw": "15/03/2027",
+        "start": "2027-03-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Name Bearers; Alexandra Fössinger; 15/03/2027; ISBN 9781788642033; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "a2319356568230c4684a",
+      "isbns": [
+        "9781788642033"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642033",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Name Bearers"
     },
     {
       "contributors": [
@@ -4643,6 +5997,82 @@
     {
       "contributors": [
         {
+          "name": "Tom Branfoot",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-01",
+        "label": "1 October 2026",
+        "precision": "day",
+        "raw": "01/10/2026",
+        "start": "2026-10-01",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Volatile; Tom Branfoot; 01/10/2026; ISBN 9781068488092; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "a81a40fa969e559ff97f",
+      "isbns": [
+        "9781068488092"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "the87press",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781068488092",
+      "territory": "UK/Ireland trade listing",
+      "title": "Volatile"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Cal Wensley",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-04",
+        "label": "4 March 2027",
+        "precision": "day",
+        "raw": "04/03/2027",
+        "start": "2027-03-04",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Dead Funny; Cal Wensley; 04/03/2027; ISBN 9781913958794; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "aa3bc178dc2934cd93e1",
+      "isbns": [
+        "9781913958794"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "burningeye",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913958794",
+      "territory": "UK/Ireland trade listing",
+      "title": "Dead Funny"
+    },
+    {
+      "contributors": [
+        {
           "name": "Joanna Lowry",
           "role": "author"
         }
@@ -4674,6 +6104,48 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/the-man-whose-brain-turned-to-glass-1419",
       "subtitle": "",
       "title": "The Man Whose Brain Turned to Glass"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Kalu Tatyisavi",
+          "role": "author"
+        },
+        {
+          "name": "Morgan Leathem Ventura",
+          "role": "translator"
+        }
+      ],
+      "date": {
+        "end": "2027-03-12",
+        "label": "12 March 2027",
+        "precision": "day",
+        "raw": "12/03/2027",
+        "start": "2027-03-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Because of the Silence; Kalu Tatyisavi, translated by Morgan Leathem Ventura; 12/03/2027; ISBN 9781915017338; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "aac22836eacd87234f13",
+      "isbns": [
+        "9781915017338"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "skein",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915017338",
+      "territory": "UK/Ireland trade listing",
+      "title": "Because of the Silence"
     },
     {
       "contributors": [
@@ -4857,6 +6329,44 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/what-remains-the-same",
       "title": "What Remains the Same"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Jenny King",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-22",
+        "label": "22 October 2026",
+        "precision": "day",
+        "raw": "22/10/2026",
+        "start": "2026-10-22",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Petersham Meadows; Jenny King; 22/10/2026; ISBN 9781917987233; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "b21604afe97b8d5962b6",
+      "isbns": [
+        "9781917987233"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987233",
+      "territory": "UK/Ireland trade listing",
+      "title": "Petersham Meadows"
     },
     {
       "contributors": [
@@ -5231,6 +6741,44 @@
     {
       "contributors": [
         {
+          "name": "Ramona Herdman",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-25",
+        "label": "25 February 2027",
+        "precision": "day",
+        "raw": "25/02/2027",
+        "start": "2027-02-25",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: The Moss Cure; Ramona Herdman; 25/02/2027; ISBN 9781916760561; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "c24942252bfa1869903a",
+      "isbns": [
+        "9781916760561"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "ninearches",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781916760561",
+      "territory": "UK/Ireland trade listing",
+      "title": "The Moss Cure"
+    },
+    {
+      "contributors": [
+        {
           "name": "Ella Duffy",
           "role": "author"
         }
@@ -5263,6 +6811,44 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/glimmer-ground-1426",
       "subtitle": "",
       "title": "Glimmer & Ground"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Yvonne Green",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-15",
+        "label": "15 October 2026",
+        "precision": "day",
+        "raw": "15/10/2026",
+        "start": "2026-10-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Yvonne Green: Collected Poems; Yvonne Green; 15/10/2026; ISBN 9781917987059; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "c4d9904b674770b80a71",
+      "isbns": [
+        "9781917987059"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987059",
+      "territory": "UK/Ireland trade listing",
+      "title": "Yvonne Green: Collected Poems"
     },
     {
       "contributors": [
@@ -5541,6 +7127,44 @@
     {
       "contributors": [
         {
+          "name": "Lydia Towsey",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-11",
+        "label": "11 February 2027",
+        "precision": "day",
+        "raw": "11/02/2027",
+        "start": "2027-02-11",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Coffee with Cayetano; Lydia Towsey; 11/02/2027; ISBN 9781913958770; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "c9cf6cba336af87afc60",
+      "isbns": [
+        "9781913958770"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "burningeye",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913958770",
+      "territory": "UK/Ireland trade listing",
+      "title": "Coffee with Cayetano"
+    },
+    {
+      "contributors": [
+        {
           "name": "Alan Gillis",
           "role": "author"
         }
@@ -5568,6 +7192,40 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/over-here",
       "title": "Over Here"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Nidhi Zak/Aria Eipe",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-19",
+        "label": "19 November 2026",
+        "precision": "day",
+        "raw": "19.11.2026",
+        "start": "2026-11-19",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Stay Winter; Nidhi Zak/Aria Eipe; Date Published 19.11.2026",
+        "url": "https://www.faber.co.uk/product/9780571401727-stay-winter/"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:45:50+00:00",
+      "history": [],
+      "id": "cd5e708548ac59e70522",
+      "isbns": [
+        "9780571401727"
+      ],
+      "last_seen_at": "2026-11-09T15:45:50+00:00",
+      "last_verified_at": "2026-11-09T15:45:50+00:00",
+      "missing_checks": 0,
+      "publisher_id": "faber",
+      "record_status": "active",
+      "source_url": "https://www.faber.co.uk/product/9780571401727-stay-winter",
+      "title": "Stay Winter"
     },
     {
       "contributors": [
@@ -5640,6 +7298,44 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/crowd-voltage-1392",
       "subtitle": "",
       "title": "Crowd Voltage"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Stuart Pickford",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-29",
+        "label": "29 October 2026",
+        "precision": "day",
+        "raw": "29/10/2026",
+        "start": "2026-10-29",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Our Lot; Stuart Pickford; 29/10/2026; ISBN 9781917987073; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "cefc6bdef7a612c5f9cf",
+      "isbns": [
+        "9781917987073"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987073",
+      "territory": "UK/Ireland trade listing",
+      "title": "Our Lot"
     },
     {
       "contributors": [
@@ -5733,6 +7429,44 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1288567960",
       "title": "Selected Poems 2013–2026"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Zelda Cahill-Patten",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-25",
+        "label": "25 February 2027",
+        "precision": "day",
+        "raw": "25/02/2027",
+        "start": "2027-02-25",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Scare; Zelda Cahill-Patten; 25/02/2027; ISBN 9781917987158; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "d196af00d35af08117f8",
+      "isbns": [
+        "9781917987158"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987158",
+      "territory": "UK/Ireland trade listing",
+      "title": "Scare"
     },
     {
       "contributors": [
@@ -6052,6 +7786,82 @@
     {
       "contributors": [
         {
+          "name": "Jonathan Edwards",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-12",
+        "label": "12 October 2026",
+        "precision": "day",
+        "raw": "12/10/2026",
+        "start": "2026-10-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Talk of the Town; Jonathan Edwards; 12/10/2026; ISBN 9781911752172; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "e2d9d060ff18be74c57e",
+      "isbns": [
+        "9781911752172"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "seren",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781911752172",
+      "territory": "UK/Ireland trade listing",
+      "title": "Talk of the Town"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Lesley Saunders",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-21",
+        "label": "21 March 2027",
+        "precision": "day",
+        "raw": "21/03/2027",
+        "start": "2027-03-21",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Broken Or Unbroken, It Is All One; Lesley Saunders; 21/03/2027; ISBN 9781915048394; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "e3bbc4f8e9e5764a7523",
+      "isbns": [
+        "9781915048394"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "tworivers",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915048394",
+      "territory": "UK/Ireland trade listing",
+      "title": "Broken Or Unbroken, It Is All One"
+    },
+    {
+      "contributors": [
+        {
           "name": "Molly Twomey",
           "role": "author"
         }
@@ -6115,6 +7925,44 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/listening-to-the-future-1415",
       "subtitle": "",
       "title": "Listening to the Future"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Martin Reed",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-26",
+        "label": "26 November 2026",
+        "precision": "day",
+        "raw": "26/11/2026",
+        "start": "2026-11-26",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Running Late: Selected Poems; Martin Reed; 26/11/2026; ISBN 9781917987219; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "e7a59fa12288d5205b3b",
+      "isbns": [
+        "9781917987219"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987219",
+      "territory": "UK/Ireland trade listing",
+      "title": "Running Late: Selected Poems"
     },
     {
       "contributors": [
@@ -6322,6 +8170,81 @@
     {
       "contributors": [
         {
+          "name": "Dan Burt",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-26",
+        "label": "26 November 2026",
+        "precision": "day",
+        "raw": "26 November 2026",
+        "start": "2026-11-26",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Carcanet 2026 catalogue page 35: Dan Burt; Late Self-Portrait; 26th November 2026; ISBN 9781800175907. Selected poetry with three prose excerpts.",
+        "url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35"
+      },
+      "evidence_checked_at": "2026-11-09T00:00:00+00:00",
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:45:50+00:00",
+      "history": [],
+      "id": "f0860a0acd3bb9d45fd2",
+      "isbns": [
+        "9781800175907"
+      ],
+      "last_seen_at": "2026-11-09T15:45:50+00:00",
+      "last_verified_at": "2026-11-09T00:00:00+00:00",
+      "missing_checks": 0,
+      "publisher_id": "carcanet",
+      "record_status": "active",
+      "source_kind": "catalogue_snapshot",
+      "source_label": "2026 publisher catalogue",
+      "source_url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35",
+      "title": "Late Self-Portrait"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Jacci Bulman",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-15",
+        "label": "15 March 2027",
+        "precision": "day",
+        "raw": "15/03/2027",
+        "start": "2027-03-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Lost and Found, in pockets; Jacci Bulman; 15/03/2027; ISBN 9781788642057; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "f2adc938c6ca1dbddff9",
+      "isbns": [
+        "9781788642057"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642057",
+      "territory": "UK/Ireland trade listing",
+      "title": "Lost and Found, in pockets"
+    },
+    {
+      "contributors": [
+        {
           "name": "Agnieszka Studzińska",
           "role": "author"
         }
@@ -6451,6 +8374,44 @@
     {
       "contributors": [
         {
+          "name": "Lisa minerva luxx",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-18",
+        "label": "18 March 2027",
+        "precision": "day",
+        "raw": "18/03/2027",
+        "start": "2027-03-18",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: on the launching side of the bomb; Lisa minerva luxx; 18/03/2027; ISBN 9781919370590; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "f75a198fc77b65e9683c",
+      "isbns": [
+        "9781919370590"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "outspoken",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781919370590",
+      "territory": "UK/Ireland trade listing",
+      "title": "on the launching side of the bomb"
+    },
+    {
+      "contributors": [
+        {
           "name": "Vicente Huidobro",
           "role": "author"
         }
@@ -6508,6 +8469,44 @@
     {
       "contributors": [
         {
+          "name": "Jane McKie",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-03-15",
+        "label": "15 March 2027",
+        "precision": "day",
+        "raw": "15/03/2027",
+        "start": "2027-03-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Sappling; Jane McKie; 15/03/2027; ISBN 9781788642040; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "f9b14b3e00095f8f713b",
+      "isbns": [
+        "9781788642040"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cinnamon",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781788642040",
+      "territory": "UK/Ireland trade listing",
+      "title": "Sappling"
+    },
+    {
+      "contributors": [
+        {
           "name": "Brian Sneeden",
           "role": "author"
         }
@@ -6561,10 +8560,184 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2027-titles--date-order#1971402284",
       "title": "Year of the Labyrinth"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Joe Wright",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-25",
+        "label": "25 February 2027",
+        "precision": "day",
+        "raw": "25/02/2027",
+        "start": "2027-02-25",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: HOWK; Joe Wright; 25/02/2027; ISBN 9781917987172; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "fa2597deaee19f32dc80",
+      "isbns": [
+        "9781917987172"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987172",
+      "territory": "UK/Ireland trade listing",
+      "title": "HOWK"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Kim Hae-ja",
+          "role": "author"
+        },
+        {
+          "name": "Deborah Smith, Dasom Yang",
+          "role": "translator"
+        }
+      ],
+      "date": {
+        "end": "2027-05-04",
+        "label": "4 May 2027",
+        "precision": "day",
+        "raw": "04/05/2027",
+        "start": "2027-05-04",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: merely mighty grass; Kim Hae-ja, translated by Deborah Smith, Dasom Yang; 04/05/2027; ISBN 9781065473428; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "fb2159525eaf84c3120e",
+      "isbns": [
+        "9781065473428"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrytranslationcentre",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781065473428",
+      "territory": "UK/Ireland trade listing",
+      "title": "merely mighty grass"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Orlagh O'Farrell",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-10-22",
+        "label": "22 October 2026",
+        "precision": "day",
+        "raw": "22/10/2026",
+        "start": "2026-10-22",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Inpress: Banshule; Orlagh O'Farrell; 22/10/2026; ISBN 9781917987257; category Poetry",
+        "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQf2pYM-1-1UNA-Nj_vuQPD9Pzhi9irKWya2e38FVuFSIhx6rmJZZGuEOKtOKwDRKqVZPWpL2WSNgwH/pub?output=csv"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:44:04+00:00",
+      "format": "Paperback",
+      "history": [],
+      "id": "fb3794f2be930c5ce3cc",
+      "isbns": [
+        "9781917987257"
+      ],
+      "last_seen_at": "2026-11-09T15:44:04+00:00",
+      "last_verified_at": "2026-11-09T15:44:04+00:00",
+      "missing_checks": 0,
+      "publisher_id": "poetrybusiness",
+      "record_status": "active",
+      "source_kind": "distributor",
+      "source_label": "Inpress listing",
+      "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781917987257",
+      "territory": "UK/Ireland trade listing",
+      "title": "Banshule"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Durs Grünbein",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-14",
+        "label": "14 January 2027",
+        "precision": "day",
+        "raw": "14.01.2027",
+        "start": "2027-01-14",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Variations on No Theme; Durs Grünbein; Date Published 14.01.2027",
+        "url": "https://www.faber.co.uk/product/9780571401703-variations-on-no-theme/"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T15:45:50+00:00",
+      "history": [],
+      "id": "fef63748ff881440a52e",
+      "isbns": [
+        "9780571401703"
+      ],
+      "last_seen_at": "2026-11-09T15:45:50+00:00",
+      "last_verified_at": "2026-11-09T15:45:50+00:00",
+      "missing_checks": 0,
+      "publisher_id": "faber",
+      "record_status": "active",
+      "source_url": "https://www.faber.co.uk/product/9780571401703-variations-on-no-theme",
+      "title": "Variations on No Theme"
     }
   ],
   "schema_version": 1,
   "sources": {
+    "andotherstories": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 2,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Mixed poems, essays and translation notes; hybrid review",
+          "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781916751613"
+        },
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
     "bloodaxe": {
       "accepted_count": 47,
       "attempted_at": "2026-11-09T14:50:06+00:00",
@@ -6578,6 +8751,50 @@
       "valid_records": 47,
       "warnings": []
     },
+    "brokensleep": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 5,
+      "excluded": 0,
+      "forthcoming_count": 3,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 4,
+      "warnings": [
+        {
+          "reason": "Collection first published in 2008; edition review",
+          "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628128"
+        },
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "burningeye": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 5,
+      "excluded": 0,
+      "forthcoming_count": 2,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 4,
+      "warnings": [
+        {
+          "reason": "Activity and writing-prompt book; scope review",
+          "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913958763"
+        },
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
     "cape": {
       "attempted_at": null,
       "last_success_at": null,
@@ -6586,11 +8803,40 @@
       "warnings": []
     },
     "carcanet": {
-      "attempted_at": null,
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:45:50+00:00",
+      "candidates": 1,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:45:50+00:00",
       "last_success_at": null,
-      "scope": "Not collected: robots directives disallow the general-purpose collector. Publisher permission/feed required.",
-      "status": "robots_disallowed",
-      "warnings": []
+      "scope": "Reviewed 2026 publisher catalogue: one remaining dated collection. A dated import, not an automatic check of current dates or 2027 announcements.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Dated catalogue import; publication changes and newer catalogues are not automatically verified",
+          "url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35"
+        }
+      ]
+    },
+    "cinnamon": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 12,
+      "excluded": 0,
+      "forthcoming_count": 12,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 12,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
     },
     "dedalus": {
       "attempted_at": null,
@@ -6599,12 +8845,45 @@
       "status": "access_blocked",
       "warnings": []
     },
-    "faber": {
-      "attempted_at": null,
+    "emmapress": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 2,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
       "last_success_at": null,
-      "scope": "Not collected: review reuse terms or obtain a suitable publisher feed.",
-      "status": "permission_review",
-      "warnings": []
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Children’s poetry classification needs review",
+          "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915628671"
+        },
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "faber": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:45:50+00:00",
+      "candidates": 6,
+      "excluded": 4,
+      "forthcoming_count": 2,
+      "last_data_at": "2026-11-09T15:45:50+00:00",
+      "last_success_at": null,
+      "scope": "Official poetry pre-order listings across catalogue pages, with book-page dates. Other announcements may be missing.",
+      "status": "partial",
+      "valid_records": 2,
+      "warnings": [
+        {
+          "reason": "Pre-order listings only; unlisted announcements and titles without pre-order markers are outside this scope",
+          "url": "https://www.faber.co.uk/product-category/poetry/"
+        }
+      ]
     },
     "gallery": {
       "accepted_count": 0,
@@ -6768,18 +9047,81 @@
         }
       ]
     },
+    "inkandescent": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 1,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "istros": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 1,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
     "ninearches": {
       "accepted_count": 10,
-      "attempted_at": "2026-11-09T14:50:06+00:00",
-      "candidates": 11,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 14,
       "excluded": 1,
-      "forthcoming_count": 1,
-      "last_data_at": "2026-11-09T14:50:06+00:00",
+      "forthcoming_count": 2,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
       "last_success_at": "2026-11-09T14:50:06+00:00",
-      "scope": "Current and future year sections of the poetry catalogue, verified against individual book pages.",
-      "status": "ok",
-      "valid_records": 10,
-      "warnings": []
+      "scope": "Current and future year sections of the poetry catalogue, verified against individual book pages. Supplemented by the rolling Inpress UK/Ireland trade list; not comprehensive.",
+      "status": "partial",
+      "valid_records": 11,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "outspoken": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 2,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Mixed poems, essays and photographs; hybrid review",
+          "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781919370514"
+        },
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
     },
     "picador": {
       "attempted_at": null,
@@ -6788,18 +9130,59 @@
       "status": "permission_review",
       "warnings": []
     },
+    "poetrybusiness": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 7,
+      "excluded": 0,
+      "forthcoming_count": 3,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 7,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "poetrytranslationcentre": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 2,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 2,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
     "seren": {
       "accepted_count": 0,
-      "attempted_at": "2026-11-09T14:50:06+00:00",
-      "candidates": 1,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 3,
       "excluded": 1,
-      "forthcoming_count": 0,
-      "last_data_at": null,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
       "last_success_at": "2026-11-09T14:50:06+00:00",
-      "scope": "Coming-soon catalogue only; genre and publication date checked on book pages.",
-      "status": "ok",
-      "valid_records": 0,
-      "warnings": []
+      "scope": "Coming-soon catalogue only; genre and publication date checked on book pages. Supplemented by the rolling Inpress UK/Ireland trade list; not comprehensive.",
+      "status": "partial",
+      "valid_records": 2,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
     },
     "shearsman": {
       "accepted_count": 0,
@@ -6824,6 +9207,100 @@
         {
           "reason": "Hybrid/prose classification requires review: The Next One",
           "url": "https://www.shearsman.com/2027-titles--date-order"
+        }
+      ]
+    },
+    "skein": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 1,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "the87press": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 7,
+      "excluded": 0,
+      "forthcoming_count": 4,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 6,
+      "warnings": [
+        {
+          "reason": "Expanded second edition; edition review",
+          "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693985"
+        },
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "tworivers": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 3,
+      "excluded": 0,
+      "forthcoming_count": 3,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 3,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "valley": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 2,
+      "excluded": 0,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 2,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "verve": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T15:44:04+00:00",
+      "candidates": 4,
+      "excluded": 0,
+      "forthcoming_count": 4,
+      "last_data_at": "2026-11-09T15:44:04+00:00",
+      "last_success_at": null,
+      "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+      "status": "partial",
+      "valid_records": 4,
+      "warnings": [
+        {
+          "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+          "url": "https://inpressbooks.co.uk/pages/whats-new"
         }
       ]
     }

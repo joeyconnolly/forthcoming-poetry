@@ -25,6 +25,12 @@ class FetchSafety(unittest.TestCase):
         with patch.object(self.fetch.session,'get') as get:
             with self.assertRaises(FetchError): self.fetch._request('https://other.example/book')
             get.assert_not_called()
+    def test_google_redirect_allowance_does_not_allow_arbitrary_google_hosts(self):
+        self.fetch.hosts.add('docs.google.com')
+        with patch.object(self.fetch.session,'get') as get:
+            for url in ['https://evil.googleusercontent.com/pub/x','https://doc-0k-8s-sheets.googleusercontent.com/private/x','https://docs.google.com.evil.org/pub/x']:
+                with self.assertRaises(FetchError):self.fetch._request(url)
+            get.assert_not_called()
     def test_cached_body_not_used_to_mask_failure(self):
         url='https://example.org/book'
         with patch.object(self.fetch,'_request',side_effect=[Response(404,''),Response(200,'<h1>Book</h1>')]):

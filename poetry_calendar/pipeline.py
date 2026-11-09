@@ -6,6 +6,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from .adapters import ADAPTERS, Result
 from .fetch import Fetcher
+from .inpress import load_feed, supplement
 from .model import SCHEMA_VERSION, content_identity, canonical_url, forthcoming, parse_date
 
 def atomic_json(path,value):
@@ -37,7 +38,7 @@ def load_registry(root):
         if p['id'] in ids or not p['id']: raise ValueError('Duplicate or empty publisher ID')
         ids.add(p['id'])
         for url in p['sources']: canonical_url(url)
-        if p['enabled'] and p['adapter'] not in ADAPTERS: raise ValueError(f"Unknown adapter for {p['id']}")
+        if p['enabled'] and p['adapter'] not in ADAPTERS and p['adapter']!='inpress': raise ValueError(f"Unknown adapter for {p['id']}")
     return registry
 
 def reconcile(state,publisher,result,now,today):
@@ -70,7 +71,7 @@ def reconcile(state,publisher,result,now,today):
         r=incoming.get(prior['id'])
         if r:
             r=copy.deepcopy(r); seen.add(r['id'])
-            r['first_seen_at']=prior['first_seen_at']; r['last_seen_at']=now; r['last_verified_at']=now
+            r['first_seen_at']=prior['first_seen_at']; r['last_seen_at']=now; r['last_verified_at']=r.get('evidence_checked_at',now)
             r['missing_checks']=0
             history=prior.get('history',[])
             before={k:prior.get(k) for k in ('title','contributors','date','source_url','record_status')}
@@ -89,7 +90,7 @@ def reconcile(state,publisher,result,now,today):
         merged.append(r)
     for rid,r in incoming.items():
         if rid not in seen:
-            r=copy.deepcopy(r); r.update(first_seen_at=now,last_seen_at=now,last_verified_at=now,missing_checks=0,history=[])
+            r=copy.deepcopy(r); r.update(first_seen_at=now,last_seen_at=now,last_verified_at=r.get('evidence_checked_at',now),missing_checks=0,history=[])
             merged.append(r)
     state['records']=[r for r in state['records'] if r['publisher_id']!=pid]+merged
     status='ok' if result.complete else 'partial'
@@ -126,6 +127,12 @@ def collect(root,today,publisher_ids=None):
     if publisher_ids and set(publisher_ids)-{p['id'] for p in registry}: raise ValueError('Unknown publisher requested')
     with update_lock(root):
         state=load_state(root); now=datetime.now(timezone.utc).isoformat(timespec='seconds')
+        selected=[p for p in registry if not publisher_ids or p['id'] in publisher_ids]
+        shared={}; shared_error=None
+        if any(p.get('inpress_name') and p['enabled'] for p in selected):
+            try:
+                shared=load_feed(Fetcher(['inpressbooks.co.uk','docs.google.com'],root/'.cache/inpress',max_requests=12),registry)
+            except Exception as e: shared_error=str(e)
         for p in registry:
             if publisher_ids and p['id'] not in publisher_ids: continue
             if not p['enabled']:
@@ -133,9 +140,16 @@ def collect(root,today,publisher_ids=None):
                 continue
             fetch=Fetcher(p['allowed_hosts'],root/'.cache'/p['id'],max_requests=p.get('max_requests',100))
             adapter_config={**p,'recheck_urls':[r['source_url'] for r in state['records'] if r['publisher_id']==p['id'] and forthcoming(r,today)]}
-            try: result=ADAPTERS[p['adapter']](adapter_config,fetch,today)
+            try:
+                if p['adapter']=='inpress':
+                    if shared_error: raise ValueError(shared_error)
+                    result=shared[p['id']]
+                else: result=ADAPTERS[p['adapter']](adapter_config,fetch,today)
             except Exception as e:
                 result=Result(); result.warn(p['sources'][0],e)
+            if p.get('inpress_name') and p['adapter']!='inpress':
+                if shared_error: result.warn('https://inpressbooks.co.uk/pages/whats-new',shared_error)
+                else: result=supplement(result,shared[p['id']])
             reconcile(state,p,result,now,today)
             print(f"{p['id']}: {state['sources'][p['id']]['status']}; {len(result.records)} records; {len(result.warnings)} warnings",flush=True)
         state['last_attempt_at']=now

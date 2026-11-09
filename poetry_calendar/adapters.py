@@ -196,4 +196,46 @@ def gallery_feeds(config,fetch,today):
         except Exception as e: result.warn(link,e)
     return result
 
-ADAPTERS={'bloodaxe':bloodaxe,'ninearches':ninearches,'shearsman':shearsman,'seren':seren,'gallery':gallery,'gallery_feeds':gallery_feeds}
+def faber(config,fetch,today):
+    result=Result(); pending=[config['sources'][0]]; seen=set(); books={}
+    for url in config.get('recheck_urls',[]): books[url]=None
+    while pending:
+        url=pending.pop(0)
+        if url in seen: continue
+        seen.add(url)
+        doc=soup(fetch.get(url)); cards=doc.select('.card-prod')
+        if not cards: result.warn(url,'No expected poetry listing cards')
+        for card in cards:
+            if not card.select_one('.pre-order-listing-trigger'): continue
+            a=card.select_one('a.card-prod__info-tt'); author=card.select_one('.card-prod__info-name')
+            if a and author: books[urljoin(url,a['href'])]=(a.get_text(' ',strip=True),author.get_text(' ',strip=True))
+        for a in doc.select('a[href]'):
+            link=urljoin(url,a['href'])
+            if re.fullmatch(r'https://www\.faber\.co\.uk/product-category/poetry/page/\d+/',link) and link not in seen: pending.append(link)
+    for url,labels in books.items():
+        result.candidates+=1
+        try:
+            detail=soup(fetch.get(url))
+            facts={r.select_one('.txt-table-item__name').get_text(' ',strip=True):r.select_one('.txt-table-item__txt').get_text(' ',strip=True) for r in detail.select('.txt-table-item') if r.select_one('.txt-table-item__name') and r.select_one('.txt-table-item__txt')}
+            title=detail.h1.get_text(' ',strip=True)
+            if not labels: raise ValueError('Previously listed title missing from pre-order discovery; review required')
+            text=detail.get_text(' ',strip=True)
+            if re.search(r'diary|deluxe|audiobook|on writing|on difficulty',title,re.I) or facts.get('Format','').lower() in ('ebook','audio','audiobook'):
+                result.excluded+=1; continue
+            if not re.search(r'collection|anthology|poems|verse|pamphlet',text,re.I): raise ValueError('Poetry classification requires review')
+            result.records.append(make_record(config['id'],title,labels[1],facts['Date Published'],url,{'url':url,'text':f"{title}; {labels[1]}; Date Published {facts['Date Published']}"},isbns=[facts['ISBN']]))
+        except Exception as e: result.warn(url,e)
+    result.warn(config['sources'][0],'Pre-order listings only; unlisted announcements and titles without pre-order markers are outside this scope')
+    return result
+
+def catalogue_snapshot(config,fetch,today):
+    result=Result(complete=False)
+    for item in config['catalogue_records']:
+        result.candidates+=1
+        result.records.append(make_record(config['id'],item['title'],item['author'],item['date'],item['url'],
+            {'url':item['url'],'text':item['evidence']},isbns=[item['isbn']],source_kind='catalogue_snapshot',
+            source_label='2026 publisher catalogue',evidence_checked_at=item['checked_at']))
+    result.warn(config['sources'][0],'Dated catalogue import; publication changes and newer catalogues are not automatically verified')
+    return result
+
+ADAPTERS={'bloodaxe':bloodaxe,'ninearches':ninearches,'shearsman':shearsman,'seren':seren,'gallery':gallery,'gallery_feeds':gallery_feeds,'faber':faber,'catalogue_snapshot':catalogue_snapshot}

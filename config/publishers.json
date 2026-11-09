@@ -32,8 +32,9 @@
       "ninearchespress.com",
       "www.ninearchespress.com"
     ],
-    "coverage": "Current and future year sections of the poetry catalogue, verified against individual book pages.",
-    "max_requests": 100
+    "coverage": "Current and future year sections of the poetry catalogue, verified against individual book pages. Supplemented by the rolling Inpress UK/Ireland trade list; not comprehensive.",
+    "max_requests": 100,
+    "inpress_name": "Nine Arches Press"
   },
   {
     "id": "shearsman",
@@ -68,8 +69,9 @@
       "www.serenbooks.com",
       "serenbooks.com"
     ],
-    "coverage": "Coming-soon catalogue only; genre and publication date checked on book pages.",
-    "max_requests": 80
+    "coverage": "Coming-soon catalogue only; genre and publication date checked on book pages. Supplemented by the rolling Inpress UK/Ireland trade list; not comprehensive.",
+    "max_requests": 80,
+    "inpress_name": "Seren"
   },
   {
     "id": "gallery",
@@ -96,34 +98,46 @@
     "name": "Faber & Faber",
     "country": "UK",
     "website": "https://www.faber.co.uk/",
-    "adapter": null,
-    "enabled": false,
-    "access_status": "permission_review",
+    "adapter": "faber",
+    "enabled": true,
+    "access_status": "reviewed",
     "sources": [
       "https://www.faber.co.uk/product-category/poetry/"
     ],
     "allowed_hosts": [
       "www.faber.co.uk"
     ],
-    "coverage": "Not collected: review reuse terms or obtain a suitable publisher feed.",
-    "access_evidence": "https://www.faber.co.uk/terms-of-use/"
+    "coverage": "Official poetry pre-order listings across catalogue pages, with book-page dates. Other announcements may be missing.",
+    "access_evidence": "https://www.faber.co.uk/terms-of-use/",
+    "max_requests": 80
   },
   {
     "id": "carcanet",
     "name": "Carcanet Press",
     "country": "UK",
     "website": "https://www.carcanet.co.uk/",
-    "adapter": null,
-    "enabled": false,
-    "access_status": "robots_disallowed",
+    "adapter": "catalogue_snapshot",
+    "enabled": true,
+    "access_status": "catalogue_import",
     "sources": [
-      "https://www.carcanet.co.uk/"
+      "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35"
     ],
     "allowed_hosts": [
       "www.carcanet.co.uk"
     ],
-    "coverage": "Not collected: robots directives disallow the general-purpose collector. Publisher permission/feed required.",
-    "access_evidence": "https://www.carcanet.co.uk/robots.txt"
+    "coverage": "Reviewed 2026 publisher catalogue: one remaining dated collection. A dated import, not an automatic check of current dates or 2027 announcements.",
+    "access_evidence": "https://www.carcanet.co.uk/robots.txt",
+    "catalogue_records": [
+      {
+        "title": "Late Self-Portrait",
+        "author": "Dan Burt",
+        "date": "26 November 2026",
+        "url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35",
+        "isbn": "9781800175907",
+        "checked_at": "2026-11-09T00:00:00+00:00",
+        "evidence": "Carcanet 2026 catalogue page 35: Dan Burt; Late Self-Portrait; 26th November 2026; ISBN 9781800175907. Selected poetry with three prose excerpts."
+      }
+    ]
   },
   {
     "id": "picador",
@@ -175,5 +189,290 @@
     ],
     "coverage": "Not collected: robots retrieval returned HTTP 403. An accessible official feed or permission is needed.",
     "access_evidence": "https://www.dedaluspress.com/robots.txt"
+  },
+  {
+    "id": "cinnamon",
+    "name": "Cinnamon Press",
+    "country": "UK",
+    "website": "http://cinnamonpress.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Cinnamon Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "the87press",
+    "name": "the87press",
+    "country": "UK",
+    "website": "https://www.the87press.co.uk/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "the87press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "verve",
+    "name": "Verve Poetry Press",
+    "country": "UK",
+    "website": "https://inpressbooks.co.uk/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Verve Poetry Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "brokensleep",
+    "name": "Broken Sleep Books",
+    "country": "UK",
+    "website": "https://inpressbooks.co.uk/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Broken Sleep Books",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "poetrybusiness",
+    "name": "The Poetry Business",
+    "country": "UK",
+    "website": "https://poetrybusiness.co.uk/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "The Poetry Business",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "burningeye",
+    "name": "Burning Eye Books",
+    "country": "UK",
+    "website": "https://burningeyebooks.wordpress.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Burning Eye Books",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "tworivers",
+    "name": "Two Rivers Press",
+    "country": "UK",
+    "website": "https://tworiverspress.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Two Rivers Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "outspoken",
+    "name": "Out-Spoken Press",
+    "country": "UK",
+    "website": "https://www.outspokenldn.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Out-Spoken Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "andotherstories",
+    "name": "And Other Stories",
+    "country": "UK",
+    "website": "https://www.andotherstories.org/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "And Other Stories",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "emmapress",
+    "name": "The Emma Press",
+    "country": "UK",
+    "website": "https://theemmapress.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "The Emma Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "valley",
+    "name": "Valley Press",
+    "country": "UK",
+    "website": "https://valleypressuk.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Valley Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "skein",
+    "name": "Skein Press",
+    "country": "Ireland",
+    "website": "https://skeinpress.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Skein Press",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "istros",
+    "name": "Istros Books",
+    "country": "UK",
+    "website": "https://istrosbooks.com/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Istros Books",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "poetrytranslationcentre",
+    "name": "Poetry Translation Centre",
+    "country": "UK",
+    "website": "https://www.poetrytranslation.org/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Poetry Translation Centre",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "inkandescent",
+    "name": "Inkandescent",
+    "country": "UK",
+    "website": "https://www.inkandescent.co.uk/",
+    "adapter": "inpress",
+    "enabled": true,
+    "access_status": "reviewed",
+    "inpress_name": "Inkandescent",
+    "sources": [
+      "https://inpressbooks.co.uk/pages/whats-new"
+    ],
+    "allowed_hosts": [
+      "inpressbooks.co.uk",
+      "docs.google.com"
+    ],
+    "max_requests": 12,
+    "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
   }
 ]

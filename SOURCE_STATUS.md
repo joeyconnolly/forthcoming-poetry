@@ -18,3 +18,7 @@ All ten proposed publishers remain in scope. **Five have implemented collection 
 No publisher has been silently substituted. Next source work should resolve official feeds/access for the held publishers, establish a complete Gallery catalogue baseline, and review Shearsman borderline editions. Adding more accessible publishers can proceed through the same adapter/registry contract while these remain visible. Shearsman links use exact catalogue-row anchors: one inspected shop button pointed to a different book, so the unverified shop links are not trusted.
 
 Raw research downloads are not shipped or published. Minimal fixtures and bibliographic evidence are retained. Robots and terms observations do not constitute legal clearance.
+# November coverage expansion
+
+The original assessment below is historical. For implemented Inpress, Faber and Carcanet routes, see [COVERAGE_EXPANSION.md](docs/COVERAGE_EXPANSION.md). The live coverage table and data/review.json reflect the latest collection.
+

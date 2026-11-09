@@ -2,6 +2,7 @@
 import hashlib
 import json
 import time
+import re
 from pathlib import Path
 from urllib.parse import urlsplit, urljoin
 from urllib.robotparser import RobotFileParser
@@ -21,7 +22,8 @@ class Fetcher:
     def _request(self,url,headers=None):
         for redirect in range(6):
             p=urlsplit(url)
-            if p.scheme!='https' or p.hostname not in self.hosts or p.username or p.password:
+            sheet_redirect=('docs.google.com' in self.hosts and re.fullmatch(r'doc-[a-z0-9-]+-sheets\.googleusercontent\.com',p.hostname or '') and (p.path.startswith('/pub/') or p.path=='/robots.txt'))
+            if p.scheme!='https' or (p.hostname not in self.hosts and not sheet_redirect) or p.username or p.password:
                 raise FetchError('Request outside configured HTTPS publisher hosts')
             if self.count>=self.max_requests: raise FetchError('Publisher request budget reached; partial coverage')
             time.sleep(max(0,self.delay-(time.monotonic()-self.last.get(p.hostname,0))))
@@ -64,7 +66,7 @@ class Fetcher:
         r=self._request(url,headers)
         if r.status_code==304 and body_path.exists(): body=body_path.read_text(encoding='utf-8')
         elif r.status_code==200:
-            if not any(t in r.headers.get('Content-Type','') for t in ('text/html','application/rss+xml','application/xml','text/xml')): raise FetchError('Expected HTML or public XML feed')
+            if not any(t in r.headers.get('Content-Type','') for t in ('text/html','application/rss+xml','application/xml','text/xml','text/csv')): raise FetchError('Expected HTML, CSV or public XML feed')
             r.encoding='utf-8'; body=r.text
             body_path.write_text(body,encoding='utf-8')
             meta_path.write_text(json.dumps({'etag':r.headers.get('ETag'),'modified':r.headers.get('Last-Modified'),'url':url}),encoding='utf-8')

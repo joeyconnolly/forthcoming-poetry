@@ -1,4 +1,146 @@
 {
+  "andotherstories": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 2,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Mixed poems, essays and translation notes; hybrid review",
+        "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781916751613"
+      },
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "brokensleep": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 5,
+    "excluded": 0,
+    "forthcoming_count": 3,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 4,
+    "warnings": [
+      {
+        "reason": "Collection first published in 2008; edition review",
+        "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628128"
+      },
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "burningeye": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 5,
+    "excluded": 0,
+    "forthcoming_count": 2,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 4,
+    "warnings": [
+      {
+        "reason": "Activity and writing-prompt book; scope review",
+        "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781913958763"
+      },
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "carcanet": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:45:50+00:00",
+    "candidates": 1,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:45:50+00:00",
+    "last_success_at": null,
+    "scope": "Reviewed 2026 publisher catalogue: one remaining dated collection. A dated import, not an automatic check of current dates or 2027 announcements.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Dated catalogue import; publication changes and newer catalogues are not automatically verified",
+        "url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35"
+      }
+    ]
+  },
+  "cinnamon": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 12,
+    "excluded": 0,
+    "forthcoming_count": 12,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 12,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "emmapress": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 2,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Children’s poetry classification needs review",
+        "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781915628671"
+      },
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "faber": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:45:50+00:00",
+    "candidates": 6,
+    "excluded": 4,
+    "forthcoming_count": 2,
+    "last_data_at": "2026-11-09T15:45:50+00:00",
+    "last_success_at": null,
+    "scope": "Official poetry pre-order listings across catalogue pages, with book-page dates. Other announcements may be missing.",
+    "status": "partial",
+    "valid_records": 2,
+    "warnings": [
+      {
+        "reason": "Pre-order listings only; unlisted announcements and titles without pre-order markers are outside this scope",
+        "url": "https://www.faber.co.uk/product-category/poetry/"
+      }
+    ]
+  },
   "gallery": {
     "accepted_count": 0,
     "attempted_at": "2026-11-09T14:50:06+00:00",
@@ -161,6 +303,136 @@
       }
     ]
   },
+  "inkandescent": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 1,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "istros": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 1,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "ninearches": {
+    "accepted_count": 10,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 14,
+    "excluded": 1,
+    "forthcoming_count": 2,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": "2026-11-09T14:50:06+00:00",
+    "scope": "Current and future year sections of the poetry catalogue, verified against individual book pages. Supplemented by the rolling Inpress UK/Ireland trade list; not comprehensive.",
+    "status": "partial",
+    "valid_records": 11,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "outspoken": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 2,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Mixed poems, essays and photographs; hybrid review",
+        "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781919370514"
+      },
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "poetrybusiness": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 7,
+    "excluded": 0,
+    "forthcoming_count": 3,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 7,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "poetrytranslationcentre": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 2,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 2,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "seren": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 3,
+    "excluded": 1,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": "2026-11-09T14:50:06+00:00",
+    "scope": "Coming-soon catalogue only; genre and publication date checked on book pages. Supplemented by the rolling Inpress UK/Ireland trade list; not comprehensive.",
+    "status": "partial",
+    "valid_records": 2,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
   "shearsman": {
     "accepted_count": 0,
     "attempted_at": "2026-11-09T14:50:06+00:00",
@@ -184,6 +456,100 @@
       {
         "reason": "Hybrid/prose classification requires review: The Next One",
         "url": "https://www.shearsman.com/2027-titles--date-order"
+      }
+    ]
+  },
+  "skein": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 1,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "the87press": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 7,
+    "excluded": 0,
+    "forthcoming_count": 4,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 6,
+    "warnings": [
+      {
+        "reason": "Expanded second edition; edition review",
+        "url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693985"
+      },
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "tworivers": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 3,
+    "excluded": 0,
+    "forthcoming_count": 3,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 3,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "valley": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 2,
+    "excluded": 0,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 2,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "verve": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T15:44:04+00:00",
+    "candidates": 4,
+    "excluded": 0,
+    "forthcoming_count": 4,
+    "last_data_at": "2026-11-09T15:44:04+00:00",
+    "last_success_at": null,
+    "scope": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue.",
+    "status": "partial",
+    "valid_records": 4,
+    "warnings": [
+      {
+        "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
+        "url": "https://inpressbooks.co.uk/pages/whats-new"
       }
     ]
   }
