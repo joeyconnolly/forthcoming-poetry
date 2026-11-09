@@ -1,0 +1,179 @@
+[
+  {
+    "id": "bloodaxe",
+    "name": "Bloodaxe Books",
+    "country": "UK",
+    "website": "https://www.bloodaxebooks.com/",
+    "adapter": "bloodaxe",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://www.bloodaxebooks.com/ecs/new_titles/comingsoon",
+      "https://www.bloodaxebooks.com/ecs/new_titles"
+    ],
+    "allowed_hosts": [
+      "www.bloodaxebooks.com"
+    ],
+    "coverage": "Publisher forthcoming and new-title listings; announcements outside these listings are not monitored.",
+    "max_requests": 100
+  },
+  {
+    "id": "ninearches",
+    "name": "Nine Arches Press",
+    "country": "UK",
+    "website": "https://ninearchespress.com/",
+    "adapter": "ninearches",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://ninearchespress.com/publications/poetry-collections/"
+    ],
+    "allowed_hosts": [
+      "ninearchespress.com",
+      "www.ninearchespress.com"
+    ],
+    "coverage": "Current and future year sections of the poetry catalogue, verified against individual book pages.",
+    "max_requests": 100
+  },
+  {
+    "id": "shearsman",
+    "name": "Shearsman Books",
+    "country": "UK",
+    "website": "https://www.shearsman.com/",
+    "adapter": "shearsman",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://www.shearsman.com/store"
+    ],
+    "allowed_hosts": [
+      "www.shearsman.com",
+      "shearsman.com"
+    ],
+    "coverage": "Current and future annual catalogues discovered from the store navigation. Reissues and ambiguous prose held for review.",
+    "max_requests": 30
+  },
+  {
+    "id": "seren",
+    "name": "Seren",
+    "country": "UK",
+    "website": "https://www.serenbooks.com/",
+    "adapter": "seren",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://www.serenbooks.com/books/coming-soon/"
+    ],
+    "allowed_hosts": [
+      "www.serenbooks.com",
+      "serenbooks.com"
+    ],
+    "coverage": "Coming-soon catalogue only; genre and publication date checked on book pages.",
+    "max_requests": 80
+  },
+  {
+    "id": "gallery",
+    "name": "The Gallery Press",
+    "country": "Ireland",
+    "website": "https://gallerypress.com/",
+    "adapter": "gallery_feeds",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://gallerypress.com/category/forthcoming/feed/",
+      "https://gallerypress.com/product-category/poetry/feed/"
+    ],
+    "allowed_hosts": [
+      "gallerypress.com",
+      "www.gallerypress.com"
+    ],
+    "coverage": "Official rolling forthcoming and poetry RSS feeds, with book-page date and genre verification. Older undiscovered titles outside these feeds are not covered.",
+    "max_pages": 3,
+    "max_requests": 100
+  },
+  {
+    "id": "faber",
+    "name": "Faber & Faber",
+    "country": "UK",
+    "website": "https://www.faber.co.uk/",
+    "adapter": null,
+    "enabled": false,
+    "access_status": "permission_review",
+    "sources": [
+      "https://www.faber.co.uk/product-category/poetry/"
+    ],
+    "allowed_hosts": [
+      "www.faber.co.uk"
+    ],
+    "coverage": "Not collected: review reuse terms or obtain a suitable publisher feed.",
+    "access_evidence": "https://www.faber.co.uk/terms-of-use/"
+  },
+  {
+    "id": "carcanet",
+    "name": "Carcanet Press",
+    "country": "UK",
+    "website": "https://www.carcanet.co.uk/",
+    "adapter": null,
+    "enabled": false,
+    "access_status": "robots_disallowed",
+    "sources": [
+      "https://www.carcanet.co.uk/"
+    ],
+    "allowed_hosts": [
+      "www.carcanet.co.uk"
+    ],
+    "coverage": "Not collected: robots directives disallow the general-purpose collector. Publisher permission/feed required.",
+    "access_evidence": "https://www.carcanet.co.uk/robots.txt"
+  },
+  {
+    "id": "picador",
+    "name": "Picador",
+    "country": "UK",
+    "website": "https://www.panmacmillan.com/",
+    "adapter": null,
+    "enabled": false,
+    "access_status": "permission_review",
+    "sources": [
+      "https://www.panmacmillan.com/imprints/picador"
+    ],
+    "allowed_hosts": [
+      "www.panmacmillan.com"
+    ],
+    "coverage": "Not collected: reuse terms need review; curated imprint page is insufficient for complete discovery.",
+    "access_evidence": "https://www.panmacmillan.com/terms-and-conditions"
+  },
+  {
+    "id": "cape",
+    "name": "Jonathan Cape",
+    "country": "UK",
+    "website": "https://www.penguin.co.uk/",
+    "adapter": null,
+    "enabled": false,
+    "access_status": "permission_review",
+    "sources": [
+      "https://www.penguin.co.uk/about/publishing-houses/vintage/jonathan-cape"
+    ],
+    "allowed_hosts": [
+      "www.penguin.co.uk"
+    ],
+    "coverage": "Not collected: reuse and deep-linking terms need review; curated imprint page is not comprehensive.",
+    "access_evidence": "https://www.penguin.co.uk/about/useful-links/terms-conditions"
+  },
+  {
+    "id": "dedalus",
+    "name": "Dedalus Press",
+    "country": "Ireland",
+    "website": "https://www.dedaluspress.com/",
+    "adapter": null,
+    "enabled": false,
+    "access_status": "access_blocked",
+    "sources": [
+      "https://www.dedaluspress.com/bookshop/"
+    ],
+    "allowed_hosts": [
+      "www.dedaluspress.com"
+    ],
+    "coverage": "Not collected: robots retrieval returned HTTP 403. An accessible official feed or permission is needed.",
+    "access_evidence": "https://www.dedaluspress.com/robots.txt"
+  }
+]

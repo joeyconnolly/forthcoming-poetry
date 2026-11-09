@@ -1,0 +1,58 @@
+{
+  "gallery": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T14:45:09+00:00",
+    "candidates": 38,
+    "excluded": 9,
+    "forthcoming_count": 0,
+    "last_data_at": "2026-11-09T14:45:09+00:00",
+    "last_success_at": null,
+    "scope": "Official rolling forthcoming and poetry RSS feeds, with book-page date and genre verification. Older undiscovered titles outside these feeds are not covered.",
+    "status": "partial",
+    "valid_records": 27,
+    "warnings": [
+      {
+        "reason": "Rolling feed: 10 announcements/products processed; older undiscovered records are outside this scope",
+        "url": "https://gallerypress.com/category/forthcoming/feed/"
+      },
+      {
+        "reason": "Rolling feed: 10 announcements/products processed; older undiscovered records are outside this scope",
+        "url": "https://gallerypress.com/product-category/poetry/feed/"
+      },
+      {
+        "reason": "'NoneType' object has no attribute 'get_text'",
+        "url": "https://gallerypress.com/product/raised-among-vultures/"
+      },
+      {
+        "reason": "No recognised book publication date",
+        "url": "https://gallerypress.com/product/the-coast-road-ailbhe-ni-ghearbhuigh/"
+      }
+    ]
+  },
+  "shearsman": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T14:32:38+00:00",
+    "candidates": 67,
+    "excluded": 5,
+    "forthcoming_count": 19,
+    "last_data_at": "2026-11-09T14:32:38+00:00",
+    "last_success_at": null,
+    "scope": "Current and future annual catalogues discovered from the store navigation. Reissues and ambiguous prose held for review.",
+    "status": "partial",
+    "valid_records": 59,
+    "warnings": [
+      {
+        "reason": "Reissue or edition requires editorial review",
+        "url": "https://www.shearsman.com/2027-titles--date-order"
+      },
+      {
+        "reason": "Hybrid/prose classification requires review: Strait",
+        "url": "https://www.shearsman.com/2027-titles--date-order"
+      },
+      {
+        "reason": "Hybrid/prose classification requires review: The Next One",
+        "url": "https://www.shearsman.com/2027-titles--date-order"
+      }
+    ]
+  }
+}

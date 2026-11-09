@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Forthcoming Poetry — a publication calendar</title>
+  <meta name="description" content="A source-attributed calendar of forthcoming poetry from selected UK and Irish publishers, with transparent coverage and publication dates.">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#calendar">Skip to the calendar</a>
+<div class="page">
+  <header>
+    <div class="masthead"><span>UK &amp; IRELAND</span><a href="#coverage">Sources &amp; coverage <span aria-hidden="true">↘</span></a></div>
+    <div class="intro"><p class="eyebrow">A PUBLICATION CALENDAR</p><h1>Forthcoming<br><em>Poetry.</em></h1>
+    <p class="lede">New collections, translations and anthologies.<br>A place to see what’s on the horizon.</p></div>
+    <div class="edition"><span><strong>{{COUNT}}</strong> forthcoming titles</span><span>{{PUBLISHERS}} publishers in scope · {{CHECKED}} source scans complete</span><span>Last collection attempt <time>{{ATTEMPT}}</time></span></div>
+  </header>
+  <main>
+    <aside class="notice"><span class="dot" aria-hidden="true"></span><p><strong>A working prototype, with partial coverage.</strong> Some publishers are awaiting access review. Dates reflect publisher information and can change. <a href="#coverage">See what is covered.</a></p></aside>
+    <section aria-labelledby="calendar-title" id="calendar">
+      <div class="calendar-top"><h2 id="calendar-title">The reading ahead</h2><span>Calendar as of <time id="as-of" datetime="{{AS_OF}}">{{AS_OF}}</time></span></div>
+      <div class="filters" hidden><label>Find a title or poet<input type="search" id="search" placeholder="Search the calendar…"></label><label>Publisher<select id="publisher"><option value="">All publishers</option>{{OPTIONS}}</select></label><p id="filter-count" role="status" aria-live="polite"></p></div>
+      <p class="date-note">Month and season dates are approximate. Year-only and unconfirmed dates appear at the end.</p>
+      <ol class="calendar">{{BOOKS}}</ol><p id="no-results" hidden>No titles match these filters.</p>
+    </section>
+    <section id="coverage" aria-labelledby="coverage-title" class="coverage">
+      <p class="eyebrow">BEHIND THE CALENDAR</p><h2 id="coverage-title">Sources &amp; coverage</h2>
+      <p>Each title links to its publisher. A completed scan means the stated source was processed; it does not establish coverage of every announcement. Failed checks preserve the last verified information.</p>
+      <div class="table-wrap"><table><caption class="sr-only">Publisher collection status and coverage limits</caption><thead><tr><th scope="col">Publisher</th><th scope="col">Collection status</th><th scope="col">Scope &amp; limitations</th></tr></thead><tbody>{{HEALTH}}</tbody></table></div>
+      <details><summary>How dates and inclusion work</summary><p>Exact dates cease to be forthcoming on publication day, in UK time. Month-only dates remain through month end; seasons use March–May, June–August, September–November and December–February. We show the publisher’s precision rather than an invented release day.</p><p>Poetry collections, selected and collected poems, anthologies, pamphlets and translations are in scope. Criticism, magazines, routine format reissues and uncertain hybrid works are excluded or held for review. This prototype does not claim comprehensive UK and Irish coverage.</p></details>
+      <p class="operations">{{AUTOMATION}}</p>
+    </section>
+  </main>
+  <footer><span>Forthcoming Poetry</span><span>Bibliographic facts. Original sources. Something to look forward to.</span></footer>
+</div>
+</body></html>
