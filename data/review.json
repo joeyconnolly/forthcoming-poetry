@@ -427,6 +427,28 @@
       }
     ]
   },
+  "picador": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T16:38:59+00:00",
+    "candidates": 323,
+    "excluded": 320,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T16:38:59+00:00",
+    "last_success_at": null,
+    "scope": "Public UK poetry catalogue pagination plus the first Picador catalogue page and previously found future titles, checked weekly. Picador imprint and poetry classification verified on book pages; related editions checked for reissues. Other announcements may be missing.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Expected one primary Book matching requested URL",
+        "url": "https://www.panmacmillan.com/authors/samanta-schweblin/little-eyes/9781037435126"
+      },
+      {
+        "reason": "Public poetry catalogue pagination, first Picador catalogue page and known future book pages; uncategorised announcements and other editions may be missing",
+        "url": "https://www.panmacmillan.com/genres/fiction/poetry"
+      }
+    ]
+  },
   "poetrybusiness": {
     "accepted_count": 0,
     "attempted_at": "2026-11-09T16:27:46+00:00",

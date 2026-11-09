@@ -246,4 +246,8 @@ def pavilion(config,fetch,today):
     from .batch_one import pavilion as run
     return run(config,fetch,today)
 
-ADAPTERS={'bloodaxe':bloodaxe,'ninearches':ninearches,'shearsman':shearsman,'seren':seren,'gallery':gallery,'gallery_feeds':gallery_feeds,'faber':faber,'catalogue_snapshot':catalogue_snapshot,'fitzcarraldo':fitzcarraldo,'pavilion':pavilion}
+def picador(config,fetch,today):
+    from .picador import collect
+    return collect(config,fetch,today)
+
+ADAPTERS={'bloodaxe':bloodaxe,'ninearches':ninearches,'shearsman':shearsman,'seren':seren,'gallery':gallery,'gallery_feeds':gallery_feeds,'faber':faber,'catalogue_snapshot':catalogue_snapshot,'fitzcarraldo':fitzcarraldo,'pavilion':pavilion,'picador':picador}

@@ -144,17 +144,19 @@
     "name": "Picador",
     "country": "UK",
     "website": "https://www.panmacmillan.com/",
-    "adapter": null,
-    "enabled": false,
-    "access_status": "permission_review",
+    "adapter": "picador",
+    "enabled": true,
+    "access_status": "reviewed",
     "sources": [
-      "https://www.panmacmillan.com/imprints/picador"
+      "https://www.panmacmillan.com/genres/fiction/poetry",
+      "https://www.panmacmillan.com/picador/books"
     ],
     "allowed_hosts": [
       "www.panmacmillan.com"
     ],
-    "coverage": "Not collected: reuse terms need review; curated imprint page is insufficient for complete discovery.",
-    "access_evidence": "https://www.panmacmillan.com/terms-and-conditions"
+    "coverage": "Public UK poetry catalogue pagination plus the first Picador catalogue page and previously found future titles, checked weekly. Picador imprint and poetry classification verified on book pages; related editions checked for reissues. Other announcements may be missing.",
+    "access_evidence": "https://www.panmacmillan.com/terms-and-conditions",
+    "max_requests": 90
   },
   {
     "id": "cape",
@@ -528,5 +530,22 @@
         }
       ]
     }
+  },
+  {
+    "id": "bloomsbury",
+    "name": "Bloomsbury",
+    "country": "UK",
+    "website": "https://www.bloomsbury.com/uk/",
+    "adapter": null,
+    "enabled": false,
+    "access_status": "access_blocked",
+    "sources": [
+      "https://www.bloomsbury.com/uk/fiction/poetry/",
+      "https://www.bloomsbury.com/uk/connect/contact-us/catalogues/"
+    ],
+    "allowed_hosts": [
+      "www.bloomsbury.com"
+    ],
+    "coverage": "Not collected: public poetry listing, curated page and sitemap returned access challenges/403 on 9 November 2026. Query-string routes are robots-disallowed. The official-linked Jan–Jun 2027 Issuu catalogue exposes no usable book text in its public HTML. No complete coverage claimed."
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "last_attempt_at": "2026-11-09T16:27:46+00:00",
+  "last_attempt_at": "2026-11-09T16:40:21+00:00",
   "records": [
     {
       "contributors": [
@@ -7464,6 +7464,41 @@
     {
       "contributors": [
         {
+          "name": "Maya C. Popa",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-21",
+        "label": "21 January 2027",
+        "precision": "day",
+        "raw": "2027-01-21",
+        "start": "2027-01-21",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "If You Love That Lady; Maya C. Popa; 2027-01-21; ISBN 9781037404177; Picador; publisher poetry classification",
+        "url": "https://www.panmacmillan.com/authors/maya-c-popa/if-you-love-that-lady/9781037404177"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:38:59+00:00",
+      "history": [],
+      "id": "c7bd10c4404dea790def",
+      "isbns": [
+        "9781037404177"
+      ],
+      "last_seen_at": "2026-11-09T16:38:59+00:00",
+      "last_verified_at": "2026-11-09T16:38:59+00:00",
+      "missing_checks": 0,
+      "publisher_id": "picador",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.panmacmillan.com/authors/maya-c-popa/if-you-love-that-lady/9781037404177",
+      "title": "If You Love That Lady"
+    },
+    {
+      "contributors": [
+        {
           "name": "Peter Armstrong",
           "role": "author"
         }
@@ -9292,6 +9327,11 @@
       "valid_records": 47,
       "warnings": []
     },
+    "bloomsbury": {
+      "scope": "Not collected: public poetry listing, curated page and sitemap returned access challenges/403 on 9 November 2026. Query-string routes are robots-disallowed. The official-linked Jan–Jun 2027 Issuu catalogue exposes no usable book text in its public HTML. No complete coverage claimed.",
+      "status": "access_blocked",
+      "warnings": []
+    },
     "brokensleep": {
       "accepted_count": 0,
       "attempted_at": "2026-11-09T16:27:46+00:00",
@@ -9713,11 +9753,26 @@
       ]
     },
     "picador": {
-      "attempted_at": null,
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T16:38:59+00:00",
+      "candidates": 323,
+      "excluded": 320,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T16:38:59+00:00",
       "last_success_at": null,
-      "scope": "Not collected: reuse terms need review; curated imprint page is insufficient for complete discovery.",
-      "status": "permission_review",
-      "warnings": []
+      "scope": "Public UK poetry catalogue pagination plus the first Picador catalogue page and previously found future titles, checked weekly. Picador imprint and poetry classification verified on book pages; related editions checked for reissues. Other announcements may be missing.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Expected one primary Book matching requested URL",
+          "url": "https://www.panmacmillan.com/authors/samanta-schweblin/little-eyes/9781037435126"
+        },
+        {
+          "reason": "Public poetry catalogue pagination, first Picador catalogue page and known future book pages; uncategorised announcements and other editions may be missing",
+          "url": "https://www.panmacmillan.com/genres/fiction/poetry"
+        }
+      ]
     },
     "poetrybusiness": {
       "accepted_count": 0,

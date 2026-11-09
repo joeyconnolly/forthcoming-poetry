@@ -22,3 +22,7 @@ All ten proposed publishers remain in scope. **Five have implemented collection 
 No publisher has been silently substituted. Next source work should resolve official feeds/access for the held publishers, establish a complete Gallery catalogue baseline, and review Shearsman borderline editions. Adding more accessible publishers can proceed through the same adapter/registry contract while these remain visible. Shearsman links use exact catalogue-row anchors: one inspected shop button pointed to a different book, so the unverified shop links are not trusted.
 
 Raw research downloads are not shipped or published. Minimal fixtures and bibliographic evidence are retained. Robots and terms observations do not constitute legal clearance.
+
+## November publisher batches
+
+See [batch one](docs/BATCH_ONE.md) for Fitzcarraldo and Pavilion/LUP, and [batch two](docs/BATCH_TWO.md) for the active Picador collector and Bloomsbury access blocker. These supersede the historical Picador assessment above. Exact current counts and coverage remain in the live site's source notes.
