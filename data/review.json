@@ -65,6 +65,28 @@
       }
     ]
   },
+  "cape": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T20:10:12+00:00",
+    "candidates": 8,
+    "excluded": 6,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T20:10:12+00:00",
+    "last_success_at": null,
+    "scope": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Earlier edition exists; possible format reissue held",
+        "url": "https://www.penguin.co.uk/books/362150/autobiography-of-red-by-carson-anne/9781787337107"
+      },
+      {
+        "reason": "Public curated poetry/author lists and tracked book pages, checked weekly; coming-soon shelves are capped and may omit later announcements. Not complete imprint coverage",
+        "url": "https://www.penguin.co.uk/fiction/poetry"
+      }
+    ]
+  },
   "carcanet": {
     "accepted_count": 0,
     "attempted_at": "2026-11-09T16:41:14+00:00",
@@ -80,6 +102,24 @@
       {
         "reason": "Dated catalogue import; publication changes and newer catalogues are not automatically verified",
         "url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35"
+      }
+    ]
+  },
+  "chatto": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T20:10:12+00:00",
+    "candidates": 9,
+    "excluded": 8,
+    "forthcoming_count": 1,
+    "last_data_at": "2026-11-09T20:10:12+00:00",
+    "last_success_at": null,
+    "scope": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
+    "status": "partial",
+    "valid_records": 1,
+    "warnings": [
+      {
+        "reason": "Public curated poetry/author lists and tracked book pages, checked weekly; coming-soon shelves are capped and may omit later announcements. Not complete imprint coverage",
+        "url": "https://www.penguin.co.uk/fiction/poetry"
       }
     ]
   },
@@ -427,24 +467,42 @@
       }
     ]
   },
-  "picador": {
+  "penguin": {
     "accepted_count": 0,
-    "attempted_at": "2026-11-09T16:41:14+00:00",
-    "candidates": 323,
-    "excluded": 320,
-    "forthcoming_count": 1,
-    "last_data_at": "2026-11-09T16:41:14+00:00",
+    "attempted_at": "2026-11-09T20:10:12+00:00",
+    "candidates": 9,
+    "excluded": 4,
+    "forthcoming_count": 4,
+    "last_data_at": "2026-11-09T20:10:12+00:00",
     "last_success_at": null,
-    "scope": "Public UK poetry catalogue pagination plus the first Picador catalogue page and previously found future titles, checked weekly. Picador imprint and poetry classification verified on book pages; related editions checked for reissues. Other announcements may be missing.",
+    "scope": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
     "status": "partial",
-    "valid_records": 1,
+    "valid_records": 4,
     "warnings": [
       {
-        "reason": "Expected one primary Book matching requested URL",
-        "url": "https://www.panmacmillan.com/authors/samanta-schweblin/little-eyes/9781037435126"
+        "reason": "Earlier edition exists; possible format reissue held",
+        "url": "https://www.penguin.co.uk/books/455673/there-lives-a-young-girl-in-me-who-will-not-die-by-ditlevsen-tove/9780241637371"
       },
       {
-        "reason": "Public poetry catalogue pagination, first Picador catalogue page and known future book pages; uncategorised announcements and other editions may be missing",
+        "reason": "Public curated poetry/author lists and tracked book pages, checked weekly; coming-soon shelves are capped and may omit later announcements. Not complete imprint coverage",
+        "url": "https://www.penguin.co.uk/fiction/poetry"
+      }
+    ]
+  },
+  "picador": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T20:10:12+00:00",
+    "candidates": 323,
+    "excluded": 330,
+    "forthcoming_count": 2,
+    "last_data_at": "2026-11-09T20:10:12+00:00",
+    "last_success_at": null,
+    "scope": "Poetry catalogue, first imprint page, tracked author pages, known future books and public sitemap candidates for poets already in the catalogue. Weekly book-page verification; sitemap dates are discovery hints only. New or unlisted authors can still be missed.",
+    "status": "partial",
+    "valid_records": 4,
+    "warnings": [
+      {
+        "reason": "Poetry catalogue, first imprint page, tracked authors, sitemap candidates for known poetry authors and known future books; sitemap dates are discovery hints only. Unlisted/new authors may be missing",
         "url": "https://www.panmacmillan.com/genres/fiction/poetry"
       }
     ]

@@ -1,7 +1,7 @@
 import json
 import unittest
 from datetime import date
-from poetry_calendar.picador import listing,book,collect
+from poetry_calendar.picador import listing,book,collect,sitemap_candidates
 
 BASE='https://www.panmacmillan.com'
 INDEX=BASE+'/genres/fiction/poetry'
@@ -41,6 +41,16 @@ class PicadorTests(unittest.TestCase):
         variant=BASE+'/authors/a/book/9781037404184'
         r,_=self.run_source(detail(workExample=[{'url':variant}]),{variant:html(detail(url=variant,bookFormat='https://schema.org/EBook'))})
         self.assertEqual(len(r.records),1)
+    def test_audio_schema_does_not_reject_print_book(self):
+        variant=BASE+'/authors/a/book/9781037404184'
+        audio=detail(url=variant,bookFormat='https://schema.org/AudiobookFormat')
+        audio['@type']='Audiobook'
+        r,_=self.run_source(detail(workExample=[{'url':variant}]),{variant:html(audio)})
+        self.assertEqual(len(r.records),1)
+    def test_sitemap_is_filtered_by_known_poet_and_date_hint(self):
+        target=BASE+'/authors/susannah-dickey/language-animal/9781037423321'
+        xml=f'<urlset><url><loc>{target}</loc><lastmod>2027-04-15</lastmod></url><url><loc>{URL}</loc><lastmod>2028-01-01</lastmod></url></urlset>'
+        self.assertEqual(sitemap_candidates(xml,{'susannah-dickey'},date(2026,11,9)),{target})
     def test_missing_book_date_cannot_use_article_date(self):
         item=detail();del item['datePublished']
         with self.assertRaises(ValueError):book(html({'@type':'WebPage','datePublished':'2027-01-01'},item),URL)
@@ -48,3 +58,10 @@ class PicadorTests(unittest.TestCase):
         with self.assertRaises(ValueError):listing('<p>Loading...</p>',INDEX)
     def test_primary_book_does_not_read_recommendation(self):
         with self.assertRaises(ValueError):book(html({'@type':'ItemList','itemListElement':[{'item':detail()}]}),URL)
+    def test_language_animal_discovered_on_author_page_when_catalogue_omits_it(self):
+        author=BASE+'/authors/susannah-dickey/45016'
+        target=BASE+'/authors/susannah-dickey/language-animal/9781037423321'
+        item=detail(name='Language Animal',url=target,isbn='9781037423321',author=[{'name':'Susannah Dickey'}],datePublished='2027-04-15')
+        fetch=Fetch({INDEX:catalogue([detail(datePublished='2025-01-01')]),author:html({'@type':'ItemList','name':'Books by Susannah Dickey','itemListElement':[{'item':{'@type':'Book','url':target}}]}),target:html(item)})
+        r=collect({'id':'picador','sources':[INDEX],'author_sources':[author]},fetch,date(2026,11,9))
+        self.assertEqual([(x['title'],x['date']['start']) for x in r.records],[('Language Animal','2027-04-15')])

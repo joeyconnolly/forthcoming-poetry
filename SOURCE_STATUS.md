@@ -26,3 +26,5 @@ Raw research downloads are not shipped or published. Minimal fixtures and biblio
 ## November publisher batches
 
 See [batch one](docs/BATCH_ONE.md) for Fitzcarraldo and Pavilion/LUP, and [batch two](docs/BATCH_TWO.md) for the active Picador collector and Bloomsbury access blocker. These supersede the historical Picador assessment above. Exact current counts and coverage remain in the live site's source notes.
+
+The [Picador case study and batch three](docs/BATCH_THREE.md) document the Language Animal discovery/edition fix and the active Jonathan Cape, Chatto & Windus and Penguin sources. These supersede the historical Jonathan Cape assessment above.

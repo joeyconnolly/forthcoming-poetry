@@ -1,5 +1,5 @@
 {
-  "last_attempt_at": "2026-11-09T16:41:14+00:00",
+  "last_attempt_at": "2026-11-09T20:10:12+00:00",
   "records": [
     {
       "contributors": [
@@ -1110,6 +1110,46 @@
     {
       "contributors": [
         {
+          "name": "Nakahara Chuya",
+          "role": "author"
+        },
+        {
+          "name": "Jeffrey Angles",
+          "role": "translator"
+        }
+      ],
+      "date": {
+        "end": "2026-11-12",
+        "label": "12 November 2026",
+        "precision": "day",
+        "raw": "2026-11-12",
+        "start": "2026-11-12",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Angel at the Earth's Extreme; Nakahara Chuya; Jeffrey Angles; Published 2026-11-12; ISBN 9780143139171; Penguin Classics; poetry",
+        "url": "https://www.penguin.co.uk/books/477651/angel-at-the-earths-extreme-by-chuya-nakahara/9780143139171"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "1ff9e2d57698d7117262",
+      "imprint": "Penguin Classics",
+      "isbns": [
+        "9780143139171"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "penguin",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.penguin.co.uk/books/477651/angel-at-the-earths-extreme-by-chuya-nakahara/9780143139171",
+      "title": "Angel at the Earth's Extreme"
+    },
+    {
+      "contributors": [
+        {
           "name": "Kym Deyn",
           "role": "author"
         }
@@ -1575,6 +1615,41 @@
     {
       "contributors": [
         {
+          "name": "Susannah Dickey",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2023-09-14",
+        "label": "14 September 2023",
+        "precision": "day",
+        "raw": "2023-09-14",
+        "start": "2023-09-14",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "ISDAL; Susannah Dickey; 2023-09-14; ISBN 9781035015054; Picador; publisher poetry classification",
+        "url": "https://www.panmacmillan.com/authors/susannah-dickey/isdal/9781035015054"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "2f0a7ebe71ab001e956c",
+      "isbns": [
+        "9781035015054"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "picador",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.panmacmillan.com/authors/susannah-dickey/isdal/9781035015054",
+      "title": "ISDAL"
+    },
+    {
+      "contributors": [
+        {
           "name": "Robin Lindsay Wilson",
           "role": "author"
         }
@@ -1641,6 +1716,41 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/the-map-of-the-world",
       "title": "The Map of the World"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Susannah Dickey",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-04-15",
+        "label": "15 April 2027",
+        "precision": "day",
+        "raw": "2027-04-15",
+        "start": "2027-04-15",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Language Animal; Susannah Dickey; 2027-04-15; ISBN 9781037423321; Picador; publisher poetry classification",
+        "url": "https://www.panmacmillan.com/authors/susannah-dickey/language-animal/9781037423321"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "35f72a91c645f263d2b6",
+      "isbns": [
+        "9781037423321"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "picador",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.panmacmillan.com/authors/susannah-dickey/language-animal/9781037423321",
+      "title": "Language Animal"
     },
     {
       "contributors": [
@@ -3102,6 +3212,42 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2027-titles--date-order#1534811899",
       "title": "To Assemble Absences"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Arthur Sze",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-28",
+        "label": "28 January 2027",
+        "precision": "day",
+        "raw": "2027-01-28",
+        "start": "2027-01-28",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "The Glass Constellation; Arthur Sze; Published 2027-01-28; ISBN 9781837312221; Penguin; poetry",
+        "url": "https://www.penguin.co.uk/books/476871/the-glass-constellation-by-sze-arthur/9781837312221"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "5be8d146f35fbc4d2341",
+      "imprint": "Penguin",
+      "isbns": [
+        "9781837312221"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "penguin",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.penguin.co.uk/books/476871/the-glass-constellation-by-sze-arthur/9781837312221",
+      "title": "The Glass Constellation"
     },
     {
       "contributors": [
@@ -4673,6 +4819,41 @@
     {
       "contributors": [
         {
+          "name": "Maya C. Popa",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2023-06-08",
+        "label": "8 June 2023",
+        "precision": "day",
+        "raw": "2023-06-08",
+        "start": "2023-06-08",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Wound is the Origin of Wonder; Maya C. Popa; 2023-06-08; ISBN 9781035017386; Picador; publisher poetry classification",
+        "url": "https://www.panmacmillan.com/authors/maya-c-popa/wound-is-the-origin-of-wonder/9781035017386"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:49:25+00:00",
+      "history": [],
+      "id": "88dcb5be686319d0d49d",
+      "isbns": [
+        "9781035017386"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "picador",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.panmacmillan.com/authors/maya-c-popa/wound-is-the-origin-of-wonder/9781035017386",
+      "title": "Wound is the Origin of Wonder"
+    },
+    {
+      "contributors": [
+        {
           "name": "Aifric Mac Aodha / David Wheatley",
           "role": "author"
         }
@@ -4862,6 +5043,42 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1686000523",
       "title": "Signals to the Disappearing Shore"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Andrew McMillan",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-02-04",
+        "label": "4 February 2027",
+        "precision": "day",
+        "raw": "2027-02-04",
+        "start": "2027-02-04",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "partings; Andrew McMillan; Published 2027-02-04; ISBN 9781787335929; Jonathan Cape; poetry",
+        "url": "https://www.penguin.co.uk/books/471825/partings-by-mcmillan-andrew/9781787335929"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "8bcd838bb5be7815a615",
+      "imprint": "Jonathan Cape",
+      "isbns": [
+        "9781787335929"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "cape",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.penguin.co.uk/books/471825/partings-by-mcmillan-andrew/9781787335929",
+      "title": "partings"
     },
     {
       "contributors": [
@@ -5940,6 +6157,42 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/tipping-points-1431",
       "subtitle": "",
       "title": "Tipping Points"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Warsan Shire",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-05-06",
+        "label": "6 May 2027",
+        "precision": "day",
+        "raw": "2027-05-06",
+        "start": "2027-05-06",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Saint Serotonin; Warsan Shire; Published 2027-05-06; ISBN 9781784746223; Chatto & Windus; poetry",
+        "url": "https://www.penguin.co.uk/books/471591/saint-serotonin-by-shire-warsan/9781784746223"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "a1036e68a2746bad2dce",
+      "imprint": "Chatto & Windus",
+      "isbns": [
+        "9781784746223"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "chatto",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.penguin.co.uk/books/471591/saint-serotonin-by-shire-warsan/9781784746223",
+      "title": "Saint Serotonin"
     },
     {
       "contributors": [
@@ -7487,8 +7740,8 @@
       "isbns": [
         "9781037404177"
       ],
-      "last_seen_at": "2026-11-09T16:41:14+00:00",
-      "last_verified_at": "2026-11-09T16:41:14+00:00",
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
       "missing_checks": 0,
       "publisher_id": "picador",
       "record_status": "active",
@@ -8331,6 +8584,42 @@
     {
       "contributors": [
         {
+          "name": "Dylan Thomas",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-11-18",
+        "label": "18 November 2027",
+        "precision": "day",
+        "raw": "2027-11-18",
+        "start": "2027-11-18",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Selected Poems; Dylan Thomas; Published 2027-11-18; ISBN 9780241635995; Penguin Classics; poetry",
+        "url": "https://www.penguin.co.uk/books/456073/selected-poems-by-thomas-dylan/9780241635995"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "e1817a50e2486b6c23f6",
+      "imprint": "Penguin Classics",
+      "isbns": [
+        "9780241635995"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "penguin",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.penguin.co.uk/books/456073/selected-poems-by-thomas-dylan/9780241635995",
+      "title": "Selected Poems"
+    },
+    {
+      "contributors": [
+        {
           "name": "Jonathan Edwards",
           "role": "author"
         }
@@ -8878,6 +9167,46 @@
     {
       "contributors": [
         {
+          "name": "Gaius Valerius Catullus",
+          "role": "author"
+        },
+        {
+          "name": "Stephanie McCarter",
+          "role": "translator"
+        }
+      ],
+      "date": {
+        "end": "2026-12-10",
+        "label": "10 December 2026",
+        "precision": "day",
+        "raw": "2026-12-10",
+        "start": "2026-12-10",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "The Poems Of Catullus; Gaius Valerius Catullus; Stephanie McCarter; Published 2026-12-10; ISBN 9780143136378; Penguin Classics; poetry",
+        "url": "https://www.penguin.co.uk/books/481979/the-poems-of-catullus-by-catullus-gaius-valerius/9780143136378"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T20:10:12+00:00",
+      "history": [],
+      "id": "f372cfc6f854e6ed4535",
+      "imprint": "Penguin Classics",
+      "isbns": [
+        "9780143136378"
+      ],
+      "last_seen_at": "2026-11-09T20:10:12+00:00",
+      "last_verified_at": "2026-11-09T20:10:12+00:00",
+      "missing_checks": 0,
+      "publisher_id": "penguin",
+      "record_status": "active",
+      "source_label": "UK publisher book page",
+      "source_url": "https://www.penguin.co.uk/books/481979/the-poems-of-catullus-by-catullus-gaius-valerius/9780143136378",
+      "title": "The Poems Of Catullus"
+    },
+    {
+      "contributors": [
+        {
           "name": "Clare Shaw",
           "role": "author"
         }
@@ -9377,11 +9706,26 @@
       ]
     },
     "cape": {
-      "attempted_at": null,
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T20:10:12+00:00",
+      "candidates": 8,
+      "excluded": 6,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T20:10:12+00:00",
       "last_success_at": null,
-      "scope": "Not collected: reuse and deep-linking terms need review; curated imprint page is not comprehensive.",
-      "status": "permission_review",
-      "warnings": []
+      "scope": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Earlier edition exists; possible format reissue held",
+          "url": "https://www.penguin.co.uk/books/362150/autobiography-of-red-by-carson-anne/9781787337107"
+        },
+        {
+          "reason": "Public curated poetry/author lists and tracked book pages, checked weekly; coming-soon shelves are capped and may omit later announcements. Not complete imprint coverage",
+          "url": "https://www.penguin.co.uk/fiction/poetry"
+        }
+      ]
     },
     "carcanet": {
       "accepted_count": 0,
@@ -9398,6 +9742,24 @@
         {
           "reason": "Dated catalogue import; publication changes and newer catalogues are not automatically verified",
           "url": "https://cdnm.heyzine.com/files/uploaded/v3/167701252da5784a49f8ce52b13ca86d9689e9c1.pdf#page=35"
+        }
+      ]
+    },
+    "chatto": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T20:10:12+00:00",
+      "candidates": 9,
+      "excluded": 8,
+      "forthcoming_count": 1,
+      "last_data_at": "2026-11-09T20:10:12+00:00",
+      "last_success_at": null,
+      "scope": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
+      "status": "partial",
+      "valid_records": 1,
+      "warnings": [
+        {
+          "reason": "Public curated poetry/author lists and tracked book pages, checked weekly; coming-soon shelves are capped and may omit later announcements. Not complete imprint coverage",
+          "url": "https://www.penguin.co.uk/fiction/poetry"
         }
       ]
     },
@@ -9752,24 +10114,42 @@
         }
       ]
     },
-    "picador": {
+    "penguin": {
       "accepted_count": 0,
-      "attempted_at": "2026-11-09T16:41:14+00:00",
-      "candidates": 323,
-      "excluded": 320,
-      "forthcoming_count": 1,
-      "last_data_at": "2026-11-09T16:41:14+00:00",
+      "attempted_at": "2026-11-09T20:10:12+00:00",
+      "candidates": 9,
+      "excluded": 4,
+      "forthcoming_count": 4,
+      "last_data_at": "2026-11-09T20:10:12+00:00",
       "last_success_at": null,
-      "scope": "Public UK poetry catalogue pagination plus the first Picador catalogue page and previously found future titles, checked weekly. Picador imprint and poetry classification verified on book pages; related editions checked for reissues. Other announcements may be missing.",
+      "scope": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
       "status": "partial",
-      "valid_records": 1,
+      "valid_records": 4,
       "warnings": [
         {
-          "reason": "Expected one primary Book matching requested URL",
-          "url": "https://www.panmacmillan.com/authors/samanta-schweblin/little-eyes/9781037435126"
+          "reason": "Earlier edition exists; possible format reissue held",
+          "url": "https://www.penguin.co.uk/books/455673/there-lives-a-young-girl-in-me-who-will-not-die-by-ditlevsen-tove/9780241637371"
         },
         {
-          "reason": "Public poetry catalogue pagination, first Picador catalogue page and known future book pages; uncategorised announcements and other editions may be missing",
+          "reason": "Public curated poetry/author lists and tracked book pages, checked weekly; coming-soon shelves are capped and may omit later announcements. Not complete imprint coverage",
+          "url": "https://www.penguin.co.uk/fiction/poetry"
+        }
+      ]
+    },
+    "picador": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T20:10:12+00:00",
+      "candidates": 323,
+      "excluded": 330,
+      "forthcoming_count": 2,
+      "last_data_at": "2026-11-09T20:10:12+00:00",
+      "last_success_at": null,
+      "scope": "Poetry catalogue, first imprint page, tracked author pages, known future books and public sitemap candidates for poets already in the catalogue. Weekly book-page verification; sitemap dates are discovery hints only. New or unlisted authors can still be missed.",
+      "status": "partial",
+      "valid_records": 4,
+      "warnings": [
+        {
+          "reason": "Poetry catalogue, first imprint page, tracked authors, sitemap candidates for known poetry authors and known future books; sitemap dates are discovery hints only. Unlisted/new authors may be missing",
           "url": "https://www.panmacmillan.com/genres/fiction/poetry"
         }
       ]

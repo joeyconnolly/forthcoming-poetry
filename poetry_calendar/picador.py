@@ -1,6 +1,7 @@
 """Public Pan Macmillan poetry catalogue; no internal API access."""
 import json
 import re
+import xml.etree.ElementTree as ET
 from datetime import date
 from urllib.parse import urljoin, urlsplit
 from .adapters import Result, soup
@@ -24,7 +25,7 @@ def listing(html,url,name='Poetry'):
 
 def book(html,url):
     doc=soup(html)
-    matches=[x for x in entities(doc) if x.get('@type')=='Book' and canonical_url(x.get('url','https://invalid.example/'))==canonical_url(url)]
+    matches=[x for x in entities(doc) if x.get('@type') in ('Book','Audiobook') and canonical_url(x.get('url','https://invalid.example/'))==canonical_url(url)]
     if len(matches)!=1:raise ValueError('Expected one primary Book matching requested URL')
     item=matches[0]
     for field in ('name','author','datePublished','isbn','publisher','genre','bookFormat'):
@@ -34,9 +35,29 @@ def book(html,url):
     if not re.fullmatch(r'\d{13}',str(item['isbn'])):raise ValueError('Invalid ISBN')
     return item
 
+def author_books(html):
+    lists=[x for x in entities(soup(html)) if x.get('@type')=='ItemList' and x.get('name','').startswith('Books by ')]
+    if not lists:raise ValueError('Expected author book list')
+    return {canonical_url(x['item']['url']) for group in lists for x in group['itemListElement'] if x['item'].get('@type')=='Book'}
+
+def author_slug(url):
+    match=re.fullmatch(r'/authors/([^/]+)/[^/]+/\d+/?',urlsplit(url).path)
+    return match[1] if match else None
+
+def sitemap_candidates(xml,authors,today):
+    """lastmod is a discovery hint only, never a publication date."""
+    root=ET.fromstring(xml)
+    if not root.tag.endswith('urlset'):raise ValueError('Expected product URL sitemap')
+    found=set()
+    for entry in root:
+        fields={x.tag.rsplit('}',1)[-1]:x.text for x in entry}
+        url=fields.get('loc',''); modified=fields.get('lastmod') or ''
+        if author_slug(url) in authors and modified[:10]>=today.isoformat():found.add(canonical_url(url))
+    return found
+
 def collect(config,fetch,today):
     result=Result(complete=False); index=config['sources'][0]
-    pending=list(config['sources']); seen=set(); candidates={}
+    pending=list(config['sources']); seen=set(); candidates={}; authors=set()
     while pending:
         url=pending.pop(0)
         if url in seen:continue
@@ -45,6 +66,7 @@ def collect(config,fetch,today):
             items,pages=listing(fetch.get(url),url,'Picador Books' if '/picador/books' in url else 'Poetry')
             pending.extend(sorted(pages-seen))
             for item in items:
+                if '/genres/fiction/poetry' in url and author_slug(item.get('url','')):authors.add(author_slug(item['url']))
                 result.candidates+=1
                 try:
                     pub=date.fromisoformat(item['datePublished'][:10])
@@ -52,7 +74,19 @@ def collect(config,fetch,today):
                     else:result.excluded+=1
                 except (KeyError,ValueError,TypeError) as e:result.warn(url,'Invalid catalogue book date: '+str(e))
         except Exception as e:result.warn(url,e)
-    for url in config.get('recheck_urls',[]):candidates.setdefault(url,None)
+    if config.get('sitemap_index'):
+        try:
+            root=ET.fromstring(fetch.get(config['sitemap_index']))
+            maps=[node.text for node in root.iter() if node.tag.endswith('loc') and re.fullmatch(r'/sitemaps/products-\d+\.xml',urlsplit(node.text).path)]
+            if not maps:raise ValueError('No public product sitemaps found')
+            for url in maps:
+                for target in sitemap_candidates(fetch.get(url),authors,today):candidates.setdefault(target,None)
+        except Exception as e:result.warn(config['sitemap_index'],e)
+    for url in config.get('author_sources',[]):
+        try:
+            for target in author_books(fetch.get(url)):candidates.setdefault(target,None)
+        except Exception as e:result.warn(url,e)
+    for url in config.get('recheck_urls',[])+config.get('book_seeds',[]):candidates.setdefault(url,None)
     for url in sorted(candidates):
         try:
             item=book(fetch.get(url),url)
@@ -81,5 +115,5 @@ def collect(config,fetch,today):
                 {'url':url,'text':f"{item['name']}; {'; '.join(a['name'] for a in contributors)}; {item['datePublished']}; ISBN {item['isbn']}; Picador; publisher poetry classification"},
                 contributors=contributors,isbns=[item['isbn']],source_label='UK publisher book page'))
         except Exception as e:result.warn(url,e)
-    result.warn(index,'Public poetry catalogue pagination, first Picador catalogue page and known future book pages; uncategorised announcements and other editions may be missing')
+    result.warn(index,'Poetry catalogue, first imprint page, tracked authors, sitemap candidates for known poetry authors and known future books; sitemap dates are discovery hints only. Unlisted/new authors may be missing')
     return result

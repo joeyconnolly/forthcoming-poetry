@@ -154,26 +154,39 @@
     "allowed_hosts": [
       "www.panmacmillan.com"
     ],
-    "coverage": "Public UK poetry catalogue pagination plus the first Picador catalogue page and previously found future titles, checked weekly. Picador imprint and poetry classification verified on book pages; related editions checked for reissues. Other announcements may be missing.",
+    "coverage": "Poetry catalogue, first imprint page, tracked author pages, known future books and public sitemap candidates for poets already in the catalogue. Weekly book-page verification; sitemap dates are discovery hints only. New or unlisted authors can still be missed.",
     "access_evidence": "https://www.panmacmillan.com/terms-and-conditions",
-    "max_requests": 90
+    "max_requests": 120,
+    "author_sources": [
+      "https://www.panmacmillan.com/authors/susannah-dickey/45016",
+      "https://www.panmacmillan.com/authors/maya-c-popa/44931"
+    ],
+    "book_seeds": [
+      "https://www.panmacmillan.com/authors/susannah-dickey/language-animal/9781037423321"
+    ],
+    "sitemap_index": "https://www.panmacmillan.com/sitemap-index.xml"
   },
   {
     "id": "cape",
     "name": "Jonathan Cape",
     "country": "UK",
     "website": "https://www.penguin.co.uk/",
-    "adapter": null,
-    "enabled": false,
-    "access_status": "permission_review",
+    "adapter": "penguin",
+    "enabled": true,
+    "access_status": "reviewed",
     "sources": [
-      "https://www.penguin.co.uk/about/publishing-houses/vintage/jonathan-cape"
+      "https://www.penguin.co.uk/fiction/poetry"
     ],
     "allowed_hosts": [
       "www.penguin.co.uk"
     ],
-    "coverage": "Not collected: reuse and deep-linking terms need review; curated imprint page is not comprehensive.",
-    "access_evidence": "https://www.penguin.co.uk/about/useful-links/terms-conditions"
+    "coverage": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial.",
+    "access_evidence": "https://www.penguin.co.uk/about/useful-links/terms-conditions",
+    "max_requests": 45,
+    "imprints": [
+      "Jonathan Cape"
+    ],
+    "book_seeds": []
   },
   {
     "id": "dedalus",
@@ -547,5 +560,52 @@
       "www.bloomsbury.com"
     ],
     "coverage": "Not collected: public poetry listing, curated page and sitemap returned access challenges/403 on 9 November 2026. Query-string routes are robots-disallowed. The official-linked Jan–Jun 2027 Issuu catalogue exposes no usable book text in its public HTML. No complete coverage claimed."
+  },
+  {
+    "id": "chatto",
+    "name": "Chatto & Windus",
+    "country": "UK",
+    "website": "https://www.penguin.co.uk/",
+    "adapter": "penguin",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://www.penguin.co.uk/fiction/poetry"
+    ],
+    "allowed_hosts": [
+      "www.penguin.co.uk"
+    ],
+    "max_requests": 45,
+    "imprints": [
+      "Chatto & Windus"
+    ],
+    "book_seeds": [
+      "https://www.penguin.co.uk/books/471591/saint-serotonin-by-shire-warsan/9781784746223"
+    ],
+    "coverage": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial."
+  },
+  {
+    "id": "penguin",
+    "name": "Penguin",
+    "country": "UK",
+    "website": "https://www.penguin.co.uk/",
+    "adapter": "penguin",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://www.penguin.co.uk/fiction/poetry"
+    ],
+    "allowed_hosts": [
+      "www.penguin.co.uk"
+    ],
+    "max_requests": 45,
+    "imprints": [
+      "Penguin",
+      "Penguin Classics"
+    ],
+    "book_seeds": [
+      "https://www.penguin.co.uk/books/456073/selected-poems-by-thomas-dylan/9780241635995"
+    ],
+    "coverage": "Public Penguin UK poetry shelves plus tracked book pages, checked weekly. Book imprint, poetry classification, contributor roles and edition dates verified. Coming-soon shelves are capped and omit some later announcements; coverage is partial."
   }
 ]
