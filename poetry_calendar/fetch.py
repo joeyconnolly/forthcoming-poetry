@@ -54,6 +54,14 @@ class Fetcher:
         if not rp.can_fetch('ForthcomingPoetry',url): raise FetchError('Disallowed by publisher robots directives')
         self.delay=max(self.delay,rp.crawl_delay('ForthcomingPoetry') or 0)
 
+    def get_pdf(self,url):
+        self._allowed(url)
+        r=self._request(url)
+        if r.status_code!=200: raise FetchError(f'HTTP {r.status_code}: {url}')
+        if 'application/pdf' not in r.headers.get('Content-Type','') or not r.content.startswith(b'%PDF-'):
+            raise FetchError('Expected a public PDF catalogue')
+        return r.content
+
     def get(self,url):
         if url in self.memory: return self.memory[url]
         self._allowed(url)

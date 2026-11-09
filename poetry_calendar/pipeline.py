@@ -140,6 +140,7 @@ def collect(root,today,publisher_ids=None):
                 continue
             fetch=Fetcher(p['allowed_hosts'],root/'.cache'/p['id'],max_requests=p.get('max_requests',100))
             adapter_config={**p,'recheck_urls':[r['source_url'] for r in state['records'] if r['publisher_id']==p['id'] and forthcoming(r,today)]}
+            adapter_config['recheck_evidence_urls']=sorted({r['evidence']['url'] for r in state['records'] if r['publisher_id']==p['id'] and forthcoming(r,today) and r.get('evidence',{}).get('url')})
             try:
                 if p['adapter']=='inpress':
                     if shared_error: raise ValueError(shared_error)

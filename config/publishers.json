@@ -474,5 +474,59 @@
     ],
     "max_requests": 12,
     "coverage": "Rolling Inpress UK/Ireland trade list, refreshed weekly. Poetry candidates checked against inclusion rules; mixed works and reissues held. Not a complete publisher catalogue."
+  },
+  {
+    "id": "fitzcarraldo",
+    "name": "Fitzcarraldo Editions",
+    "country": "UK",
+    "website": "https://fitzcarraldoeditions.com/",
+    "adapter": "fitzcarraldo",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://fitzcarraldoeditions.com/shop/poetry/",
+      "https://fitzcarraldoeditions.com/catalogues/"
+    ],
+    "allowed_hosts": [
+      "fitzcarraldoeditions.com"
+    ],
+    "max_requests": 45,
+    "coverage": "Official poetry book pages and latest UK seasonal catalogue, checked weekly. Other announcements may be missing."
+  },
+  {
+    "id": "pavilion",
+    "name": "Pavilion Poetry / LUP",
+    "country": "UK",
+    "website": "https://liverpooluniversitypress.co.uk/",
+    "adapter": "pavilion",
+    "enabled": true,
+    "access_status": "reviewed",
+    "sources": [
+      "https://liverpooluniversitypress.blog/tag/pavilion-poetry/"
+    ],
+    "allowed_hosts": [
+      "liverpooluniversitypress.blog"
+    ],
+    "max_requests": 15,
+    "announcement_seeds": [
+      "https://liverpooluniversitypress.blog/2026/10/01/announcing-our-2027-pavilion-poetry-collections/"
+    ],
+    "coverage": "Official Pavilion annual announcements, checked weekly. Book pages currently block direct requests; Spring 2027 dates have not been narrowed to exact days.",
+    "contributor_overrides": {
+      "9781807811648": [
+        {
+          "name": "Marina Tsvetaeva",
+          "role": "author"
+        },
+        {
+          "name": "Rainer Maria Rilke",
+          "role": "author"
+        },
+        {
+          "name": "Sasha Dugdale",
+          "role": "translator"
+        }
+      ]
+    }
   }
 ]

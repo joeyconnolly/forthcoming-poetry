@@ -149,6 +149,24 @@
       }
     ]
   },
+  "fitzcarraldo": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T16:22:54+00:00",
+    "candidates": 12,
+    "excluded": 0,
+    "forthcoming_count": 3,
+    "last_data_at": "2026-11-09T16:22:54+00:00",
+    "last_success_at": null,
+    "scope": "Official poetry book pages and latest UK seasonal catalogue, checked weekly. Other announcements may be missing.",
+    "status": "partial",
+    "valid_records": 12,
+    "warnings": [
+      {
+        "reason": "Official poetry list plus latest UK catalogue; announcements elsewhere may be missing",
+        "url": "https://fitzcarraldoeditions.com/shop/poetry/"
+      }
+    ]
+  },
   "gallery": {
     "accepted_count": 0,
     "attempted_at": "2026-11-09T16:11:04+00:00",
@@ -384,6 +402,24 @@
       {
         "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
         "url": "https://inpressbooks.co.uk/pages/whats-new"
+      }
+    ]
+  },
+  "pavilion": {
+    "accepted_count": 0,
+    "attempted_at": "2026-11-09T16:22:54+00:00",
+    "candidates": 3,
+    "excluded": 0,
+    "forthcoming_count": 3,
+    "last_data_at": "2026-11-09T16:22:54+00:00",
+    "last_success_at": null,
+    "scope": "Official Pavilion annual announcements, checked weekly. Book pages currently block direct requests; Spring 2027 dates have not been narrowed to exact days.",
+    "status": "partial",
+    "valid_records": 3,
+    "warnings": [
+      {
+        "reason": "Official annual announcements, checked weekly; book pages currently inaccessible. Seasonal dates retained. Tagged archive discovery is partial.",
+        "url": "https://liverpooluniversitypress.blog/tag/pavilion-poetry/"
       }
     ]
   },

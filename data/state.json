@@ -1,5 +1,5 @@
 {
-  "last_attempt_at": "2026-11-09T16:11:04+00:00",
+  "last_attempt_at": "2026-11-09T16:22:54+00:00",
   "records": [
     {
       "contributors": [
@@ -38,6 +38,37 @@
       "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781918628302",
       "territory": "UK/Ireland trade listing",
       "title": "For Days on End"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Matthew Rice",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-01-29",
+        "label": "29 January 2026",
+        "precision": "day",
+        "raw": "29 January 2026",
+        "start": "2026-01-29",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "plastic; Matthew Rice; Published 29 January 2026; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/plastic"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "049ccd075b1413a04e54",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/plastic",
+      "title": "plastic"
     },
     {
       "contributors": [
@@ -1816,6 +1847,73 @@
     {
       "contributors": [
         {
+          "name": "Sasha Debevec-McKenney",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2025-07-03",
+        "label": "3 July 2025",
+        "precision": "day",
+        "raw": "3 July 2025",
+        "start": "2025-07-03",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Joy Is My Middle Name; Sasha Debevec-McKenney; Published 3 July 2025; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/joy-is-my-middle-name"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "3aa2e7294c6ffe1359cb",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/joy-is-my-middle-name",
+      "title": "Joy Is My Middle Name"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Rebecca Tamás",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-01-28",
+        "label": "28 January 2027",
+        "precision": "day",
+        "raw": "28 January 2027",
+        "start": "2027-01-28",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "The Fisher King; Rebecca Tamás; 28 January 2027; print ISBN 9781804273166; DC (Poetry)",
+        "url": "https://fitzcarraldoeditions.com/app/uploads/Digital-catalogue-files-PDF.pdf#page=4"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "3ae411732e63359747dd",
+      "isbns": [
+        "9781804273166"
+      ],
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_kind": "catalogue",
+      "source_label": "Publisher catalogue",
+      "source_url": "https://fitzcarraldoeditions.com/app/uploads/Digital-catalogue-files-PDF.pdf#page=4",
+      "title": "The Fisher King"
+    },
+    {
+      "contributors": [
+        {
           "name": "Clementine Ewokolo Burnley",
           "role": "author"
         }
@@ -2312,6 +2410,80 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/daylight-mystery",
       "title": "Daylight Mystery"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Marina Tsvetaeva",
+          "role": "author"
+        },
+        {
+          "name": "Rainer Maria Rilke",
+          "role": "author"
+        },
+        {
+          "name": "Sasha Dugdale",
+          "role": "translator"
+        }
+      ],
+      "date": {
+        "end": "2027-05-31",
+        "label": "Spring 2027, provisional",
+        "precision": "season",
+        "raw": "spring 2027",
+        "start": "2027-03-01",
+        "status": "provisional"
+      },
+      "evidence": {
+        "text": "Tsvetaeva ’27; Sasha Dugdale; collections will publish in spring 2027",
+        "url": "https://liverpooluniversitypress.blog/2026/10/01/announcing-our-2027-pavilion-poetry-collections/"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "482a9eb821f6a4343fb2",
+      "isbns": [
+        "9781807811648"
+      ],
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "pavilion",
+      "record_status": "active",
+      "source_label": "Publisher announcement; season only",
+      "source_url": "https://liverpooluniversitypress.co.uk/doi/book/10.3828/9781807811648",
+      "title": "Tsvetaeva ’27"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Oluwaseun Olayiwola",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2025-01-30",
+        "label": "30 January 2025",
+        "precision": "day",
+        "raw": "30 January 2025",
+        "start": "2025-01-30",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Strange Beach; Oluwaseun Olayiwola; Published 30 January 2025; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/strange-beach"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "49eb9bf5c4b10c04f7ce",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/strange-beach",
+      "title": "Strange Beach"
     },
     {
       "contributors": [
@@ -2962,6 +3134,37 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2027-titles--date-order#1875362569",
       "title": "Just About Music"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Małgorzata Lebda",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-05-21",
+        "label": "21 May 2026",
+        "precision": "day",
+        "raw": "21 May 2026",
+        "start": "2026-05-21",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Mer de Glace; Małgorzata Lebda; Published 21 May 2026; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/mer-de-glace"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "5e063a552496a8eaf995",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/mer-de-glace",
+      "title": "Mer de Glace"
     },
     {
       "contributors": [
@@ -3813,6 +4016,37 @@
     {
       "contributors": [
         {
+          "name": "Holly Pester",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-07-02",
+        "label": "2 July 2026",
+        "precision": "day",
+        "raw": "2 July 2026",
+        "start": "2026-07-02",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Cafés; Holly Pester; Published 2 July 2026; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/cafes"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "7695614faae005f7cbc1",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/cafes",
+      "title": "Cafés"
+    },
+    {
+      "contributors": [
+        {
           "name": "Dillon Jaxx",
           "role": "author"
         }
@@ -3844,6 +4078,37 @@
       "record_status": "active",
       "source_url": "https://ninearchespress.com/publications/poetry-collections/like-starlings-falling",
       "title": "like starlings falling"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Diane Seuss",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2025-02-13",
+        "label": "13 February 2025",
+        "precision": "day",
+        "raw": "13 February 2025",
+        "start": "2025-02-13",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Modern Poetry; Diane Seuss; Published 13 February 2025; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/modern-poetry"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "780275ce509a055cb929",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/modern-poetry",
+      "title": "Modern Poetry"
     },
     {
       "contributors": [
@@ -3913,6 +4178,37 @@
       "source_url": "https://inpressbooks.co.uk/pages/whats-new?search=9781067693954",
       "territory": "UK/Ireland trade listing",
       "title": "A Holy Dread"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Eve Esfandiari-Denney",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-09-10",
+        "label": "10 September 2026",
+        "precision": "day",
+        "raw": "10 September 2026",
+        "start": "2026-09-10",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Girling; Eve Esfandiari-Denney; Published 10 September 2026; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/girling"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "7b50924610de4b6c7611",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/girling",
+      "title": "Girling"
     },
     {
       "contributors": [
@@ -5682,6 +5978,37 @@
     {
       "contributors": [
         {
+          "name": "Sylvia Legris",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2026-11-19",
+        "label": "19 November 2026",
+        "precision": "day",
+        "raw": "19 November 2026",
+        "start": "2026-11-19",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Sleep Gate; Sylvia Legris; Published 19 November 2026; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/sleep-gate"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "a15cad864d79197f476e",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/sleep-gate",
+      "title": "Sleep Gate"
+    },
+    {
+      "contributors": [
+        {
           "name": "Karen Downs-Barton",
           "role": "author"
         }
@@ -6297,6 +6624,42 @@
       "record_status": "active",
       "source_url": "https://www.shearsman.com/2026-titles--date-order#1076512588",
       "title": "White Pony"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Jazmine Linklater",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-05-06",
+        "label": "6 May 2027",
+        "precision": "day",
+        "raw": "6 May 2027",
+        "start": "2027-05-06",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Your Accurate Depiction; Jazmine Linklater; 6 May 2027; print ISBN 9781804273333; DC (Poetry)",
+        "url": "https://fitzcarraldoeditions.com/app/uploads/Digital-catalogue-files-PDF.pdf#page=10"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "adcbfacf9be169260840",
+      "isbns": [
+        "9781804273333"
+      ],
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_kind": "catalogue",
+      "source_label": "Publisher catalogue",
+      "source_url": "https://fitzcarraldoeditions.com/app/uploads/Digital-catalogue-files-PDF.pdf#page=10",
+      "title": "Your Accurate Depiction"
     },
     {
       "contributors": [
@@ -7165,6 +7528,37 @@
     {
       "contributors": [
         {
+          "name": "Phoebe Giannisi",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2025-11-06",
+        "label": "6 November 2025",
+        "precision": "day",
+        "raw": "6 November 2025",
+        "start": "2025-11-06",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "Goatsong; Phoebe Giannisi; Published 6 November 2025; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/goatsong"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "ca51cc15d2a700e71376",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/goatsong",
+      "title": "Goatsong"
+    },
+    {
+      "contributors": [
+        {
           "name": "Alan Gillis",
           "role": "author"
         }
@@ -7750,6 +8144,41 @@
     {
       "contributors": [
         {
+          "name": "Martha Sprackland",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-05-31",
+        "label": "Spring 2027, provisional",
+        "precision": "season",
+        "raw": "spring 2027",
+        "start": "2027-03-01",
+        "status": "provisional"
+      },
+      "evidence": {
+        "text": "Question to the Creatures; Martha Sprackland; collections will publish in spring 2027",
+        "url": "https://liverpooluniversitypress.blog/2026/10/01/announcing-our-2027-pavilion-poetry-collections/"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "df2212785456c8428f5b",
+      "isbns": [
+        "9781807811938"
+      ],
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "pavilion",
+      "record_status": "active",
+      "source_label": "Publisher announcement; season only",
+      "source_url": "https://liverpooluniversitypress.co.uk/doi/book/10.3828/9781807811938",
+      "title": "Question to the Creatures"
+    },
+    {
+      "contributors": [
+        {
           "name": "Nadine El-Enany",
           "role": "author"
         }
@@ -7782,6 +8211,41 @@
       "source_url": "https://www.bloodaxebooks.com/ecs/product/pelican-daughter-1403",
       "subtitle": "",
       "title": "Pelican Daughter"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Jemma Borg",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2027-05-31",
+        "label": "Spring 2027, provisional",
+        "precision": "season",
+        "raw": "spring 2027",
+        "start": "2027-03-01",
+        "status": "provisional"
+      },
+      "evidence": {
+        "text": "Before & After the Night; Jemma Borg; collections will publish in spring 2027",
+        "url": "https://liverpooluniversitypress.blog/2026/10/01/announcing-our-2027-pavilion-poetry-collections/"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "dfd2306e6e847b70d5a0",
+      "isbns": [
+        "9781807812614"
+      ],
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "pavilion",
+      "record_status": "active",
+      "source_label": "Publisher announcement; season only",
+      "source_url": "https://liverpooluniversitypress.co.uk/doi/book/10.3828/9781807812614",
+      "title": "Before & After the Night"
     },
     {
       "contributors": [
@@ -7995,6 +8459,37 @@
       "record_status": "active",
       "source_url": "https://gallerypress.com/product/collected-poems-volume-two-ciaran-carson",
       "title": "Collected Poems: Volume Two"
+    },
+    {
+      "contributors": [
+        {
+          "name": "Diane Seuss",
+          "role": "author"
+        }
+      ],
+      "date": {
+        "end": "2025-02-13",
+        "label": "13 February 2025",
+        "precision": "day",
+        "raw": "13 February 2025",
+        "start": "2025-02-13",
+        "status": "publisher_stated"
+      },
+      "evidence": {
+        "text": "frank: sonnets; Diane Seuss; Published 13 February 2025; official poetry list",
+        "url": "https://fitzcarraldoeditions.com/books/frank-sonnets"
+      },
+      "explicit_forthcoming": true,
+      "first_seen_at": "2026-11-09T16:22:54+00:00",
+      "history": [],
+      "id": "eb1983d5dd38a40c4a45",
+      "last_seen_at": "2026-11-09T16:22:54+00:00",
+      "last_verified_at": "2026-11-09T16:22:54+00:00",
+      "missing_checks": 0,
+      "publisher_id": "fitzcarraldo",
+      "record_status": "active",
+      "source_url": "https://fitzcarraldoeditions.com/books/frank-sonnets",
+      "title": "frank: sonnets"
     },
     {
       "contributors": [
@@ -8893,6 +9388,24 @@
         }
       ]
     },
+    "fitzcarraldo": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T16:22:54+00:00",
+      "candidates": 12,
+      "excluded": 0,
+      "forthcoming_count": 3,
+      "last_data_at": "2026-11-09T16:22:54+00:00",
+      "last_success_at": null,
+      "scope": "Official poetry book pages and latest UK seasonal catalogue, checked weekly. Other announcements may be missing.",
+      "status": "partial",
+      "valid_records": 12,
+      "warnings": [
+        {
+          "reason": "Official poetry list plus latest UK catalogue; announcements elsewhere may be missing",
+          "url": "https://fitzcarraldoeditions.com/shop/poetry/"
+        }
+      ]
+    },
     "gallery": {
       "accepted_count": 0,
       "attempted_at": "2026-11-09T16:11:04+00:00",
@@ -9128,6 +9641,24 @@
         {
           "reason": "Rolling Inpress trade list; not a complete publisher catalogue. Older missing entries are retained.",
           "url": "https://inpressbooks.co.uk/pages/whats-new"
+        }
+      ]
+    },
+    "pavilion": {
+      "accepted_count": 0,
+      "attempted_at": "2026-11-09T16:22:54+00:00",
+      "candidates": 3,
+      "excluded": 0,
+      "forthcoming_count": 3,
+      "last_data_at": "2026-11-09T16:22:54+00:00",
+      "last_success_at": null,
+      "scope": "Official Pavilion annual announcements, checked weekly. Book pages currently block direct requests; Spring 2027 dates have not been narrowed to exact days.",
+      "status": "partial",
+      "valid_records": 3,
+      "warnings": [
+        {
+          "reason": "Official annual announcements, checked weekly; book pages currently inaccessible. Seasonal dates retained. Tagged archive discovery is partial.",
+          "url": "https://liverpooluniversitypress.blog/tag/pavilion-poetry/"
         }
       ]
     },

@@ -238,4 +238,12 @@ def catalogue_snapshot(config,fetch,today):
     result.warn(config['sources'][0],'Dated catalogue import; publication changes and newer catalogues are not automatically verified')
     return result
 
-ADAPTERS={'bloodaxe':bloodaxe,'ninearches':ninearches,'shearsman':shearsman,'seren':seren,'gallery':gallery,'gallery_feeds':gallery_feeds,'faber':faber,'catalogue_snapshot':catalogue_snapshot}
+def fitzcarraldo(config,fetch,today):
+    from .batch_one import fitzcarraldo as run
+    return run(config,fetch,today)
+
+def pavilion(config,fetch,today):
+    from .batch_one import pavilion as run
+    return run(config,fetch,today)
+
+ADAPTERS={'bloodaxe':bloodaxe,'ninearches':ninearches,'shearsman':shearsman,'seren':seren,'gallery':gallery,'gallery_feeds':gallery_feeds,'faber':faber,'catalogue_snapshot':catalogue_snapshot,'fitzcarraldo':fitzcarraldo,'pavilion':pavilion}
