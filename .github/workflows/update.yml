@@ -5,6 +5,7 @@ on:
     paths:
       - 'poetry_calendar/**'
       - 'config/**'
+      - 'data/imported.json'
       - 'site/**'
       - 'tests/**'
       - 'requirements.txt'

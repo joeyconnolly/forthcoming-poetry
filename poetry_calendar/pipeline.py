@@ -104,7 +104,7 @@ def reconcile(state,publisher,result,now,today):
         'forthcoming_count':sum(forthcoming(r,today) for r in merged),
         'warnings':result.warnings,'scope':publisher['coverage']}
 
-def effective_records(state,overrides,today):
+def effective_records(state,overrides,today,imported=None):
     records=copy.deepcopy(state['records']); known={r['id'] for r in records}
     if set(overrides)-known: raise ValueError('Override references an unknown record ID')
     for r in records:
@@ -118,6 +118,10 @@ def effective_records(state,overrides,today):
             if 'date' in changes: changes={**changes,'date':parse_date(changes['date'])}
             if 'source_url' in changes: canonical_url(changes['source_url'])
             r.update(changes); r['override_reason']=override['reason']
+    if imported:
+        from .imports import merge_imported
+        records=merge_imported(records,imported)
+    for r in records:
         if r['date']['precision'] in ('unknown','year') and (today-date.fromisoformat(r['last_verified_at'][:10])).days>180:
             r['record_status']='uncertain'
     return records

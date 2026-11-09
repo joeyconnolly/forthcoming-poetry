@@ -5,13 +5,14 @@ from datetime import date
 from pathlib import Path
 from .model import forthcoming, sort_key
 from .pipeline import load_registry, load_state, effective_records
+from .imports import load_imported
 
 def esc(value): return html.escape(str(value),quote=True)
 
 def render(root,today):
     state=load_state(root); registry=load_registry(root); pubs={p['id']:p for p in registry}
     overrides=json.loads((root/'config/overrides.json').read_text(encoding='utf-8'))
-    records=effective_records(state,overrides,today)
+    records=effective_records(state,overrides,today,load_imported(root)['records'])
     records=sorted((r for r in records if forthcoming(r,today)),key=sort_key)
     rows=[]; heading=None
     for r in records:

@@ -23,6 +23,8 @@ python -m poetry_calendar update                    # collect all enabled publis
 python -m poetry_calendar collect --publisher bloodaxe  # one publisher, no rebuild
 python -m poetry_calendar build                     # no publisher requests
 python -m poetry_calendar status                    # coverage report
+python -m poetry_calendar import-csv titles.csv --dry-run # preview CSV import
+python -m poetry_calendar import-csv titles.csv     # save uploads and rebuild locally
 python -m unittest discover -s tests -v             # offline tests
 ```
 
@@ -36,6 +38,7 @@ Collection needs outbound HTTPS. It checks robots directives, stays on configure
 - `poetry_calendar/model.py`: common records, uncertainty-aware date parsing and inclusion.
 - `poetry_calendar/pipeline.py`: stable identity, deduplication, history, reconciliation and durable state.
 - `data/state.json`: last-good records, histories and source status. **Keep this between runs.**
+- `data/imported.json`: durable CSV uploads; these take priority over matching automatic records, including dates.
 - `data/review.json`: current extraction and quality warnings.
 - `config/overrides.json`: auditable persistent corrections.
 - `site/`: presentation; `dist/`: generated deployable static site.
@@ -49,6 +52,8 @@ No hosted database, runtime API, LLM, frontend framework, CDN fonts or analytics
 See [docs/ADDING_PUBLISHERS.md](docs/ADDING_PUBLISHERS.md). There is no ten-publisher limit. Publisher counts, filters, diagnostics and display all derive from the registry. Add a registry entry and either reuse an adapter for the same site structure or register a new function. No storage or presentation changes are needed.
 
 ## Correct a record
+
+For spreadsheet/CSV additions and corrections, use the [CSV import command](docs/CSV_IMPORT.md) and [template](examples/import-template.csv). Uploaded records survive collection, and later imports replace earlier versions of the same book. The command validates the whole file before saving and rebuilds the local site. Commit and push `data/imported.json` to publish it.
 
 Find its `id` in `data/state.json`. Add an entry to `config/overrides.json`:
 
