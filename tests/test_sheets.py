@@ -52,7 +52,7 @@ class SheetsTests(unittest.TestCase):
             with self.assertRaisesRegex(SheetError,'Row 2'):build_sheet(self.root,TODAY)
         self.assertEqual((output/'index.html').read_text(),'LAST GOOD')
     def test_unknown_status_and_unsafe_url_fail_without_echoing_values(self):
-        for col,value in [(8,'PRIVATE-STATUS'),(5,'javascript:PRIVATE-URL'),(4,'PRIVATE-FORMAT')]:
+        for col,value in [(8,'PRIVATE-STATUS'),(5,'javascript:PRIVATE-URL')]:
             r=ROW.copy();r[col]=value
             with self.assertRaises(SheetError) as caught:public_records([HEADERS,r])
             self.assertNotIn(value,str(caught.exception));self.assertIn('Row 2',str(caught.exception))
@@ -97,4 +97,5 @@ class SheetsTests(unittest.TestCase):
         (self.root/'data').mkdir();(self.root/'data/state.json').write_text('INVALID LEGACY DATA')
         with patch('poetry_calendar.sheets.fetch_values',return_value=[HEADERS,ROW]):build_sheet(self.root,TODAY)
         self.assertIn('A New Publisher',(self.root/'public-site/index.html').read_text(encoding='utf-8'))
+
 

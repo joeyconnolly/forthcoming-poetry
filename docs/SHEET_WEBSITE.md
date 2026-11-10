@@ -8,7 +8,7 @@ Keep the header row first. Recognised headers are case-insensitive and may be re
 
 Required headers: Title, Author, Publisher, Pub Date, Format, URL to book page (if applicable), Translator, Status. Notes and Form submitted may remain in the Sheet but are discarded. Only the seven bibliographic fields are rendered.
 
-Live rows require Title and Publisher. Author, URL and Translator may be blank. Format may be blank or one of Single-author collection, Pamphlet, Anthology, Translation, Selected poems, Collected poems. Pub Date may be a Google date cell, a full UK date, month/year, year, or Date TBC; blank also means Date TBC. Real date cells are read independently of display locale. Do not mark a date as a precise day if only its month is known.
+Live rows require Title and Publisher. Author, URL and Translator may be blank. Format is displayed as entered; recommended categories are Single-author collection, Pamphlet, Anthology, Translation, Selected poems, Collected poems. Pub Date may be a Google date cell, a full UK date, month/year, year, or Date TBC; blank also means Date TBC. Real date cells are read independently of display locale. Do not mark a date as a precise day if only its month is known.
 
 Identical copies of a book are collapsed. Conflicting rows with the same title, author, publisher and translator stop the build and report their row numbers. Correct the canonical rows to resolve this.
 
@@ -29,4 +29,5 @@ Check the failed workflow's build step. Errors identify missing headers or row n
 Failures preserve the last published website. A valid Sheet with no Live rows intentionally publishes an empty calendar. The last-updated date is shown on the page. GitHub schedules can be delayed or disabled through inactivity; check workflow history and enable failure notifications.
 
 Tests use synthetic fixtures and require no Google access. The weekly discovery spreadsheet and separate discovery project remain a subsequent phase.
+
 

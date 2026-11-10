@@ -89,7 +89,6 @@ def public_records(values):
                 d=parse_date(datetime.strptime(raw_date,'%d/%m/%y').date().isoformat())
         except ValueError:raise SheetError(f'Row {number}: unrecognised Pub Date; use a date, month/year, year or Date TBC.') from None
         fmt=cell('format')
-        if fmt and fmt.casefold() not in FORMATS:raise SheetError(f'Row {number}: unrecognised Format category.')
         url=cell('url')
         try:
             u=urlsplit(url)
@@ -97,7 +96,7 @@ def public_records(values):
         except ValueError:raise SheetError(f'Row {number}: invalid book-page URL.') from None
         # Never carry the input row, status, Notes, or Form submitted into output.
         record={'title':cell('title'),'author':cell('author'),'publisher':cell('publisher'),
-            'date':d,'format':FORMATS.get(fmt.casefold(),''),'url':url,'translator':cell('translator')}
+            'date':d,'format':FORMATS.get(fmt.casefold(),fmt),'url':url,'translator':cell('translator')}
         identity=tuple(key(record[k]) for k in ('title','author','publisher','translator'))
         if identity in seen:
             prior,prior_row=seen[identity]
@@ -115,4 +114,5 @@ def build_sheet(root,today):
     records,duplicates=public_records(fetch_values(config))
     render_sheet(root,today,records)
     print(f'Sheet build succeeded: {len(records)} public titles, {len({r["publisher"] for r in records})} publishers; {duplicates} identical duplicates collapsed.')
+
 
