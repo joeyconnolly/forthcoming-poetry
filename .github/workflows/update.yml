@@ -48,11 +48,11 @@ jobs:
         env:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
         run: python -m poetry_calendar build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5.0.0
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
         with:
           path: public-site
       - name: Publish
         id: deployment
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1
