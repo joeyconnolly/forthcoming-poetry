@@ -4,10 +4,12 @@ const publisher = document.querySelector('#publisher');
 const books = [...document.querySelectorAll('.book')];
 filters.hidden = false;
 function applyFilters() {
-  const query = search.value.trim().toLocaleLowerCase('en-GB');
+  const query = search?.value.trim().toLocaleLowerCase('en-GB');
   let count = 0;
   for (const book of books) {
-    book.hidden = !(book.dataset.search.includes(query) && (!publisher.value || book.dataset.publisher === publisher.value));
+    const matchesSearch = !query || book.dataset.search.includes(query);
+    const matchesPublisher = !publisher.value || book.dataset.publisher === publisher.value;
+    book.hidden = !matchesSearch || !matchesPublisher;
     if (!book.hidden) count++;
   }
   for (const heading of document.querySelectorAll('.month')) {
@@ -18,7 +20,7 @@ function applyFilters() {
   document.querySelector('#filter-count').textContent = `${count} ${count === 1 ? 'title' : 'titles'}`;
   document.querySelector('#no-results').hidden = count !== 0;
 }
-search.addEventListener('input', applyFilters);
+search?.addEventListener('input', applyFilters);
 publisher.addEventListener('change', applyFilters);
 applyFilters();
 // Display a missed rebuild honestly even if the scheduler itself has stopped.

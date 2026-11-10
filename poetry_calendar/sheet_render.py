@@ -15,8 +15,7 @@ def render_sheet(root,today,records):
         title=esc(r['title'])
         if r['url']:title=f'<a href="{esc(r["url"])}">{title}<span aria-hidden="true" class="arrow"> ↗</span></a>'
         credits=r['author']+(f' · translated by {r["translator"]}' if r['translator'] else '')
-        search=' '.join(r[k] for k in ('title','author','publisher','translator','format')).casefold()
-        rows.append(f'''<li class="book" data-publisher="{publisher_id(r['publisher'])}" data-search="{esc(search)}">
+        rows.append(f'''<li class="book" data-publisher="{publisher_id(r['publisher'])}">
           <div class="book-date">{esc(d['label'])}</div>
           <div class="book-main"><h3>{title}</h3><p class="contributors">{esc(credits)}</p></div>
           <details class="book-source"><summary>{esc(r['publisher'])}</summary><small>{esc(r['format']) if r['format'] else 'Poetry'}</small></details>
