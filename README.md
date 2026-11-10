@@ -4,7 +4,7 @@
 
 The website is an editor-maintained poetry calendar. Its canonical source is the private Google Sheet's **Current list** tab. Only rows marked **Live** are published. Notes, Status and Form submitted are never included in the website's output. Dates do not automatically remove Live titles.
 
-The compact frontend includes a publisher filter. Publishers come directly from the Sheet, without a publisher registry requirement. Titles without a book-page URL remain visible without a link.
+The calendar can be filtered by publication month, publisher and format. Publishers come directly from the Sheet, without a publisher registry requirement. Titles without a book-page URL remain visible without a link.
 
 ## Publication
 

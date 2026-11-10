@@ -1,6 +1,6 @@
 const filters = document.querySelector('.filters');
 const search = document.querySelector('#search');
-const publisher = document.querySelector('#publisher');
+const selections = [...filters.querySelectorAll('select')];
 const books = [...document.querySelectorAll('.book')];
 filters.hidden = false;
 function applyFilters() {
@@ -8,8 +8,8 @@ function applyFilters() {
   let count = 0;
   for (const book of books) {
     const matchesSearch = !query || book.dataset.search.includes(query);
-    const matchesPublisher = !publisher.value || book.dataset.publisher === publisher.value;
-    book.hidden = !matchesSearch || !matchesPublisher;
+    const matchesSelections = selections.every(select => !select.value || book.dataset[select.id] === select.value);
+    book.hidden = !matchesSearch || !matchesSelections;
     if (!book.hidden) count++;
   }
   for (const heading of document.querySelectorAll('.month')) {
@@ -21,7 +21,7 @@ function applyFilters() {
   document.querySelector('#no-results').hidden = count !== 0;
 }
 search?.addEventListener('input', applyFilters);
-publisher.addEventListener('change', applyFilters);
+for (const select of selections) select.addEventListener('change', applyFilters);
 applyFilters();
 // Display a missed rebuild honestly even if the scheduler itself has stopped.
 const asOf = document.querySelector('#as-of');

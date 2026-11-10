@@ -19,7 +19,12 @@
     <aside class="notice"><p>An editor-maintained selection; publication dates can change.</p></aside>
     <section aria-labelledby="calendar-title" id="calendar">
       <div class="calendar-top"><h2 id="calendar-title">Forthcoming titles</h2><span>As of <time id="as-of" datetime="{{AS_OF}}">{{AS_OF}}</time></span></div>
-      <div class="filters" hidden><div class="filter-slot"></div><label>Publisher<select id="publisher"><option value="">All publishers</option>{{OPTIONS}}</select></label><p id="filter-count" role="status" aria-live="polite"></p></div>
+      <div class="filters calendar-filters" hidden>
+        <label>Month<select id="month"><option value="">All months</option>{{MONTH_OPTIONS}}</select></label>
+        <label>Publisher<select id="publisher"><option value="">All publishers</option>{{OPTIONS}}</select></label>
+        <label>Format<select id="format"><option value="">All formats</option>{{FORMAT_OPTIONS}}</select></label>
+        <p id="filter-count" role="status" aria-live="polite"></p>
+      </div>
       <p class="date-note">Select a publisher name beside a book to see its format. Links open book pages where available.</p>
       <ol class="calendar">{{BOOKS}}</ol><p id="no-results" hidden>No titles match these filters.</p>
     </section>

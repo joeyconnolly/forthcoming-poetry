@@ -12,6 +12,8 @@ Live rows require Title and Publisher. Author, URL and Translator may be blank. 
 
 Identical copies of a book are collapsed. Conflicting rows with the same title, author, publisher and translator stop the build and report their row numbers. Correct the canonical rows to resolve this.
 
+The public Month filter groups titles with a stated month or day. Season-only, year-only and undated titles appear under No specific month. The Format filter offers the six recommended categories. All formats also includes titles with other or blank format labels.
+
 ## Access and deployment
 
 Enable the Google Sheets API for the service account's Cloud project. Share only the intended spreadsheet with the service account email as Viewer. No Cloud project role, domain-wide delegation or Google Drive API is required. Store its JSON key in the GitHub Actions repository secret GOOGLE_SHEETS_CREDENTIALS. Keep keys out of the repository and frontend.
