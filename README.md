@@ -1,96 +1,44 @@
 # Forthcoming Poetry
 
-Live calendar: https://joeyconnolly.github.io/forthcoming-poetry/
+[Live calendar](https://joeyconnolly.github.io/forthcoming-poetry/)
 
-The November expansion adds 15 independent presses through Inpress, supplements Nine Arches and Seren, enables Faber pre-order checks, and includes a clearly dated Carcanet catalogue entry. See [coverage expansion](docs/COVERAGE_EXPANSION.md) for current scope and remaining gaps. The earlier Sites-hosted preview is not the automatically maintained calendar.
+The website is an editor-maintained poetry calendar. Its canonical source is the private Google Sheet's **Current list** tab. Only rows marked **Live** are published. Notes, Status and Form submitted are never included in the website's output. Dates do not automatically remove Live titles.
 
-A real, source-attributed poetry publication calendar, implemented in Python with a static HTML frontend. This is a **working partial prototype**, not completed ten-publisher coverage. Read [SOURCE_STATUS.md](SOURCE_STATUS.md) and [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md) before interpreting its coverage.
+The compact frontend retains search and publisher filtering. Publishers come directly from the Sheet, without a publisher registry requirement. Titles without a book-page URL remain visible without a link.
 
-## Run locally
+## Publication
 
-Python 3.11+ (tested with 3.14). From this directory:
+GitHub Actions reads the Sheet with a dedicated read-only service account and rebuilds daily at approximately **08:17 Europe/London**. Sheet edits do not trigger builds. A manual workflow run can publish immediately; code pushes run tests and validate the Sheet without publishing.
+
+Credentials are held only in the repository's `GOOGLE_SHEETS_CREDENTIALS` Actions secret. Raw Sheet data is not committed or uploaded as an artifact. A failed read or validation stops deployment and leaves the previous live site in place.
+
+See [website operation](docs/SHEET_WEBSITE.md) for setup, fields and troubleshooting.
+
+## Project structure
+
+- `config/sheet.json`: spreadsheet ID and canonical tab name.
+- `poetry_calendar/sheets.py`: read-only Google access, validation, Live filtering and public-field projection.
+- `poetry_calendar/sheet_render.py`: HTML generation from approved public fields.
+- `site/sheet-template.html`, `site/style.css`, `site/app.js`: compact frontend.
+- `public-site/`: ignored generated publication directory; only HTML, CSS, JavaScript and robots.txt are deployed.
+- `.github/workflows/update.yml`: tests, daily build and Pages deployment.
+- `tests/test_sheets.py`: offline tests for privacy, dates, validation and rendering.
+
+## Development
+
+Python 3.11+; CI uses Python 3.14.
 
 ```sh
 python -m pip install -r requirements.txt
-python -m poetry_calendar build
-python -m http.server 8000 --directory dist
+python -m unittest discover -s tests -v
 ```
 
-Open http://localhost:8000. The included dataset is real, collected on 9 November 2026. A build uses today's Europe/London date, so old publications disappear automatically.
+`python -m poetry_calendar build` reads the private Sheet and requires the credential environment variable. Prefer running this in GitHub Actions, where the secret is already configured. Never commit or paste the credential into source files or logs.
 
-```sh
-python -m poetry_calendar update                    # collect all enabled publishers, then rebuild
-python -m poetry_calendar collect --publisher bloodaxe  # one publisher, no rebuild
-python -m poetry_calendar build                     # no publisher requests
-python -m poetry_calendar status                    # coverage report
-python -m poetry_calendar import-csv titles.csv --dry-run # preview CSV import
-python -m poetry_calendar import-csv titles.csv     # save uploads and rebuild locally
-python -m unittest discover -s tests -v             # offline tests
-```
+## Discovery prototype (retained, unscheduled)
 
-Collection needs outbound HTTPS. It checks robots directives, stays on configured hosts, waits at least 1.5 seconds between requests to a host, uses timeouts and request budgets, and caches conditional responses. It never impersonates a search engine or bypasses a block. A failed fetch never substitutes a cached response as newly verified data.
+Publisher collectors and their historic JSON data remain available for the separate discovery phase. They no longer supply or update the website. No discovery job is scheduled by this workflow.
 
-## How it is organised
+`build-local` builds the legacy JSON dataset into `dist/`; `collect`, `update` and `import-csv` operate on that legacy dataset only. They do not edit the Sheet or publish the website. Earlier documentation is archived in [LEGACY_PROJECT.md](docs/LEGACY_PROJECT.md).
 
-- `config/publishers.json`: stable publisher IDs, source URLs, adapter, access status, request budget and honest coverage scope.
-- `poetry_calendar/adapters.py`: source-specific extraction functions sharing one `Result` contract.
-- `poetry_calendar/fetch.py`: independent request, robots and cache layer.
-- `poetry_calendar/model.py`: common records, uncertainty-aware date parsing and inclusion.
-- `poetry_calendar/pipeline.py`: stable identity, deduplication, history, reconciliation and durable state.
-- `data/state.json`: last-good records, histories and source status. **Keep this between runs.**
-- `data/imported.json`: durable CSV uploads; these take priority over matching automatic records, including dates.
-- `data/review.json`: current extraction and quality warnings.
-- `config/overrides.json`: auditable persistent corrections.
-- `site/`: presentation; `dist/`: generated deployable static site.
-- `tests/fixtures/`: reduced representative source excerpts; tests require no live websites.
-- `.github/workflows/update.yml`: weekly collection, daily rebuild, manual trigger and GitHub Pages publication.
-
-No hosted database, runtime API, LLM, frontend framework, CDN fonts or analytics are required. Site viewing works without JavaScript; JS adds search and a publisher filter.
-
-## Add publishers immediately
-
-See [docs/ADDING_PUBLISHERS.md](docs/ADDING_PUBLISHERS.md). There is no ten-publisher limit. Publisher counts, filters, diagnostics and display all derive from the registry. Add a registry entry and either reuse an adapter for the same site structure or register a new function. No storage or presentation changes are needed.
-
-## Correct a record
-
-For spreadsheet/CSV additions and corrections, use the [CSV import command](docs/CSV_IMPORT.md) and [template](examples/import-template.csv). Uploaded records survive collection, and later imports replace earlier versions of the same book. The command validates the whole file before saving and rebuilds the local site. Commit and push `data/imported.json` to publish it.
-
-Find its `id` in `data/state.json`. Add an entry to `config/overrides.json`:
-
-```json
-{
-  "existing-record-id": {
-    "reason": "Publisher corrected the release month",
-    "evidence_url": "https://publisher.example/book",
-    "set": {"date": "March 2027"}
-  }
-}
-```
-
-Other allowed fields are `title`, `contributors`, `source_url`, and `record_status` (`active`, `uncertain`, `excluded`, `withdrawn`). Exclude a false positive with `record_status: excluded`. Corrections apply after collection, survive subsequent runs, and leave raw observations intact. Unknown IDs and missing rationale are rejected. Candidates that could not be safely extracted are listed in the review report; fix their adapter/classification before admitting them.
-
-## Deploy and enable unattended updates
-
-The Sites publication is a reviewable snapshot. The production automation supplied here targets **GitHub Pages**, not the Sites URL. A static Sites deployment does not run Python or GitHub Actions merely because the workflow file is included.
-
-1. Put this project at the root of a repository on your GitHub account, with this workflow on the default branch. Preserve `data/state.json`.
-2. In repository Settings → Pages, select **GitHub Actions** as the publishing source.
-3. Allow the workflow's contents-write permission, or use an approved branch arrangement that lets it persist `data/` and `dist/`. No force push is used; a concurrent source update stops publication rather than overwriting changes.
-4. Run **Refresh poetry calendar** manually with `collect` checked. Inspect the source report, committed data and deployed URL.
-5. Verify a subsequent scheduled run. Collection is Monday at 08:17 Europe/London; the other days rebuild from stored data at 08:17. DST follows the timezone setting.
-6. Enable GitHub's workflow-failure notifications for the operator, and check for missed schedules. Scheduled runs can be delayed or disabled after repository inactivity; timestamps on the page remain explicit.
-7. Once verified, change the preview scheduling notice in `site/template.html` to describe the actual live cadence. Do not claim automation active before this verification.
-
-The repository, Pages configuration, and an end-to-end push-triggered collection and publication were verified on 9 November 2026. The schedule is configured; a later scheduled occurrence has not yet been observed. Steps above remain setup instructions for a new installation. [GitHub scheduling reference](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
-
-## Diagnose and recover
-
-- Read console output, `data/review.json`, and per-publisher status in `data/state.json`.
-- `ok` means the configured scope was processed; it does not certify all announcements on the publisher's website. `partial` means some accepted facts plus unresolved coverage. `failed` preserves earlier records.
-- A suspicious count collapse is quarantined. Inspect the source before changing thresholds or data. Repeated complete non-suspicious misses on three different dates hold the old record for review; a single disappearance does not mean withdrawn.
-- A local `data/.update.lock` prevents simultaneous writes. After a crashed process, verify no update is running before removing that specific file. GitHub workflow concurrency prevents overlapping automated runs.
-- `state.json` is written via atomic replacement. Source data is saved before deployment. Failed publication leaves the previously deployed version available; rerun build/deploy after recovery.
-- `.cache/` holds locally retrieved HTML for conditional requests. It is ignored by Git and not deployed. Delete it when no longer needed; it is not a durable data source.
-- Revert an erroneous data/source change with normal version control, then rebuild. Keep observations and overrides together in backups.
-
-See [docs/DECISIONS.md](docs/DECISIONS.md) for editorial rules and deliberate limitations.
+The planned next phase is a separate weekly discovery process producing a spreadsheet for manual review and copying into Google Sheets. It is not implemented here yet.

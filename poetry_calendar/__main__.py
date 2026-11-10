@@ -6,7 +6,7 @@ from .pipeline import collect, load_state, load_registry, effective_records
 
 def main():
     parser=argparse.ArgumentParser(description='Collect publisher facts and render Forthcoming Poetry')
-    parser.add_argument('command',choices=['collect','build','update','status','import-csv'])
+    parser.add_argument('command',choices=['collect','build','update','status','import-csv','build-local'])
     parser.add_argument('csv_file',nargs='?',type=Path,help='CSV file for import-csv')
     parser.add_argument('--dry-run',action='store_true',help='Validate an import and report counts without saving or rebuilding')
     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
@@ -21,10 +21,16 @@ def main():
         if not args.dry_run:
             from .render import render
             render(root,today)
+        print('Legacy import only: this does not change the canonical Sheet or published website.')
         return
     if args.csv_file is not None or args.dry_run:parser.error('CSV file and --dry-run apply only to import-csv')
+    if args.command=='build':
+        from .sheets import build_sheet,SheetError
+        try:build_sheet(root,today)
+        except SheetError as e:parser.exit(2,f'Sheet build failed: {e}\n')
+        return
     if args.command in ('collect','update'): collect(root,today,args.publisher)
-    if args.command in ('build','update'):
+    if args.command in ('build-local','update'):
         from .render import render
         render(root,today)
     if args.command=='status':

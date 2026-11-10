@@ -2,3 +2,4 @@ beautifulsoup4==4.15.0
 requests==2.34.2
 tzdata>=2025.2
 pypdf==6.16.2
+google-auth[requests]>=2.38,<3

@@ -1,29 +1,26 @@
-name: Refresh poetry calendar
+name: Publish calendar from canonical Sheet
 on:
   push:
     branches: [main]
     paths:
       - 'poetry_calendar/**'
-      - 'config/**'
-      - 'data/imported.json'
+      - 'config/sheet.json'
       - 'site/**'
       - 'tests/**'
       - 'requirements.txt'
       - '.github/workflows/update.yml'
   workflow_dispatch:
     inputs:
-      collect:
-        description: Fetch publisher websites (otherwise rebuild only)
+      publish:
+        description: Publish after validating the Sheet (false performs a build check only)
         type: boolean
         default: true
   schedule:
-    - cron: '17 8 * * 1'
-      timezone: Europe/London
-    - cron: '17 8 * * 0,2-6'
+    - cron: '17 8 * * *'
       timezone: Europe/London
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 concurrency:
@@ -33,42 +30,29 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v7
         with:
           python-version: '3.14'
           cache: pip
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
-      - name: Weekly or requested collection
-        if: github.event_name == 'push' || github.event.schedule == '17 8 * * 1' || (github.event_name == 'workflow_dispatch' && inputs.collect)
-        run: python -m poetry_calendar collect
-      - name: Rebuild from durable state
+      - name: Read canonical Sheet and build public fields only
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
         run: python -m poetry_calendar build
-      - name: Preserve observations before deployment
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data dist
-          if ! git diff --cached --quiet; then
-            git commit -m "Refresh poetry calendar and source diagnostics"
-            git push
-          fi
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
         with:
-          path: dist
+          path: public-site
       - name: Publish
         id: deployment
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
         uses: actions/deploy-pages@v4
-      - name: Source report
-        if: always()
-        run: |
-          python -m poetry_calendar status >> "$GITHUB_STEP_SUMMARY"
-          if [ -f data/review.json ]; then
-            echo 'Source warnings are retained in data/review.json in the repository.' >> "$GITHUB_STEP_SUMMARY"
-          fi

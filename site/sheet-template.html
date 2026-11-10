@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Forthcoming Poetry — a publication calendar</title>
+  <meta name="description" content="A source-attributed calendar of forthcoming poetry from selected UK and Irish publishers, with editor-maintained publication dates.">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#calendar">Skip to the calendar</a>
+<div class="page">
+  <header>
+    <div class="masthead"><span>UK &amp; IRELAND</span><a href="#coverage">About this calendar <span aria-hidden="true">↘</span></a></div>
+    <div class="intro"><h1>Forthcoming Poetry</h1>
+    <p class="lede">New collections, translations and anthologies.</p></div>
+    <div class="edition"><span><strong>{{COUNT}}</strong> forthcoming titles</span><span>From {{VISIBLE_PUBLISHERS}} publishers</span><span>Last updated <time>{{AS_OF}}</time></span></div>
+  </header>
+  <main>
+    <aside class="notice"><p>An editor-maintained selection; publication dates can change. <a href="#coverage">About this calendar</a></p></aside>
+    <section aria-labelledby="calendar-title" id="calendar">
+      <div class="calendar-top"><h2 id="calendar-title">Forthcoming titles</h2><span>As of <time id="as-of" datetime="{{AS_OF}}">{{AS_OF}}</time></span></div>
+      <div class="filters" hidden><label>Find a title or poet<input type="search" id="search" placeholder="Search the calendar…"></label><label>Publisher<select id="publisher"><option value="">All publishers</option>{{OPTIONS}}</select></label><p id="filter-count" role="status" aria-live="polite"></p></div>
+      <p class="date-note">Select a publisher name beside a book to see its format. Links open book pages where available.</p>
+      <ol class="calendar">{{BOOKS}}</ol><p id="no-results" hidden>No titles match these filters.</p>
+    </section>
+    <section id="coverage" aria-labelledby="coverage-title" class="coverage">
+      <p class="eyebrow">BEHIND THE CALENDAR</p><h2 id="coverage-title">About this calendar</h2>
+      <p>This calendar is maintained by its editors and refreshed each morning from their current list. Books may remain listed after publication until the editors update the list. It does not claim comprehensive publisher coverage.</p>
+      <p>Collections, pamphlets, anthologies, translations, selected poems and collected poems are included. Approximate or unconfirmed dates are shown without inventing a publication day.</p>
+      <p class="operations">Updated daily at approximately 08:17 UK time. If a refresh fails, the previous published calendar remains available.</p>
+    </section>
+  </main>
+  <footer><span>Forthcoming Poetry</span><span>Bibliographic facts. Original sources. Something to look forward to.</span></footer>
+</div>
+</body></html>
