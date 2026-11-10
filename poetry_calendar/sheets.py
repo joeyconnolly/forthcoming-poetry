@@ -80,7 +80,7 @@ def public_records(values):
         status=cell('status').casefold()
         if status in ('','past','excluded'):continue
         if status!='live':raise SheetError(f'Row {number}: unrecognised editorial status.')
-        for field in ('title','author','publisher'):
+        for field in ('title','publisher'):
             if not cell(field):raise SheetError(f'Row {number}: missing {field}.')
         try:
             raw_date=cell('date') or 'Date TBC'
@@ -115,3 +115,4 @@ def build_sheet(root,today):
     records,duplicates=public_records(fetch_values(config))
     render_sheet(root,today,records)
     print(f'Sheet build succeeded: {len(records)} public titles, {len({r["publisher"] for r in records})} publishers; {duplicates} identical duplicates collapsed.')
+
