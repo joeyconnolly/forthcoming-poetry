@@ -69,6 +69,21 @@ class SheetsTests(unittest.TestCase):
         with self.assertRaises(SheetError):public_records([HEADERS[:3]])
         for value in ['', 'Date TBC','Spring 2027','2027','April 2027','15/04/2027']:
             r=ROW.copy();r[3]=value;self.assertEqual(len(public_records([HEADERS,r])[0]),1)
+    def test_live_status_only_rows_are_ignored_but_real_entries_need_a_title(self):
+        placeholder = [''] * len(HEADERS)
+        placeholder[HEADERS.index('Status')] = 'Live'
+        anthology = ROW.copy()
+        anthology[1] = ''
+        anthology[4] = 'Anthology'
+        records, _ = public_records([HEADERS, placeholder, anthology, placeholder])
+        self.assertEqual([(r['title'], r['author'], r['format']) for r in records],
+                         [(anthology[0], '', 'Anthology')])
+
+        incomplete = anthology.copy()
+        incomplete[0] = ''
+        with self.assertRaisesRegex(SheetError, 'Row 3: missing title'):
+            public_records([HEADERS, placeholder, incomplete])
+
     def test_empty_approved_list_is_valid(self):
         self.assertEqual(public_records([HEADERS]),([],0))
     def test_real_date_cell_ignores_locale_and_hyperlink_label(self):

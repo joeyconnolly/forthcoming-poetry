@@ -80,6 +80,10 @@ def public_records(values):
         status=cell('status').casefold()
         if status in ('','past','excluded'):continue
         if status!='live':raise SheetError(f'Row {number}: unrecognised editorial status.')
+        if not cell('title') and not any(
+            clean(value) for index, value in enumerate(row) if index != columns['status']
+        ):
+            continue  # Ignore empty rows with a prefilled Live status.
         for field in ('title','publisher'):
             if not cell(field):raise SheetError(f'Row {number}: missing {field}.')
         try:
