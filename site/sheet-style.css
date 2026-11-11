@@ -1,0 +1,163 @@
+:root {
+  --paper: #f5f6ef;
+  --ink: #192a22;
+  --muted: #46594f;
+  --forest: #1e3b30;
+  --line: #b7c7ba;
+  --focus: #386e53;
+  --serif: Georgia, 'Times New Roman', serif;
+  --gutter: clamp(18px, 4vw, 42px);
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.4 Arial, Helvetica, sans-serif;
+}
+
+a { color: inherit; text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.skip {
+  position: absolute;
+  z-index: 1;
+  inset: 8px auto auto 8px;
+  padding: 8px 12px;
+  background: var(--paper);
+  transform: translateY(-150%);
+}
+.skip:focus { transform: none; }
+
+.masthead { background: var(--forest); color: var(--paper); }
+.masthead-inner,
+.catalogue {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.masthead-inner {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px 28px;
+  padding-block: 24px;
+}
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.eyebrow span { margin-inline: 3px; }
+h1 {
+  margin: 0 0 6px;
+  font: 400 clamp(35px, 5.1vw, 58px)/1.04 var(--serif);
+  letter-spacing: -.04em;
+}
+.lede,
+.edition p { margin: 0; }
+.edition { flex: none; font-size: 12px; line-height: 1.45; }
+
+.catalogue {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px clamp(20px, 4vw, 40px);
+  padding-block: 22px 52px;
+}
+.catalogue:has(.filters:not([hidden])) {
+  grid-template-columns: minmax(175px, 23%) minmax(0, 1fr);
+}
+.filters {
+  align-self: start;
+  display: grid;
+  gap: 12px;
+  padding: 0 16px 10px 0;
+  border-right: 1px solid var(--line);
+}
+.filters label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.filters select {
+  width: 100%;
+  min-height: 35px;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 13px Arial, Helvetica, sans-serif;
+}
+#filter-count,
+#no-results,
+.empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.calendar { margin: 0; padding: 0; list-style: none; }
+.month {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.month:not([hidden]) ~ .month { margin-top: 22px; }
+.month h2 {
+  margin: 0;
+  color: var(--forest);
+  font: 600 23px/1.15 var(--serif);
+}
+.book {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) minmax(110px, 26%);
+  align-items: baseline;
+  column-gap: 12px;
+  padding-block: 9px 10px;
+  border-bottom: 1px solid var(--line);
+}
+.book-date,
+.book-source {
+  color: var(--muted);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.book-date { font-variant-numeric: tabular-nums; }
+.book-main { min-width: 0; overflow-wrap: anywhere; }
+.book h3 { margin: 0; font: 600 17px/1.15 var(--serif); }
+.book h3 a { text-decoration: none; }
+.book h3 a:hover,
+.book h3 a:focus-visible { text-decoration: underline; }
+.contributors { margin: 1px 0 0; color: var(--muted); font-size: 13px; }
+.contributors:empty { display: none; }
+.book-source summary { cursor: pointer; }
+.book-source summary::marker { font-size: 8px; }
+.book-source small { display: block; margin-top: 3px; font-size: 11px; }
+
+@media (max-width: 700px) {
+  .masthead-inner { flex-wrap: wrap; gap: 12px 24px; }
+  .catalogue:has(.filters:not([hidden])) { grid-template-columns: minmax(0, 1fr); }
+  .filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 0 12px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  #filter-count { grid-column: 1 / -1; }
+}
+
+@media (max-width: 460px) {
+  .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filters label:last-of-type { grid-column: 1 / -1; }
+  .book {
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 10px;
+  }
+  .book-source { grid-column: 2; margin-top: 3px; }
+}
