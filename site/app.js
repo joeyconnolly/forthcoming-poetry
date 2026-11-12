@@ -23,7 +23,8 @@ function applyFilters() {
 search?.addEventListener('input', applyFilters);
 for (const select of selections) select.addEventListener('change', applyFilters);
 applyFilters();
-// Display a missed rebuild honestly even if the scheduler itself has stopped.
 const asOf = document.querySelector('#as-of');
-const now = new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-if (now > asOf.dateTime) { asOf.insertAdjacentText('afterend', ' · rebuild overdue'); }
+if (asOf) {
+  const now = new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  if (now > asOf.dateTime) { asOf.insertAdjacentText('afterend', ' · rebuild overdue'); }
+}

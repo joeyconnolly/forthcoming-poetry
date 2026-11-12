@@ -40,7 +40,7 @@ def render_sheet(root,today,records):
     format_options = ''.join(f'<option value="{esc(label)}">{esc(label)}</option>' for label in FORMATS.values())
     template=(root/'site/sheet-template.html').read_text(encoding='utf-8')
     replacements={'{{BOOKS}}':''.join(rows) or '<li class="empty">No titles are currently listed.</li>',
-        '{{MONTH_OPTIONS}}':month_options,'{{FORMAT_OPTIONS}}':format_options,'{{OPTIONS}}':options,'{{COUNT}}':str(len(records)),'{{VISIBLE_PUBLISHERS}}':str(len(publishers)),'{{AS_OF}}':today.isoformat(),'{{UPDATED}}':f'{today.day} {today:%b %Y}'}
+        '{{MONTH_OPTIONS}}':month_options,'{{FORMAT_OPTIONS}}':format_options,'{{OPTIONS}}':options,'{{COUNT}}':str(len(records)),'{{VISIBLE_PUBLISHERS}}':str(len(publishers))}
     for token,value in replacements.items():template=template.replace(token,value)
     # A separate publication directory prevents legacy JSON/cache files entering artifacts.
     output=root/'public-site';output.mkdir(exist_ok=True)
