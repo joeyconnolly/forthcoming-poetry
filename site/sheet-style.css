@@ -1,11 +1,11 @@
 :root {
-  --paper: #f5f6ef;
+  --paper: #f8f8f3;
   --ink: #192a22;
   --muted: #46594f;
   --forest: #1e3b30;
   --line: #b7c7ba;
   --focus: #386e53;
-  --serif: Georgia, 'Times New Roman', serif;
+  --serif: 'EB Garamond', Garamond, Georgia, serif;
   --gutter: clamp(18px, 4vw, 42px);
 }
 
@@ -30,7 +30,7 @@ a { color: inherit; text-underline-offset: 3px; }
 }
 .skip:focus { transform: none; }
 
-.masthead { background: var(--forest); color: var(--paper); }
+.masthead { background: var(--forest); color: #f5f6ef; }
 .masthead-inner,
 .catalogue {
   width: 100%;
