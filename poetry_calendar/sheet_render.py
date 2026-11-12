@@ -16,7 +16,7 @@ def render_sheet(root,today,records):
         months[month] = 'No specific month' if month == 'unspecified' else group
         if group!=heading:rows.append(f'<li class="month"><h2>{esc(group)}</h2></li>');heading=group
         title=esc(r['title'])
-        if r['url']:title=f'<a href="{esc(r["url"])}">{title}</a>'
+        if r['url']:title=f'<a href="{esc(r["url"])}" target="_blank" rel="noopener">{title}</a>'
         credits = r['author']
         if r['translator']:
             credits += (' · ' if credits else '') + f'Translated by {r["translator"]}'
