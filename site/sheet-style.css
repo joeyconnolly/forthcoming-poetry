@@ -168,3 +168,39 @@ h1 {
   }
   .book-source { grid-column: 2; margin-top: 3px; }
 }
+
+.masthead-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.about-link {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.masthead a:focus-visible,
+.about-link:focus-visible { outline-color: #f5f6ef; }
+#about-dialog {
+  width: min(560px, calc(100% - 36px));
+  max-height: calc(100% - 36px);
+  overflow: auto;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+#about-dialog::backdrop { background: rgb(16 34 26 / 55%); }
+#about-title { margin: 0 0 14px; font: 600 28px/1.15 var(--serif); }
+#about-dialog p { margin: 0 0 22px; }
+#about-dialog form { margin: 0; }
+#about-dialog button {
+  padding: 7px 16px;
+  border: 1px solid var(--forest);
+  border-radius: 2px;
+  background: var(--forest);
+  color: var(--paper);
+  font: inherit;
+  cursor: pointer;
+}

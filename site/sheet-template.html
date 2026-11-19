@@ -6,8 +6,8 @@
   <title>Forthcoming Poetry — a publication calendar</title>
   <meta name="description" content="An editor-maintained calendar of forthcoming poetry from UK and Irish publishers.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&amp;display=swap">
-  <link rel="stylesheet" href="style.css?v=press-catalogue-3">
-  <script src="app.js?v=press-catalogue-2" defer></script>
+  <link rel="stylesheet" href="style.css?v=press-catalogue-4">
+  <script src="app.js?v=press-catalogue-4" defer></script>
 </head>
 <body>
 <a class="skip" href="#calendar">Skip to the calendar</a>
@@ -20,7 +20,7 @@
     </div>
     <div class="edition">
       <p>{{COUNT}} titles <span aria-hidden="true">·</span> {{VISIBLE_PUBLISHERS}} publishers</p>
-      <p><a href="https://forms.gle/mQyCNQsfSzomrirD7" target="_blank" rel="noopener">Submit a book to this list</a></p>
+      <p class="masthead-links"><a href="https://forms.gle/mQyCNQsfSzomrirD7" target="_blank" rel="noopener">Submit a book to this list</a><button type="button" class="about-link" id="about-open" aria-haspopup="dialog" hidden>About this site</button></p>
     </div>
   </div>
 </header>
@@ -36,5 +36,10 @@
     <p id="no-results" hidden>No titles match these filters.</p>
   </section>
 </main>
+<dialog id="about-dialog" aria-labelledby="about-title">
+  <h2 id="about-title">About this site</h2>
+  <p>This site is built and maintained by <a href="https://www.marthasprackland.co.uk/" target="_blank" rel="noopener">Martha Sprackland</a> and <a href="https://joeyconnolly.com/" target="_blank" rel="noopener">Joey Connolly</a>. It probably isn't complete, and we'd be grateful for any missing books you can let us know about. If you have any suggestions for how the site could be improved feel free to email them to <a href="mailto:contact@joeyconnolly.com">contact@joeyconnolly.com</a></p>
+  <form method="dialog"><button type="submit" autofocus>Close</button></form>
+</dialog>
 </body>
 </html>

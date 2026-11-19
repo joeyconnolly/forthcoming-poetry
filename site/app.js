@@ -28,3 +28,10 @@ if (asOf) {
   const now = new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   if (now > asOf.dateTime) { asOf.insertAdjacentText('afterend', ' · rebuild overdue'); }
 }
+
+const aboutDialog = document.querySelector('#about-dialog');
+const aboutOpen = document.querySelector('#about-open');
+if (aboutDialog && aboutOpen) {
+  aboutOpen.hidden = false;
+  aboutOpen.addEventListener('click', () => aboutDialog.showModal());
+}
