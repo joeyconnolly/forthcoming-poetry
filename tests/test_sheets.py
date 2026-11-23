@@ -59,11 +59,12 @@ class SheetsTests(unittest.TestCase):
         self.assertEqual(len(page.select('.book[hidden]')), 2)
         self.assertEqual(len(page.select('.month:not([hidden])')), 1)
 
-    def test_publication_groups_share_validation_and_duplicate_checks(self):
+    def test_publication_groups_preserve_distinct_duplicates_and_validation(self):
         past = ROW.copy()
         past[8] = 'Past'
-        with self.assertRaisesRegex(SheetError, 'conflicting duplicate'):
-            public_records([HEADERS, ROW, past], include_non_live=True)
+        records, count = public_records([HEADERS, ROW, past], include_non_live=True)
+        self.assertEqual((len(records), count), (2, 0))
+        self.assertEqual({r['period'] for r in records}, {'upcoming', 'past'})
         records, count = public_records([HEADERS, past, past], include_non_live=True)
         self.assertEqual((len(records), count), (1, 1))
         for status in ('Live', 'Past', ''):
@@ -98,10 +99,17 @@ class SheetsTests(unittest.TestCase):
             r=ROW.copy();r[col]=value
             with self.assertRaises(SheetError) as caught:public_records([HEADERS,r])
             self.assertNotIn(value,str(caught.exception));self.assertIn('Row 2',str(caught.exception))
-    def test_duplicate_exact_collapses_but_conflicts_stop_build(self):
+    def test_duplicate_exact_collapses_but_conflicting_versions_are_kept(self):
         records,count=public_records([HEADERS,ROW,ROW]);self.assertEqual(len(records),1);self.assertEqual(count,1)
         r=ROW.copy();r[3]='16 April 2027'
-        with self.assertRaisesRegex(SheetError,'Rows 2 and 3'):public_records([HEADERS,ROW,r])
+        records,count=public_records([HEADERS,ROW,r,r,ROW])
+        self.assertEqual((len(records),count),(2,2))
+        self.assertEqual({book['date']['start'] for book in records},{'2027-04-15','2027-04-16'})
+        with patch('poetry_calendar.sheets.fetch_values',return_value=[HEADERS,ROW,r]):
+            build_sheet(self.root,TODAY)
+        from bs4 import BeautifulSoup
+        page=BeautifulSoup((self.root/'public-site/index.html').read_text(encoding='utf-8'),'html.parser')
+        self.assertEqual(len(page.select('.book')),2)
     def test_header_order_blank_columns_and_case(self):
         indexes=[8,7,0,9,2,4,6,3,5,1]
         headers=[HEADERS[i].upper() for i in indexes]+['','']

@@ -107,10 +107,10 @@ def public_records(values, *, include_non_live=False):
             record['period'] = {'live': 'upcoming', 'past': 'past', '': 'other'}[status]
         identity=tuple(key(record[k]) for k in ('title','author','publisher','translator'))
         if identity in seen:
-            prior,prior_row=seen[identity]
-            if prior!=record:raise SheetError(f'Rows {prior_row} and {number}: conflicting duplicate book entries.')
-            duplicates+=1;continue
-        seen[identity]=(record,number);result.append(record)
+            if record in seen[identity]:
+                duplicates+=1;continue
+        seen.setdefault(identity,[]).append(record)
+        result.append(record)
     result.sort(key=lambda r:(r['date']['start'] or '9999',key(r['title']),key(r['publisher'])))
     return result,duplicates
 
