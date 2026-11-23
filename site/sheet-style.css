@@ -140,7 +140,7 @@ h1 {
 .book-source summary::marker { font-size: 8px; }
 .book-source small { display: block; margin-top: 3px; font-size: 11px; }
 
-@media (min-width: 701px) and (min-height: 300px) {
+@media (min-width: 701px) and (min-height: 400px) {
   .filters {
     position: sticky;
     top: 22px;
@@ -151,7 +151,7 @@ h1 {
   .masthead-inner { flex-wrap: wrap; gap: 12px 24px; }
   .catalogue:has(.filters:not([hidden])) { grid-template-columns: minmax(0, 1fr); }
   .filters {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0 0 12px;
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -161,7 +161,6 @@ h1 {
 
 @media (max-width: 460px) {
   .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .filters label:last-of-type { grid-column: 1 / -1; }
   .book {
     grid-template-columns: 48px minmax(0, 1fr);
     column-gap: 10px;

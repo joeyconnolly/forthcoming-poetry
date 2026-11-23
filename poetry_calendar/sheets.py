@@ -64,7 +64,7 @@ def fetch_values(config):
     except SheetError:raise
     except Exception:raise SheetError('Unexpected Google Sheets response; no source values were logged.') from None
 
-def public_records(values):
+def public_records(values, *, include_non_live=False):
     if not values:raise SheetError('Canonical tab has no header row.')
     columns={}
     for i,text in enumerate(values[0]):
@@ -78,12 +78,14 @@ def public_records(values):
     for number,row in enumerate(values[1:],2):
         cell=lambda field:clean(row[columns[field]]) if columns[field]<len(row) else ''
         status=cell('status').casefold()
-        if status in ('','past','excluded'):continue
-        if status!='live':raise SheetError(f'Row {number}: unrecognised editorial status.')
-        if not cell('title') and not any(
-            clean(value) for index, value in enumerate(row) if index != columns['status']
-        ):
-            continue  # Ignore empty rows with a prefilled Live status.
+        if status == 'excluded':
+            continue
+        if status not in ('', 'live', 'past'):
+            raise SheetError(f'Row {number}: unrecognised editorial status.')
+        if not include_non_live and status != 'live':
+            continue
+        if not any(cell(field) for field in columns if field != 'status'):
+            continue  # Ignore rows without bibliographic data.
         for field in ('title','publisher'):
             if not cell(field):raise SheetError(f'Row {number}: missing {field}.')
         try:
@@ -101,6 +103,8 @@ def public_records(values):
         # Never carry the input row, status, Notes, or Form submitted into output.
         record={'title':cell('title'),'author':cell('author'),'publisher':cell('publisher'),
             'date':d,'format':FORMATS.get(fmt.casefold(),fmt),'url':url,'translator':cell('translator')}
+        if include_non_live:
+            record['period'] = {'live': 'upcoming', 'past': 'past', '': 'other'}[status]
         identity=tuple(key(record[k]) for k in ('title','author','publisher','translator'))
         if identity in seen:
             prior,prior_row=seen[identity]
@@ -115,7 +119,7 @@ def publisher_id(name):return hashlib.sha256(key(name).encode()).hexdigest()[:12
 def build_sheet(root,today):
     from .sheet_render import render_sheet
     config=json.loads((root/'config/sheet.json').read_text(encoding='utf-8'))
-    records,duplicates=public_records(fetch_values(config))
+    records,duplicates=public_records(fetch_values(config), include_non_live=True)
     render_sheet(root,today,records)
     print(f'Sheet build succeeded: {len(records)} public titles, {len({r["publisher"] for r in records})} publishers; {duplicates} identical duplicates collapsed.')
 

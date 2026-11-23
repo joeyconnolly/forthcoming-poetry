@@ -1,18 +1,18 @@
 # Sheet-based website operation
 
-Edit **Current list** in the canonical private spreadsheet. Set Status to **Live** to publish, or **Past**, **Excluded** or blank to omit a row. Changes appear after the next successful daily build, approximately 08:17 UK time. Google access is read-only: this project never edits the spreadsheet.
+Edit **Current list** in the canonical private spreadsheet. Set Status to **Live** for Upcoming or **Past** for Past. The All view includes Live, Past and blank-status entries. **Excluded** rows are omitted entirely. Changes appear after the next successful daily build, approximately 08:17 UK time. Google access is read-only: this project never edits the spreadsheet.
 
 ## Columns
 
 Keep the header row first. Recognised headers are case-insensitive and may be reordered. Trailing empty columns are allowed.
 
-Required headers: Title, Author, Publisher, Pub Date, Format, URL to book page (if applicable), Translator, Status. Notes and Form submitted may remain in the Sheet but are discarded. Only the seven bibliographic fields are rendered.
+Required headers: Title, Author, Publisher, Pub Date, Format, URL to book page (if applicable), Translator, Status. Notes and Form submitted may remain in the Sheet but are discarded. The seven bibliographic fields and a derived public filter group are rendered.
 
-An otherwise empty row with a prefilled Live status is ignored. Live rows require Title and Publisher. Author, URL and Translator may be blank. Format is displayed as entered; recommended categories are Single-author collection, Pamphlet, Anthology, Translation, Selected poems, Collected poems. Pub Date may be a Google date cell, a full UK date, month/year, year, or Date TBC; blank also means Date TBC. Real date cells are read independently of display locale. Do not mark a date as a precise day if only its month is known.
+Rows without bibliographic data are ignored. All included rows require Title and Publisher. Author, URL and Translator may be blank. Format is displayed as entered; recommended categories are Single-author collection, Pamphlet, Anthology, Translation, Selected poems, Collected poems. Pub Date may be a Google date cell, a full UK date, month/year, year, or Date TBC; blank also means Date TBC. Real date cells are read independently of display locale. Do not mark a date as a precise day if only its month is known.
 
 Identical copies of a book are collapsed. Conflicting rows with the same title, author, publisher and translator stop the build and report their row numbers. Correct the canonical rows to resolve this.
 
-The public Month filter groups titles with a stated month or day. Season-only, year-only and undated titles appear under No specific month. The Format filter offers the six recommended categories. All formats also includes titles with other or blank format labels.
+The Publication date filter defaults to Upcoming and uses the editorial status, independently of publication dates. All includes entries with a blank status. The public Month filter groups titles with a stated month or day. Season-only, year-only and undated titles appear under No specific month. The Format filter offers the six recommended categories. All formats also includes titles with other or blank format labels.
 
 ## Access and deployment
 

@@ -30,6 +30,48 @@ class SheetsTests(unittest.TestCase):
         self.assertEqual(len(records),1);data=json.dumps(records)
         for word in ['PRIVATE','notes','submitted']:self.assertNotIn(word,data)
         self.assertEqual(records[0]['translator'],'A Translator')
+    def test_publication_filter_includes_only_allowed_bibliographic_projection(self):
+        rows = []
+        for title, status, pub_date in [
+            ('Upcoming book', 'Live', '1 January 2020'),
+            ('Past book', 'Past', '1 January 2030'),
+            ('Blank-status book', '', '1 January 2027'),
+            ('PRIVATE-EXCLUDED', 'Excluded', 'invalid private date'),
+        ]:
+            row = ROW.copy()
+            row[0], row[8], row[3] = title, status, pub_date
+            rows.append(row)
+        records, _ = public_records([HEADERS, *rows], include_non_live=True)
+        self.assertEqual({r['title']: r['period'] for r in records}, {
+            'Upcoming book': 'upcoming', 'Past book': 'past', 'Blank-status book': 'other',
+        })
+        for record in records:
+            self.assertNotIn('status', record)
+        render_sheet(self.root, TODAY, records)
+        output = (self.root/'public-site/index.html').read_text(encoding='utf-8')
+        for private_value in ['PRIVATE-EXCLUDED', 'PRIVATE-NOTE-92', 'PRIVATE-FORM-93']:
+            self.assertNotIn(private_value, output)
+        from bs4 import BeautifulSoup
+        page = BeautifulSoup(output, 'html.parser')
+        self.assertEqual(page.select_one('#period option[selected]')['value'], 'upcoming')
+        visible = [book.h3.get_text() for book in page.select('.book') if not book.has_attr('hidden')]
+        self.assertEqual(visible, ['Upcoming book'])
+        self.assertEqual(len(page.select('.book[hidden]')), 2)
+        self.assertEqual(len(page.select('.month:not([hidden])')), 1)
+
+    def test_publication_groups_share_validation_and_duplicate_checks(self):
+        past = ROW.copy()
+        past[8] = 'Past'
+        with self.assertRaisesRegex(SheetError, 'conflicting duplicate'):
+            public_records([HEADERS, ROW, past], include_non_live=True)
+        records, count = public_records([HEADERS, past, past], include_non_live=True)
+        self.assertEqual((len(records), count), (1, 1))
+        for status in ('Live', 'Past', ''):
+            incomplete = ROW.copy()
+            incomplete[8], incomplete[2] = status, ''
+            with self.assertRaisesRegex(SheetError, 'missing publisher'):
+                public_records([HEADERS, incomplete], include_non_live=True)
+
     def test_live_past_date_is_not_automatically_hidden(self):
         r=ROW.copy();r[3]='1 January 2020'
         records,_=public_records([HEADERS,r]);render_sheet(self.root,TODAY,records)

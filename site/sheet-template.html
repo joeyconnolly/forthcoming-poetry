@@ -6,8 +6,8 @@
   <title>Forthcoming Poetry — a publication calendar</title>
   <meta name="description" content="An editor-maintained calendar of forthcoming poetry from UK and Irish publishers.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&amp;display=swap">
-  <link rel="stylesheet" href="style.css?v=press-catalogue-4">
-  <script src="app.js?v=press-catalogue-4" defer></script>
+  <link rel="stylesheet" href="style.css?v=press-catalogue-5">
+  <script src="app.js?v=press-catalogue-5" defer></script>
 </head>
 <body>
 <a class="skip" href="#calendar">Skip to the calendar</a>
@@ -26,6 +26,11 @@
 </header>
 <main class="catalogue">
   <div class="filters" role="group" aria-label="Filter the calendar" hidden>
+    <label>Publication date<select id="period">
+      <option value="upcoming" selected>Upcoming</option>
+      <option value="past">Past</option>
+      <option value="">All</option>
+    </select></label>
     <label>Month<select id="month"><option value="">All months</option>{{MONTH_OPTIONS}}</select></label>
     <label>Publisher<select id="publisher"><option value="">All publishers</option>{{OPTIONS}}</select></label>
     <label>Format<select id="format"><option value="">All formats</option>{{FORMAT_OPTIONS}}</select></label>
@@ -33,7 +38,7 @@
   </div>
   <section id="calendar" aria-label="Publication calendar" tabindex="-1">
     <ol class="calendar">{{BOOKS}}</ol>
-    <p id="no-results" hidden>No titles match these filters.</p>
+    <p id="no-results"{{NO_RESULTS_HIDDEN}}>No titles match these filters.</p>
   </section>
 </main>
 <dialog id="about-dialog" aria-labelledby="about-title">

@@ -8,13 +8,21 @@ def esc(value):return html.escape(str(value),quote=True)
 
 def render_sheet(root,today,records):
     rows=[];heading=None
+    heading_index = None
     months = {}
     for r in records:
         d=r['date']
         group='Dates to be confirmed' if d['precision'] in ('unknown','year') else (d['label'] if d['precision']=='season' else date.fromisoformat(d['start']).strftime('%B %Y'))
         month = d['start'][:7] if d['precision'] in ('day', 'month') else 'unspecified'
         months[month] = 'No specific month' if month == 'unspecified' else group
-        if group!=heading:rows.append(f'<li class="month"><h2>{esc(group)}</h2></li>');heading=group
+        period = r.get('period', 'upcoming')
+        initially_hidden = ' hidden' if period != 'upcoming' else ''
+        if group != heading:
+            heading_index = len(rows)
+            rows.append(f'<li class="month" hidden><h2>{esc(group)}</h2></li>')
+            heading = group
+        if period == 'upcoming':
+            rows[heading_index] = f'<li class="month"><h2>{esc(group)}</h2></li>'
         title=esc(r['title'])
         if r['url']:title=f'<a href="{esc(r["url"])}" target="_blank" rel="noopener">{title}</a>'
         credits = r['author']
@@ -29,7 +37,7 @@ def render_sheet(root,today,records):
                 date_label = f'<time datetime="{pub_date:%Y-%m}">{pub_date:%b %Y}</time>'
         elif d['precision'] == 'season':
             date_label = esc(d['label'].removesuffix(', provisional'))
-        rows.append(f'''<li class="book" data-publisher="{publisher_id(r['publisher'])}" data-month="{month}" data-format="{esc(r['format'])}">
+        rows.append(f'''<li class="book" data-publisher="{publisher_id(r['publisher'])}" data-month="{month}" data-format="{esc(r['format'])}" data-period="{esc(period)}"{initially_hidden}>
           <div class="book-date">{date_label}</div>
           <div class="book-main"><h3>{title}</h3><p class="contributors">{esc(credits)}</p></div>
           <details class="book-source"><summary>{esc(r['publisher'])}</summary><small>{esc(r['format']) if r['format'] else 'Poetry'}</small></details>
@@ -40,6 +48,7 @@ def render_sheet(root,today,records):
     format_options = ''.join(f'<option value="{esc(label)}">{esc(label)}</option>' for label in FORMATS.values())
     template=(root/'site/sheet-template.html').read_text(encoding='utf-8')
     replacements={'{{BOOKS}}':''.join(rows) or '<li class="empty">No titles are currently listed.</li>',
+        '{{NO_RESULTS_HIDDEN}}':' hidden' if any(r.get('period', 'upcoming') == 'upcoming' for r in records) else '',
         '{{MONTH_OPTIONS}}':month_options,'{{FORMAT_OPTIONS}}':format_options,'{{OPTIONS}}':options,'{{COUNT}}':str(len(records)),'{{VISIBLE_PUBLISHERS}}':str(len(publishers))}
     for token,value in replacements.items():template=template.replace(token,value)
     # A separate publication directory prevents legacy JSON/cache files entering artifacts.
