@@ -31,9 +31,6 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -52,7 +49,18 @@ jobs:
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
         with:
           path: public-site
+
+  # A separate job gives the uploaded artifact time to become discoverable.
+  # https://github.com/actions/deploy-pages/issues/451
+  deploy:
+    needs: update
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Publish
         id: deployment
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish)
         uses: actions/deploy-pages@v5.0.1
